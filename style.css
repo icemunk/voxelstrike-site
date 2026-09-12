@@ -72,9 +72,18 @@ td{color:var(--dim)}
 td.k{color:var(--text)}
 td.num{text-align:right;font-variant-numeric:tabular-nums}
 tr:last-child td{border-bottom:none}
-.clips{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(360px,1fr))}
+/* THE CLIPS GET A WIDER COLUMN THAN THE REST OF THE PAGE. Everything else reads best at
+   1180px (prose, cards, tables); gameplay does not -- asked for as "bigger so I can see
+   more than just 1 demo gameplay, but a bunch of them". At 1380 the hero plays at close to
+   the 1280 it was filmed at and the cards below it sit two and three across instead of
+   two, so several battles are on screen at once and each is still worth looking at. */
+#action .wrap{max-width:1380px}
+.clip.hero video{max-height:min(72vh,760px);object-fit:contain}
+.clips{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(460px,1fr))}
 .clip{background:var(--panel);border:1px solid var(--line);border-radius:3px;overflow:hidden}
-.clip img,.clip video{width:100%;display:block;background:#000;aspect-ratio:16/9;object-fit:cover}
+.clip img,.clip video{width:100%;display:block;background:#000;aspect-ratio:16/9;object-fit:cover;cursor:zoom-in}
+[data-full]{cursor:zoom-in}
+#lb video{max-width:min(1280px,96vw);max-height:92vh;border-radius:8px;box-shadow:0 30px 90px rgba(0,0,0,.6);background:#000;cursor:auto}
 .clip .cap{padding:12px 14px}
 .clip .cap b{font-family:var(--disp);font-weight:500;font-size:16px;display:block;margin-bottom:3px}
 .clip .cap span{color:var(--dim);font-size:13px}

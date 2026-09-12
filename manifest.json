@@ -8,7 +8,7 @@
   "replay_air": "clip_replay_air.mp4",
   "strike": "clip_strike.mp4"
  },
- "commit": "ef149e3",
+ "commit": "adf225d",
  "facts": {
   "biomes": 14,
   "check_names": [
@@ -917,9 +917,9 @@
   "checks_pass": 899,
   "checks_secs": 5840.661317110062,
   "enemies": 47,
-  "engine_loc": 81614,
-  "lessons": 525,
-  "log_lines": 16415,
+  "engine_loc": 81804,
+  "lessons": 540,
+  "log_lines": 16637,
   "mechs": 14,
   "missions": 26,
   "models": 438,
@@ -1649,17 +1649,17 @@
    "game/biomes.py"
   ]
  },
- "source": "93811c7ef2a99bc7",
+ "source": "2ea5d05d4f886b9e",
  "sources": {
   "game/biomes.py": "340a29eb48636169",
   "game/content.py": "f0cee8d7bec4bc66",
-  "game/entities.py": "094058115fe44b3a",
+  "game/entities.py": "b163a46fd9d2ae27",
   "game/limbs.py": "183c6970d6bcde75",
   "game/mapgen.py": "fdd0e5b183b5170d",
   "game/models.py": "4f1362c3a8d8ff21",
   "game/props.py": "75b2c2e9611cc3d1",
   "inventory.py": "9a17ffd14d84ab53",
-  "sitegen.py": "f623bb7a859967b0"
+  "sitegen.py": "583ab8e7094c3c22"
  },
  "stamp": "built 2026-09-12",
  "units": {
@@ -1796,6 +1796,16 @@
  "work": [
   {
    "date": "2026-09-12",
+   "sha": "72b62b5",
+   "subject": "audio: the world around you makes a sound, and you can hear how far away it is"
+  },
+  {
+   "date": "2026-09-12",
+   "sha": "222ab98",
+   "subject": "site: seven gameplay clips, one of them full size at the top"
+  },
+  {
+   "date": "2026-09-12",
    "sha": "ef149e3",
    "subject": "site: the catalogue in the repo too, and the README stops keeping its own numbers"
   },
@@ -1853,16 +1863,6 @@
    "date": "2026-09-11",
    "sha": "e1e8978",
    "subject": "docs: OPEN.md keeps its own bytes, and one worktree, one job"
-  },
-  {
-   "date": "2026-09-11",
-   "sha": "0e453ac",
-   "subject": "ai: a unit on a jetty with the sea on three sides gets off it"
-  },
-  {
-   "date": "2026-09-11",
-   "sha": "ba0af7f",
-   "subject": "ai: a unit standing at the waterline gets back onto land (carried from claude/vigorous-mestorf-62dba1)"
   }
  ],
  "worlds": {

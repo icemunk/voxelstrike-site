@@ -1,10 +1,14 @@
 {
  "clips": {
   "armour": "clip_armour.mp4",
+  "battle": "clip_battle.mp4",
+  "dogfight": "clip_dogfight.mp4",
   "mech_fight": "clip_mech_fight.mp4",
-  "replay_air": "clip_replay_air.mp4"
+  "naval": "clip_naval.mp4",
+  "replay_air": "clip_replay_air.mp4",
+  "strike": "clip_strike.mp4"
  },
- "commit": "0078227",
+ "commit": "ef149e3",
  "facts": {
   "biomes": 14,
   "check_names": [
@@ -911,11 +915,11 @@
   "checks": 909,
   "checks_partial": true,
   "checks_pass": 899,
-  "checks_secs": 5831.827384471893,
+  "checks_secs": 5840.661317110062,
   "enemies": 47,
-  "engine_loc": 81601,
-  "lessons": 523,
-  "log_lines": 16369,
+  "engine_loc": 81614,
+  "lessons": 525,
+  "log_lines": 16415,
   "mechs": 14,
   "missions": 26,
   "models": 438,
@@ -1065,6 +1069,16 @@
    "h": 1.8
   }
  },
+ "posters": {
+  "armour": "clip_armour.jpg",
+  "battle": "clip_battle.jpg",
+  "dogfight": "clip_dogfight.jpg",
+  "mech_fight": "clip_mech_fight.jpg",
+  "naval": "clip_naval.jpg",
+  "replay_air": "clip_replay_air.jpg",
+  "strike": "clip_strike.jpg"
+ },
+ "readme_counts": "  <sub><b>63</b> machines and <b>14</b> battlemechs &middot; <b>75</b> weapons &middot; <b>47</b> hostile types &middot; <b>26</b> missions &middot; <b>438</b> voxel models &middot; <b>119</b> destructible props &middot; <b>26</b> worlds &middot; <b>909</b> automated checks</sub>",
  "scenery": {
   "person": "person.png",
   "prop_adobe_house": "prop_adobe_house_sheet.png",
@@ -1635,7 +1649,7 @@
    "game/biomes.py"
   ]
  },
- "source": "b4ef75a35a63b1f4",
+ "source": "93811c7ef2a99bc7",
  "sources": {
   "game/biomes.py": "340a29eb48636169",
   "game/content.py": "f0cee8d7bec4bc66",
@@ -1645,7 +1659,7 @@
   "game/models.py": "4f1362c3a8d8ff21",
   "game/props.py": "75b2c2e9611cc3d1",
   "inventory.py": "9a17ffd14d84ab53",
-  "sitegen.py": "05d65824f4f14b63"
+  "sitegen.py": "f623bb7a859967b0"
  },
  "stamp": "built 2026-09-12",
  "units": {
@@ -1782,6 +1796,21 @@
  "work": [
   {
    "date": "2026-09-12",
+   "sha": "ef149e3",
+   "subject": "site: the catalogue in the repo too, and the README stops keeping its own numbers"
+  },
+  {
+   "date": "2026-09-12",
+   "sha": "699abba",
+   "subject": "site: the showcase shows every model, and a stale page is loud"
+  },
+  {
+   "date": "2026-09-12",
+   "sha": "2d213ae",
+   "subject": "aim: the sight solves the same equation the shell flies"
+  },
+  {
+   "date": "2026-09-12",
    "sha": "6566cf3",
    "subject": "weapons: a round's arc is its speed and its launch angle"
   },
@@ -1834,21 +1863,6 @@
    "date": "2026-09-11",
    "sha": "ba0af7f",
    "subject": "ai: a unit standing at the waterline gets back onto land (carried from claude/vigorous-mestorf-62dba1)"
-  },
-  {
-   "date": "2026-09-11",
-   "sha": "8b17954",
-   "subject": "ai: a hurt unit with the sea behind it breaks contact over land"
-  },
-  {
-   "date": "2026-09-11",
-   "sha": "a35007a",
-   "subject": "the view follows where you aim, and the turret catches up"
-  },
-  {
-   "date": "2026-09-11",
-   "sha": "334608c",
-   "subject": "a turret stops when you stop, and so does the hull"
   }
  ],
  "worlds": {

@@ -42,10 +42,14 @@
 <section id="action"><div class="wrap">
 <h2>In motion</h2>
 <p class="sub">Captured from the real render path &mdash; terrain, entities and HUD through the same <code>Session.draw</code> the game runs, stepped at a fixed rate over a pinned world so every rebuild produces the same clip.</p>
+<figure class="clip hero"><video src="media/clip_battle.mp4" autoplay muted loop playsinline poster="media/clip_battle.jpg" preload="metadata" aria-label="A combined-arms fight, full size"></video><figcaption class="cap"><b>A combined-arms fight, full size</b><span>One machine, one pass, no cuts and no camera written for this page &mdash; the game&rsquo;s own chase camera over the city it generated, with everything in the frame doing what it does: armour manoeuvring, air defence tracking, a hundred-tonne machine walking into it, and the buildings coming down when something hits them.</span></figcaption></figure>
 <div class="clips">
-<figure class="clip"><video src="media/clip_replay_air.mp4" autoplay muted loop playsinline preload="metadata" aria-label="The death replay, uncut"></video><figcaption class="cap"><b>The death replay, uncut</b><span>Not a camera script written for this page &mdash; this is the game&rsquo;s own director, filmed end to end at the speed you see it. Your machine comes apart on your own camera; it holds on what killed you and says what and from how far; it winds the last five seconds back and plays them forward, standing off the line the round is travelling down so you and the thing that killed you are both in frame while it arrives; then it cuts between shots that each carry a move.</span></figcaption></figure>
-<figure class="clip"><video src="media/clip_mech_fight.mp4" autoplay muted loop playsinline preload="metadata" aria-label="A hundred tonnes, walking"></video><figcaption class="cap"><b>A hundred tonnes, walking</b><span>A two-segment leg with a real knee, a stride whose length is what actually carries the machine forward, and a waist that lets the torso train while the legs keep walking. It is a machine, not a tall tank: it wades rather than swims, it loses the limb you shot, and a heavy round staggers it.</span></figcaption></figure>
-<figure class="clip"><video src="media/clip_armour.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Armour on the deck"></video><figcaption class="cap"><b>Armour on the deck</b><span>A land vehicle rides on springs over four wheel stations, and its track bridges a hollow rather than dropping into it. The hull steers while the turret trains independently, and every round leaves on the boresight, so the crosshair is honest at any range without a lock.</span></figcaption></figure>
+<figure class="clip"><video src="media/clip_naval.mp4" autoplay muted loop playsinline poster="media/clip_naval.jpg" preload="none" aria-label="Guns and missiles at sea"></video><figcaption class="cap"><b>Guns and missiles at sea</b><span>A displacement hull with a rudder that only bites while water is flowing past it, a gun house that trains independently of the bow, and an enemy line doing the same thing back. The sea state, the wake and the shell splashes are the same renderer that draws the land.</span></figcaption></figure>
+<figure class="clip"><video src="media/clip_dogfight.mp4" autoplay muted loop playsinline poster="media/clip_dogfight.jpg" preload="none" aria-label="Fighters, and a wing that can stall"></video><figcaption class="cap"><b>Fighters, and a wing that can stall</b><span>A 3-DOF point-mass wing: bank splits the lift vector so you pull in the turn, a V-n limit means a slow aeroplane cannot pull the g a fast one can, and the missiles bleed energy in a hard turn exactly as yours do. The hostiles hold a cruise altitude and climb at rates their airframe allows.</span></figcaption></figure>
+<figure class="clip"><video src="media/clip_strike.mp4" autoplay muted loop playsinline poster="media/clip_strike.jpg" preload="none" aria-label="A strike, and the hole it leaves"></video><figcaption class="cap"><b>A strike, and the hole it leaves</b><span>Ordnance going into a defended position: every detonation carves a real crater into the heightmap rather than painting a scorch on it, the rim slumps so a vehicle can still climb out, and whatever was standing over the hole comes down with it. The air defence is shooting back the whole way in.</span></figcaption></figure>
+<figure class="clip"><video src="media/clip_replay_air.mp4" autoplay muted loop playsinline poster="media/clip_replay_air.jpg" preload="none" aria-label="The death replay, uncut"></video><figcaption class="cap"><b>The death replay, uncut</b><span>Not a camera script written for this page &mdash; this is the game&rsquo;s own director, filmed end to end at the speed you see it. Your machine comes apart on your own camera; it holds on what killed you and says what and from how far; it winds the last five seconds back and plays them forward, standing off the line the round is travelling down so you and the thing that killed you are both in frame while it arrives; then it cuts between shots that each carry a move.</span></figcaption></figure>
+<figure class="clip"><video src="media/clip_mech_fight.mp4" autoplay muted loop playsinline poster="media/clip_mech_fight.jpg" preload="none" aria-label="A hundred tonnes, walking"></video><figcaption class="cap"><b>A hundred tonnes, walking</b><span>A two-segment leg with a real knee, a stride whose length is what actually carries the machine forward, and a waist that lets the torso train while the legs keep walking. It is a machine, not a tall tank: it wades rather than swims, it loses the limb you shot, and a heavy round staggers it.</span></figcaption></figure>
+<figure class="clip"><video src="media/clip_armour.mp4" autoplay muted loop playsinline poster="media/clip_armour.jpg" preload="none" aria-label="Armour on the deck"></video><figcaption class="cap"><b>Armour on the deck</b><span>A land vehicle rides on springs over four wheel stations, and its track bridges a hollow rather than dropping into it. The hull steers while the turret trains independently, and every round leaves on the boresight, so the crosshair is honest at any range without a lock.</span></figcaption></figure>
 </div></div></section>
 <section id="fleet"><div class="wrap">
 <h2>The fleet<span class="n">63 machines</span></h2>
@@ -613,14 +617,14 @@
 <div class="fig"><b>14</b><span>Biomes</span><i>palette, climate and planting per entry</i></div>
 <div class="fig"><b>26</b><span>World presets</span><i>4096 sq. streamed or authored</i></div>
 <div class="fig"><b>44</b><span>Engine modules</span><i>in game/</i></div>
-<div class="fig"><b>81,601</b><span>Lines of engine</span><i>Python, JIT-compiled where it is hot</i></div>
+<div class="fig"><b>81,614</b><span>Lines of engine</span><i>Python, JIT-compiled where it is hot</i></div>
 </div>
 <h3>How it is kept honest<small>Correctness is gated by a headless battery that drives the real session &mdash; not by unit tests around it.</small></h3>
 <div class="figs">
 <div class="fig"><b>909</b><span>Checks in the battery</span><i>each one drives the game</i></div>
 <div class="fig"><b>98.9%</b><span>Passing</span><i>899 of 909 (partial run)</i></div>
 <div class="fig"><b>1.6 h</b><span>Of gate per full run</span><i>sharded across workers</i></div>
-<div class="fig"><b>523</b><span>Recorded lessons</span><i>16,369 lines of evidence behind them</i></div>
+<div class="fig"><b>525</b><span>Recorded lessons</span><i>16,415 lines of evidence behind them</i></div>
 </div>
 <p class="sub">A dozen of them, sampled across the battery:</p>
 <ul class="checks">
@@ -652,6 +656,9 @@
 </table></div>
 <h3>What was done last<small>Straight from the commit log &mdash; the subject lines in this repository are written as statements about the game, so this is a changelog nobody has to keep.</small></h3>
 <ol class="log">
+<li><code>ef149e3</code><time>2026-09-12</time><span>site: the catalogue in the repo too, and the README stops keeping its own numbers</span></li>
+<li><code>699abba</code><time>2026-09-12</time><span>site: the showcase shows every model, and a stale page is loud</span></li>
+<li><code>2d213ae</code><time>2026-09-12</time><span>aim: the sight solves the same equation the shell flies</span></li>
 <li><code>6566cf3</code><time>2026-09-12</time><span>weapons: a round&#x27;s arc is its speed and its launch angle</span></li>
 <li><code>b180c14</code><time>2026-09-12</time><span>fx: ammunition cooks off, and a hulk goes on burning</span></li>
 <li><code>901c1e2</code><time>2026-09-12</time><span>feel: what an explosion throws falls in the same world too</span></li>
@@ -663,14 +670,11 @@
 <li><code>e1e8978</code><time>2026-09-11</time><span>docs: OPEN.md keeps its own bytes, and one worktree, one job</span></li>
 <li><code>0e453ac</code><time>2026-09-11</time><span>ai: a unit on a jetty with the sea on three sides gets off it</span></li>
 <li><code>ba0af7f</code><time>2026-09-11</time><span>ai: a unit standing at the waterline gets back onto land (carried from claude/vigorous-mestorf-62dba1)</span></li>
-<li><code>8b17954</code><time>2026-09-11</time><span>ai: a hurt unit with the sea behind it breaks contact over land</span></li>
-<li><code>a35007a</code><time>2026-09-11</time><span>the view follows where you aim, and the turret catches up</span></li>
-<li><code>334608c</code><time>2026-09-11</time><span>a turret stops when you stop, and so does the hull</span></li>
 </ol>
 </div></section>
 <footer><div class="wrap">
 <div>Built from the game&rsquo;s own tables by <code>sitegen.py</code> &mdash; every figure on this page is read from the source, not transcribed.</div>
-<div class="stamp">built 2026-09-12 &middot; 0078227</div>
+<div class="stamp">built 2026-09-12 &middot; ef149e3</div>
 </div></footer>
 <div id="lb" aria-hidden="true"><img alt=""></div>
 <script>

@@ -86,6 +86,14 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 @media (max-width:640px){.grid{grid-template-columns:repeat(auto-fill,minmax(200px,1fr))}}
 
+/* ---- the hero clip: full width, above the card grid ----------------------------------- */
+.clip.hero{margin:22px 0 26px;background:var(--panel);border:1px solid var(--line);
+  border-radius:12px;overflow:hidden}
+.clip.hero video{width:100%;display:block;aspect-ratio:16/9;background:#05070a}
+.clip.hero .cap{padding:16px 20px 18px;display:grid;gap:6px}
+.clip.hero .cap b{font-family:var(--disp);font-weight:500;font-size:22px;letter-spacing:.01em}
+.clip.hero .cap span{font-size:14px;max-width:88ch}
+
 /* ---- the filter box, in the sticky nav ------------------------------------------------ */
 nav.sticky .wrap{display:flex;align-items:center;gap:4px;flex-wrap:wrap}
 #q{margin-left:auto;min-width:260px;flex:0 1 320px;background:var(--panel-2);color:var(--text);

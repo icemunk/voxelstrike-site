@@ -1,0 +1,7164 @@
+{
+ "build": {
+  "stamp": "built 2026-09-29",
+  "commit": "af7dfdf"
+ },
+ "counts": {
+  "vehicles": 66,
+  "mechs": 14,
+  "weapons": 85,
+  "missions": 26,
+  "models": 441,
+  "props": 119,
+  "biomes": 14,
+  "presets": 26,
+  "enemies": 47,
+  "ordnance": 12,
+  "flora": 30,
+  "scenery": 106,
+  "carded": 261
+ },
+ "clips": [
+  {
+   "key": "battle",
+   "title": "A combined-arms fight, full size",
+   "note": "One machine, one pass, no cuts and no camera written for this page &mdash; the game&rsquo;s own chase camera over the city it generated, with everything in the frame doing what it does: armour manoeuvring, air defence tracking, a hundred-tonne machine walking into it, and the buildings coming down when something hits them.",
+   "hero": true,
+   "video": "media/clip_battle.mp4",
+   "poster": "media/clip_battle.jpg"
+  },
+  {
+   "key": "naval",
+   "title": "Guns and missiles at sea",
+   "note": "A displacement hull with a rudder that only bites while water is flowing past it, a gun house that trains independently of the bow, and an enemy line doing the same thing back. The sea state, the wake and the shell splashes are the same renderer that draws the land.",
+   "hero": false,
+   "video": "media/clip_naval.mp4",
+   "poster": "media/clip_naval.jpg"
+  },
+  {
+   "key": "dogfight",
+   "title": "Fighters, and a wing that can stall",
+   "note": "A 3-DOF point-mass wing: bank splits the lift vector so you pull in the turn, a V-n limit means a slow aeroplane cannot pull the g a fast one can, and the missiles bleed energy in a hard turn exactly as yours do. The hostiles hold a cruise altitude and climb at rates their airframe allows.",
+   "hero": false,
+   "video": "media/clip_dogfight.mp4",
+   "poster": "media/clip_dogfight.jpg"
+  },
+  {
+   "key": "strike",
+   "title": "A strike, and the hole it leaves",
+   "note": "Ordnance going into a defended position: every detonation carves a real crater into the heightmap rather than painting a scorch on it, the rim slumps so a vehicle can still climb out, and whatever was standing over the hole comes down with it. The air defence is shooting back the whole way in.",
+   "hero": false,
+   "video": "media/clip_strike.mp4",
+   "poster": "media/clip_strike.jpg"
+  },
+  {
+   "key": "replay_air",
+   "title": "The death replay, uncut",
+   "note": "Not a camera script written for this page &mdash; this is the game&rsquo;s own director, filmed end to end at the speed you see it. Your machine comes apart on your own camera; it holds on what killed you and says what and from how far; it winds the last five seconds back and plays them forward, standing off the line the round is travelling down so you and the thing that killed you are both in frame while it arrives; then it cuts between shots that each carry a move.",
+   "hero": false,
+   "video": "media/clip_replay_air.mp4",
+   "poster": "media/clip_replay_air.jpg"
+  },
+  {
+   "key": "mech_fight",
+   "title": "A hundred tonnes, walking",
+   "note": "A two-segment leg with a real knee, a stride whose length is what actually carries the machine forward, and a waist that lets the torso train while the legs keep walking. It is a machine, not a tall tank: it wades rather than swims, it loses the limb you shot, and a heavy round staggers it.",
+   "hero": false,
+   "video": "media/clip_mech_fight.mp4",
+   "poster": "media/clip_mech_fight.jpg"
+  },
+  {
+   "key": "armour",
+   "title": "Armour on the deck",
+   "note": "A land vehicle rides on springs over four wheel stations, and its track bridges a hollow rather than dropping into it. The hull steers while the turret trains independently, and every round leaves on the boresight, so the crosshair is honest at any range without a lock.",
+   "hero": false,
+   "video": "media/clip_armour.mp4",
+   "poster": "media/clip_armour.jpg"
+  }
+ ],
+ "fleet": [
+  {
+   "cls": "rotor",
+   "title": "ROTORCRAFT",
+   "cards": [
+    {
+     "key": "alligator",
+     "name": "KA-52 ALLIGATOR",
+     "desc": "Coaxial attack heli — no tail rotor, brutally agile. Full arsenal.",
+     "media": "media/alligator.gif",
+     "accent": "#5a645c",
+     "bars": [
+      [
+       "Speed",
+       48,
+       196
+      ],
+      [
+       "Hull",
+       3,
+       160
+      ],
+      [
+       "Turn",
+       80,
+       2.5
+      ]
+     ],
+     "tags": [
+      "gatling",
+      "zuni",
+      "javelin",
+      "swarm",
+      "aa_missile"
+     ]
+    },
+    {
+     "key": "comanche",
+     "name": "RAH-66 COMANCHE",
+     "desc": "Stealth interceptor. Railgun, ARC-LASER beam, tesla arc and a radar AAM.",
+     "media": "media/comanche.gif",
+     "accent": "#aa82d2",
+     "bars": [
+      [
+       "Speed",
+       53,
+       216
+      ],
+      [
+       "Hull",
+       1,
+       110
+      ],
+      [
+       "Turn",
+       68,
+       2.2
+      ]
+     ],
+     "tags": [
+      "railgun",
+      "arc_laser",
+      "tesla",
+      "amraam"
+     ]
+    },
+    {
+     "key": "gunship",
+     "name": "AH-64 APACHE",
+     "desc": "The all-rounder. Cannon, rockets, missiles and bombs.",
+     "media": "media/gunship.gif",
+     "accent": "#78a0d2",
+     "bars": [
+      [
+       "Speed",
+       49,
+       201
+      ],
+      [
+       "Hull",
+       2,
+       140
+      ],
+      [
+       "Turn",
+       52,
+       1.8
+      ]
+     ],
+     "tags": [
+      "cannon",
+      "hellfire",
+      "rockets",
+      "missile",
+      "bomb"
+     ]
+    },
+    {
+     "key": "havoc",
+     "name": "MI-28 HAVOC",
+     "desc": "Heavily-armoured Russian gunship — broad + tough, full attack arsenal. Eats a few rockets.",
+     "media": "media/havoc.gif",
+     "accent": "#96503c",
+     "bars": [
+      [
+       "Speed",
+       49,
+       200
+      ],
+      [
+       "Hull",
+       3,
+       175
+      ],
+      [
+       "Turn",
+       71,
+       2.3
+      ]
+     ],
+     "tags": [
+      "gatling",
+      "hellfire",
+      "dragonfire",
+      "apam_rockets",
+      "aa_missile"
+     ]
+    },
+    {
+     "key": "heavy",
+     "name": "MI-24 HIND",
+     "desc": "Heavy gunship. Slow and ponderous but armored, full arsenal.",
+     "media": "media/heavy.gif",
+     "accent": "#c89b6e",
+     "bars": [
+      [
+       "Speed",
+       38,
+       160
+      ],
+      [
+       "Hull",
+       6,
+       250
+      ],
+      [
+       "Turn",
+       30,
+       1.25
+      ]
+     ],
+     "tags": [
+      "gatling",
+      "rockets",
+      "missile",
+      "bomb"
+     ]
+    },
+    {
+     "key": "kiowa",
+     "name": "OH-58D KIOWA WARRIOR",
+     "desc": "Armed scout — mast sight sees over cover. Light rockets and Hellfire. Very fragile.",
+     "media": "media/kiowa.gif",
+     "accent": "#667064",
+     "bars": [
+      [
+       "Speed",
+       41,
+       171
+      ],
+      [
+       "Hull",
+       1,
+       120
+      ],
+      [
+       "Turn",
+       54,
+       1.85
+      ]
+     ],
+     "tags": [
+      "scout_rockets",
+      "hellfire",
+      "minigun"
+     ]
+    },
+    {
+     "key": "littlebird",
+     "name": "MH-6 LITTLE BIRD",
+     "desc": "Tiny special-ops scout — blisteringly nimble and fast, but eggshell armour.",
+     "media": "media/littlebird.gif",
+     "accent": "#5a6064",
+     "bars": [
+      [
+       "Speed",
+       52,
+       212
+      ],
+      [
+       "Hull",
+       0,
+       75
+      ],
+      [
+       "Turn",
+       91,
+       2.8
+      ]
+     ],
+     "tags": [
+      "minigun",
+      "rockets",
+      "hellfire"
+     ]
+    },
+    {
+     "key": "osprey",
+     "name": "V-22 OSPREY",
+     "desc": "Tiltrotor assault transport — fast cruise, vertical lift. Tough; door guns + rockets.",
+     "media": "media/osprey.gif",
+     "accent": "#788078",
+     "bars": [
+      [
+       "Speed",
+       41,
+       168
+      ],
+      [
+       "Hull",
+       4,
+       200
+      ],
+      [
+       "Turn",
+       40,
+       1.5
+      ]
+     ],
+     "tags": [
+      "gatling",
+      "rockets",
+      "stinger"
+     ]
+    },
+    {
+     "key": "rotor_drone",
+     "name": "COAXIAL ROTOR DRONE",
+     "desc": "Unmanned coaxial — tiny, quiet, cheap. Two guided munitions and nothing to spare.",
+     "media": "media/rotor_drone.gif",
+     "accent": "#60666c",
+     "bars": [
+      [
+       "Speed",
+       35,
+       146
+      ],
+      [
+       "Hull",
+       0,
+       70
+      ],
+      [
+       "Turn",
+       100,
+       3.0
+      ]
+     ],
+     "tags": [
+      "hellfire",
+      "scout_rockets"
+     ]
+    },
+    {
+     "key": "scout",
+     "name": "AH-6 LITTLE BIRD",
+     "desc": "Fast, nimble, fragile. Minigun and rocket pods.",
+     "media": "media/scout.gif",
+     "accent": "#78d282",
+     "bars": [
+      [
+       "Speed",
+       40,
+       167
+      ],
+      [
+       "Hull",
+       0,
+       80
+      ],
+      [
+       "Turn",
+       84,
+       2.6
+      ]
+     ],
+     "tags": [
+      "minigun",
+      "rockets",
+      "stinger"
+     ]
+    },
+    {
+     "key": "seahawk",
+     "name": "SH-60 SEAHAWK",
+     "desc": "Naval helicopter — ASW torpedoes and a door gun. At home over the sea, folds on deck.",
+     "media": "media/seahawk.gif",
+     "accent": "#586876",
+     "bars": [
+      [
+       "Speed",
+       38,
+       157
+      ],
+      [
+       "Hull",
+       4,
+       190
+      ],
+      [
+       "Turn",
+       34,
+       1.35
+      ]
+     ],
+     "tags": [
+      "asw_torpedo",
+      "door_gun",
+      "hellfire"
+     ]
+    },
+    {
+     "key": "skycrane",
+     "name": "SKYCRANE",
+     "desc": "A rotor, a spine and a hook — no cabin at all. Lifts anything, hides from nothing.",
+     "media": "media/skycrane.gif",
+     "accent": "#626e5a",
+     "bars": [
+      [
+       "Speed",
+       28,
+       122
+      ],
+      [
+       "Hull",
+       9,
+       340
+      ],
+      [
+       "Turn",
+       17,
+       0.95
+      ]
+     ],
+     "tags": [
+      "door_gun",
+      "minigun"
+     ]
+    },
+    {
+     "key": "transport_heli",
+     "name": "CH-47 CHINOOK",
+     "desc": "Tandem-rotor heavy lift. Tough and steady; twin door guns, rockets, bombs.",
+     "media": "media/transport_heli.gif",
+     "accent": "#78966e",
+     "bars": [
+      [
+       "Speed",
+       35,
+       147
+      ],
+      [
+       "Hull",
+       6,
+       240
+      ],
+      [
+       "Turn",
+       32,
+       1.3
+      ]
+     ],
+     "tags": [
+      "minigun",
+      "rockets",
+      "bomb"
+     ]
+    },
+    {
+     "key": "viper",
+     "name": "AH-1Z VIPER",
+     "desc": "Slim dedicated attack helicopter — fast + agile, lightly armoured. Cannon + missiles.",
+     "media": "media/viper.gif",
+     "accent": "#965a46",
+     "bars": [
+      [
+       "Speed",
+       50,
+       204
+      ],
+      [
+       "Hull",
+       1,
+       120
+      ],
+      [
+       "Turn",
+       76,
+       2.4
+      ]
+     ],
+     "tags": [
+      "cannon",
+      "hellfire",
+      "sidewinder",
+      "tv_missile",
+      "rockets"
+     ]
+    }
+   ]
+  },
+  {
+   "cls": "jet",
+   "title": "FIXED WING",
+   "cards": [
+    {
+     "key": "ac130",
+     "name": "AC-130 GUNSHIP",
+     "desc": "Orbiting gunship — a 105mm and a 40mm firing out of the left flank. Slow, huge, deadly.",
+     "media": "media/ac130.gif",
+     "accent": "#686e5c",
+     "bars": [
+      [
+       "Speed",
+       35,
+       147
+      ],
+      [
+       "Hull",
+       12,
+       420
+      ],
+      [
+       "Turn",
+       7,
+       0.7
+      ]
+     ],
+     "tags": [
+      "side_105",
+      "side_40",
+      "gatling",
+      "minigun"
+     ]
+    },
+    {
+     "key": "awacs",
+     "name": "E-3 SENTRY AWACS",
+     "desc": "Airborne early warning — an enormous radar and nothing to shoot with. See everything.",
+     "media": "media/awacs.gif",
+     "accent": "#70767e",
+     "bars": [
+      [
+       "Speed",
+       43,
+       176
+      ],
+      [
+       "Hull",
+       11,
+       380
+      ],
+      [
+       "Turn",
+       3,
+       0.6
+      ]
+     ],
+     "tags": [
+      "minigun"
+     ]
+    },
+    {
+     "key": "bomber",
+     "name": "B-52 STRATOFORTRESS",
+     "desc": "Strategic bomber. Slow and huge; a devastating bomb load.",
+     "media": "media/bomber.gif",
+     "accent": "#828890",
+     "bars": [
+      [
+       "Speed",
+       54,
+       218
+      ],
+      [
+       "Hull",
+       11,
+       380
+      ],
+      [
+       "Turn",
+       12,
+       0.8
+      ]
+     ],
+     "tags": [
+      "cruise",
+      "ballistic",
+      "bunker_buster",
+      "thermobaric",
+      "cluster"
+     ]
+    },
+    {
+     "key": "devjet",
+     "name": "DEV TESTBED (all weapons)",
+     "desc": "Development airframe: every weapon in the game, tough hull, long radar. For testing.",
+     "media": "media/devjet.gif",
+     "accent": "#faaa28",
+     "bars": [
+      [
+       "Speed",
+       100,
+       392
+      ],
+      [
+       "Hull",
+       30,
+       900
+      ],
+      [
+       "Turn",
+       48,
+       1.7
+      ]
+     ],
+     "tags": [
+      "cannon",
+      "minigun",
+      "rockets",
+      "missile",
+      "bomb"
+     ]
+    },
+    {
+     "key": "falcon",
+     "name": "F/A-18 HORNET",
+     "desc": "Twin-engined carrier strike fighter. Cannon, rockets, missiles.",
+     "media": "media/falcon.gif",
+     "accent": "#96a0b4",
+     "bars": [
+      [
+       "Speed",
+       80,
+       319
+      ],
+      [
+       "Hull",
+       0,
+       95
+      ],
+      [
+       "Turn",
+       34,
+       1.35
+      ]
+     ],
+     "tags": [
+      "cannon",
+      "rockets",
+      "harpoon",
+      "jdam"
+     ]
+    },
+    {
+     "key": "flanker",
+     "name": "SU-57 FELON",
+     "desc": "Agile twin-engine stealth multirole — the Raptor's rival. Heavy missile loadout.",
+     "media": "media/flanker.gif",
+     "accent": "#5a6c5c",
+     "bars": [
+      [
+       "Speed",
+       92,
+       364
+      ],
+      [
+       "Hull",
+       1,
+       120
+      ],
+      [
+       "Turn",
+       44,
+       1.6
+      ]
+     ],
+     "tags": [
+      "amraam",
+      "sidewinder",
+      "hypersonic",
+      "cluster"
+     ]
+    },
+    {
+     "key": "gripen",
+     "name": "JAS-39 GRIPEN",
+     "desc": "Light delta-canard fighter. Turns hardest; thin-skinned. BVR + SEAD.",
+     "media": "media/gripen.gif",
+     "accent": "#be9646",
+     "bars": [
+      [
+       "Speed",
+       88,
+       349
+      ],
+      [
+       "Hull",
+       0,
+       82
+      ],
+      [
+       "Turn",
+       47,
+       1.68
+      ]
+     ],
+     "tags": [
+      "cannon",
+      "amraam",
+      "sidewinder",
+      "harm"
+     ]
+    },
+    {
+     "key": "gunship_plane",
+     "name": "AC-130 SPECTRE",
+     "desc": "Gunship. Orbits low and slow, raining heavy gunfire and ordnance.",
+     "media": "media/gunship_plane.gif",
+     "accent": "#788c6e",
+     "bars": [
+      [
+       "Speed",
+       38,
+       160
+      ],
+      [
+       "Hull",
+       8,
+       300
+      ],
+      [
+       "Turn",
+       16,
+       0.9
+      ]
+     ],
+     "tags": [
+      "avenger",
+      "flak",
+      "howitzer",
+      "loiter",
+      "dragonfire"
+     ]
+    },
+    {
+     "key": "harrier",
+     "name": "AV-8B HARRIER II",
+     "desc": "Agile multirole jump-jet — cannon, rockets, AA + anti-ship missiles.",
+     "media": "media/harrier.gif",
+     "accent": "#96785a",
+     "bars": [
+      [
+       "Speed",
+       63,
+       252
+      ],
+      [
+       "Hull",
+       1,
+       110
+      ],
+      [
+       "Turn",
+       32,
+       1.3
+      ]
+     ],
+     "tags": [
+      "cannon",
+      "rockets",
+      "sidewinder",
+      "harpoon"
+     ]
+    },
+    {
+     "key": "heavy_lifter",
+     "name": "STRATEGIC AIRLIFTER",
+     "desc": "Fat, high-winged and T-tailed. Carries everything, fights nothing. Very tough.",
+     "media": "media/heavy_lifter.gif",
+     "accent": "#666c74",
+     "bars": [
+      [
+       "Speed",
+       46,
+       188
+      ],
+      [
+       "Hull",
+       20,
+       620
+      ],
+      [
+       "Turn",
+       2,
+       0.55
+      ]
+     ],
+     "tags": [
+      "ciws",
+      "minigun"
+     ]
+    },
+    {
+     "key": "lightning",
+     "name": "F-35 LIGHTNING",
+     "desc": "Stealth multirole. Plasma, homing missiles and bombs.",
+     "media": "media/lightning.gif",
+     "accent": "#78808c",
+     "bars": [
+      [
+       "Speed",
+       88,
+       349
+      ],
+      [
+       "Hull",
+       1,
+       120
+      ],
+      [
+       "Turn",
+       40,
+       1.5
+      ]
+     ],
+     "tags": [
+      "plasma",
+      "amraam",
+      "stinger",
+      "jdam"
+     ]
+    },
+    {
+     "key": "raptor",
+     "name": "F-22 RAPTOR",
+     "desc": "Stealth superiority fighter. ARC-LASER beam, gauss slug, AAMs.",
+     "media": "media/raptor.gif",
+     "accent": "#788496",
+     "bars": [
+      [
+       "Speed",
+       96,
+       378
+      ],
+      [
+       "Hull",
+       1,
+       110
+      ],
+      [
+       "Turn",
+       42,
+       1.55
+      ]
+     ],
+     "tags": [
+      "amraam",
+      "sidewinder",
+      "arc_laser",
+      "gauss"
+     ]
+    },
+    {
+     "key": "seaplane",
+     "name": "FLYING BOAT",
+     "desc": "A hull that flies — slow, roomy, and the only aircraft built to meet the water.",
+     "media": "media/seaplane.gif",
+     "accent": "#68747e",
+     "bars": [
+      [
+       "Speed",
+       31,
+       132
+      ],
+      [
+       "Hull",
+       8,
+       300
+      ],
+      [
+       "Turn",
+       17,
+       0.95
+      ]
+     ],
+     "tags": [
+      "asw_torpedo",
+      "bomb",
+      "door_gun"
+     ]
+    },
+    {
+     "key": "spirit",
+     "name": "B-2 SPIRIT",
+     "desc": "Stealth flying-wing bomber — a wide dark delta; massive payload, slow to turn.",
+     "media": "media/spirit.gif",
+     "accent": "#464850",
+     "bars": [
+      [
+       "Speed",
+       70,
+       280
+      ],
+      [
+       "Hull",
+       2,
+       150
+      ],
+      [
+       "Turn",
+       17,
+       0.95
+      ]
+     ],
+     "tags": [
+      "jdam",
+      "cluster",
+      "napalm",
+      "harpoon"
+     ]
+    },
+    {
+     "key": "swingwing",
+     "name": "VARIABLE-GEOMETRY STRIKE",
+     "desc": "Swing wing — spread to loiter and turn, swept to run. Heavy centreline load.",
+     "media": "media/swingwing.gif",
+     "accent": "#6c7484",
+     "bars": [
+      [
+       "Speed",
+       80,
+       316
+      ],
+      [
+       "Hull",
+       6,
+       260
+      ],
+      [
+       "Turn",
+       30,
+       1.25
+      ]
+     ],
+     "tags": [
+      "amraam",
+      "jdam",
+      "sidewinder",
+      "gauss"
+     ]
+    },
+    {
+     "key": "tanker_air",
+     "name": "REFUELLING TANKER",
+     "desc": "A flying fuel state with a boom down its tail. Unarmed but for a defensive gun.",
+     "media": "media/tanker_air.gif",
+     "accent": "#727882",
+     "bars": [
+      [
+       "Speed",
+       48,
+       197
+      ],
+      [
+       "Hull",
+       16,
+       520
+      ],
+      [
+       "Turn",
+       3,
+       0.6
+      ]
+     ],
+     "tags": [
+      "minigun"
+     ]
+    },
+    {
+     "key": "tucano",
+     "name": "A-29 SUPER TUCANO",
+     "desc": "Light attack turboprop — slow enough to see the target, cheap enough to lose. Loiters.",
+     "media": "media/tucano.gif",
+     "accent": "#687260",
+     "bars": [
+      [
+       "Speed",
+       32,
+       137
+      ],
+      [
+       "Hull",
+       2,
+       140
+      ],
+      [
+       "Turn",
+       40,
+       1.5
+      ]
+     ],
+     "tags": [
+      "prop_rockets",
+      "minigun",
+      "bomb"
+     ]
+    },
+    {
+     "key": "ucav",
+     "name": "UCAV STRIKE DRONE",
+     "desc": "Unmanned tailless delta — small, quiet, expendable. Guided munitions from a bay.",
+     "media": "media/ucav.gif",
+     "accent": "#626870",
+     "bars": [
+      [
+       "Speed",
+       67,
+       269
+      ],
+      [
+       "Hull",
+       1,
+       110
+      ],
+      [
+       "Turn",
+       50,
+       1.75
+      ]
+     ],
+     "tags": [
+      "jdam",
+      "hellfire",
+      "harm"
+     ]
+    },
+    {
+     "key": "warthog",
+     "name": "A-10 WARTHOG",
+     "desc": "Ground-attack jet. Heavy cannon, rockets and bombs; tough.",
+     "media": "media/warthog.gif",
+     "accent": "#707a5c",
+     "bars": [
+      [
+       "Speed",
+       56,
+       227
+      ],
+      [
+       "Hull",
+       4,
+       185
+      ],
+      [
+       "Turn",
+       22,
+       1.05
+      ]
+     ],
+     "tags": [
+      "avenger",
+      "hellfire",
+      "tv_missile",
+      "harm",
+      "napalm"
+     ]
+    }
+   ]
+  },
+  {
+   "cls": "ground",
+   "title": "GROUND",
+   "cards": [
+    {
+     "key": "abrams",
+     "name": "M1A2 ABRAMS",
+     "desc": "Main battle tank. A 120mm smoothbore -- APFSDS or HEAT-MP -- and a .50 cal. Heavily armoured.",
+     "media": "media/abrams.gif",
+     "accent": "#60684e",
+     "bars": [
+      [
+       "Speed",
+       7,
+       41
+      ],
+      [
+       "Hull",
+       9,
+       320
+      ],
+      [
+       "Turn",
+       20,
+       1.0
+      ]
+     ],
+     "tags": [
+      "tank_120",
+      "tank_120_heat",
+      "hmg"
+     ]
+    },
+    {
+     "key": "amtrac",
+     "name": "AAV-7 AMTRAC",
+     "desc": "Amphibious assault APC — drives the beach AND swims. Gatling + rockets.",
+     "media": "media/amtrac.gif",
+     "accent": "#566054",
+     "bars": [
+      [
+       "Speed",
+       8,
+       44
+      ],
+      [
+       "Hull",
+       5,
+       210
+      ],
+      [
+       "Turn",
+       40,
+       1.5
+      ]
+     ],
+     "tags": [
+      "gatling",
+      "rockets",
+      "missile"
+     ]
+    },
+    {
+     "key": "archer",
+     "name": "FH77 BW L52",
+     "desc": "Swedish wheeled 155mm L52. Fires, then drives off before the answer lands. Thin skin.",
+     "media": "media/archer.gif",
+     "accent": "#68785c",
+     "bars": [
+      [
+       "Speed",
+       8,
+       46
+      ],
+      [
+       "Hull",
+       2,
+       140
+      ],
+      [
+       "Turn",
+       30,
+       1.25
+      ]
+     ],
+     "tags": [
+      "arty_155_l52",
+      "arty_mrsi",
+      "arty_excalibur",
+      "hmg"
+     ]
+    },
+    {
+     "key": "bradley",
+     "name": "M2 BRADLEY IFV",
+     "desc": "Tracked infantry fighting vehicle — 25mm chain gun + TOW missiles. Tough.",
+     "media": "media/bradley.gif",
+     "accent": "#6e966e",
+     "bars": [
+      [
+       "Speed",
+       9,
+       47
+      ],
+      [
+       "Hull",
+       5,
+       220
+      ],
+      [
+       "Turn",
+       40,
+       1.5
+      ]
+     ],
+     "tags": [
+      "autocannon",
+      "sabot",
+      "javelin",
+      "rockets",
+      "flechette"
+     ]
+    },
+    {
+     "key": "breacher",
+     "name": "M1150 BREACHER",
+     "desc": "Assault breacher. Mine plough, line charges, demolition gun. Goes first.",
+     "media": "media/breacher.gif",
+     "accent": "#7e7652",
+     "bars": [
+      [
+       "Speed",
+       6,
+       36
+      ],
+      [
+       "Hull",
+       12,
+       400
+      ],
+      [
+       "Turn",
+       16,
+       0.92
+      ]
+     ],
+     "tags": [
+      "mortar",
+      "gatling",
+      "flechette"
+     ]
+    },
+    {
+     "key": "buggy",
+     "name": "RECON BUGGY",
+     "desc": "Fast light scout. Pintle minigun and rockets; nimble but fragile.",
+     "media": "media/buggy.gif",
+     "accent": "#968250",
+     "bars": [
+      [
+       "Speed",
+       24,
+       105
+      ],
+      [
+       "Hull",
+       0,
+       90
+      ],
+      [
+       "Turn",
+       76,
+       2.4
+      ]
+     ],
+     "tags": [
+      "minigun",
+      "rockets"
+     ]
+    },
+    {
+     "key": "centauro",
+     "name": "B1 CENTAURO",
+     "desc": "8x8 wheeled tank destroyer. A 120mm tank gun at truck speed, on a thin skin.",
+     "media": "media/centauro.gif",
+     "accent": "#707e68",
+     "bars": [
+      [
+       "Speed",
+       16,
+       76
+      ],
+      [
+       "Hull",
+       3,
+       165
+      ],
+      [
+       "Turn",
+       42,
+       1.55
+      ]
+     ],
+     "tags": [
+      "tank_120",
+      "tank_120_heat",
+      "hmg",
+      "javelin"
+     ]
+    },
+    {
+     "key": "gepard",
+     "name": "GEPARD FLAKPANZER",
+     "desc": "Radar-guided AA tank — twin 35mm autocannons shred aircraft. Armoured; eats rockets.",
+     "media": "media/gepard.gif",
+     "accent": "#6eb4a0",
+     "bars": [
+      [
+       "Speed",
+       10,
+       50
+      ],
+      [
+       "Hull",
+       6,
+       240
+      ],
+      [
+       "Turn",
+       24,
+       1.1
+      ]
+     ],
+     "tags": [
+      "flak",
+      "aa_missile",
+      "gatling"
+     ]
+    },
+    {
+     "key": "grad",
+     "name": "BM-21 GRAD",
+     "desc": "Rocket artillery — forty tubes, one trigger. Saturates an area, then runs. Thin skin.",
+     "media": "media/grad.gif",
+     "accent": "#70765c",
+     "bars": [
+      [
+       "Speed",
+       11,
+       56
+      ],
+      [
+       "Hull",
+       1,
+       120
+      ],
+      [
+       "Turn",
+       56,
+       1.9
+      ]
+     ],
+     "tags": [
+      "grad_salvo",
+      "mlrs",
+      "minigun"
+     ]
+    },
+    {
+     "key": "himars",
+     "name": "M142 HIMARS",
+     "desc": "Fast wheeled rocket artillery — salvo rockets, hit-and-run. Light armour.",
+     "media": "media/himars.gif",
+     "accent": "#687056",
+     "bars": [
+      [
+       "Speed",
+       12,
+       58
+      ],
+      [
+       "Hull",
+       2,
+       130
+      ],
+      [
+       "Turn",
+       48,
+       1.7
+      ]
+     ],
+     "tags": [
+      "mlrs",
+      "rockets",
+      "loiter",
+      "stinger"
+     ]
+    },
+    {
+     "key": "humvee",
+     "name": "HMMWV TECHNICAL",
+     "desc": "Fast light 4x4. Pintle minigun and rocket pods. Nimble, fragile.",
+     "media": "media/humvee.gif",
+     "accent": "#968a60",
+     "bars": [
+      [
+       "Speed",
+       20,
+       88
+      ],
+      [
+       "Hull",
+       2,
+       130
+      ],
+      [
+       "Turn",
+       60,
+       2.0
+      ]
+     ],
+     "tags": [
+      "minigun",
+      "javelin",
+      "mk19"
+     ]
+    },
+    {
+     "key": "leopard",
+     "name": "LEOPARD 2A7",
+     "desc": "German main battle tank. A long 120mm L55 -- APFSDS or HEAT-MP. Quicker than the Abrams, lighter.",
+     "media": "media/leopard.gif",
+     "accent": "#586246",
+     "bars": [
+      [
+       "Speed",
+       8,
+       44
+      ],
+      [
+       "Hull",
+       8,
+       296
+      ],
+      [
+       "Turn",
+       21,
+       1.04
+      ]
+     ],
+     "tags": [
+      "tank_120",
+      "tank_120_heat",
+      "minigun"
+     ]
+    },
+    {
+     "key": "missile_truck",
+     "name": "SAM CARRIER",
+     "desc": "Mobile launcher. Homing AA + heavy missiles; lobs them on the move.",
+     "media": "media/missile_truck.gif",
+     "accent": "#686e56",
+     "bars": [
+      [
+       "Speed",
+       12,
+       59
+      ],
+      [
+       "Hull",
+       3,
+       170
+      ],
+      [
+       "Turn",
+       35,
+       1.4
+      ]
+     ],
+     "tags": [
+      "aa_missile",
+      "stinger",
+      "mlrs",
+      "loiter",
+      "flak"
+     ]
+    },
+    {
+     "key": "msta",
+     "name": "2S19 MSTA-S",
+     "desc": "Heavy self-propelled howitzer — a 152mm that reaches over the hill. Slow, well armoured.",
+     "media": "media/msta.gif",
+     "accent": "#6c745a",
+     "bars": [
+      [
+       "Speed",
+       7,
+       42
+      ],
+      [
+       "Hull",
+       6,
+       250
+      ],
+      [
+       "Turn",
+       17,
+       0.95
+      ]
+     ],
+     "tags": [
+      "arty_152",
+      "arty_krasnopol",
+      "minigun"
+     ]
+    },
+    {
+     "key": "paladin",
+     "name": "M109A7 PALADIN",
+     "desc": "Self-propelled 155mm howitzer. Lays itself on the target -- HE, Excalibur GPS, SMArt top-attack.",
+     "media": "media/paladin.gif",
+     "accent": "#788c5a",
+     "bars": [
+      [
+       "Speed",
+       6,
+       38
+      ],
+      [
+       "Hull",
+       5,
+       230
+      ],
+      [
+       "Turn",
+       16,
+       0.9
+      ]
+     ],
+     "tags": [
+      "arty_155",
+      "arty_excalibur",
+      "arty_smart",
+      "hmg"
+     ]
+    },
+    {
+     "key": "pzh2000",
+     "name": "PZH 2000",
+     "desc": "German 155mm L52 self-propelled howitzer. Longest reach in the fleet; four rounds that land at once.",
+     "media": "media/pzh2000.gif",
+     "accent": "#607050",
+     "bars": [
+      [
+       "Speed",
+       7,
+       40
+      ],
+      [
+       "Hull",
+       6,
+       250
+      ],
+      [
+       "Turn",
+       12,
+       0.82
+      ]
+     ],
+     "tags": [
+      "arty_155_l52",
+      "arty_mrsi",
+      "arty_excalibur",
+      "arty_smart",
+      "minigun"
+     ]
+    },
+    {
+     "key": "shilka",
+     "name": "ZSU-23-4 SHILKA",
+     "desc": "Quad 23mm SPAAG — a wall of tracer at short range. Light, slow, murderous up close.",
+     "media": "media/shilka.gif",
+     "accent": "#687060",
+     "bars": [
+      [
+       "Speed",
+       6,
+       35
+      ],
+      [
+       "Hull",
+       2,
+       150
+      ],
+      [
+       "Turn",
+       56,
+       1.9
+      ]
+     ],
+     "tags": [
+      "zsu_quad23",
+      "gatling",
+      "minigun"
+     ]
+    },
+    {
+     "key": "smerch",
+     "name": "BM-30 SMERCH",
+     "desc": "Heavy MRL — six 300mm rockets that level what they land on. Ponderous, fragile.",
+     "media": "media/smerch.gif",
+     "accent": "#686e56",
+     "bars": [
+      [
+       "Speed",
+       6,
+       37
+      ],
+      [
+       "Hull",
+       2,
+       150
+      ],
+      [
+       "Turn",
+       30,
+       1.25
+      ]
+     ],
+     "tags": [
+      "smerch_salvo",
+      "howitzer_152",
+      "minigun"
+     ]
+    },
+    {
+     "key": "stryker",
+     "name": "M1126 STRYKER",
+     "desc": "8x8 wheeled IFV. Armoured and quick; slat armour, remote gun.",
+     "media": "media/stryker.gif",
+     "accent": "#78846c",
+     "bars": [
+      [
+       "Speed",
+       18,
+       82
+      ],
+      [
+       "Hull",
+       3,
+       175
+      ],
+      [
+       "Turn",
+       50,
+       1.75
+      ]
+     ],
+     "tags": [
+      "autocannon",
+      "javelin",
+      "mk19"
+     ]
+    },
+    {
+     "key": "tunguska",
+     "name": "2S6 TUNGUSKA",
+     "desc": "Gun and missile air defence — twin 30mm plus short-range SAMs. Owns the low sky.",
+     "media": "media/tunguska.gif",
+     "accent": "#647062",
+     "bars": [
+      [
+       "Speed",
+       11,
+       54
+      ],
+      [
+       "Hull",
+       5,
+       210
+      ],
+      [
+       "Turn",
+       28,
+       1.2
+      ]
+     ],
+     "tags": [
+      "aa_twin30",
+      "sam_short",
+      "flak",
+      "minigun"
+     ]
+    }
+   ]
+  },
+  {
+   "cls": "boat",
+   "title": "SEA",
+   "cards": [
+    {
+     "key": "arsenal_ship",
+     "name": "ARSENAL SHIP",
+     "desc": "A hull that is one enormous magazine — 36 launch cells and almost no gun. Kill it first.",
+     "media": "media/arsenal_ship.gif",
+     "accent": "#606c7c",
+     "bars": [
+      [
+       "Speed",
+       17,
+       78
+      ],
+      [
+       "Hull",
+       29,
+       880
+      ],
+      [
+       "Turn",
+       0,
+       0.5
+      ]
+     ],
+     "tags": [
+      "arsenal_vls",
+      "cruise",
+      "ballistic",
+      "ciws"
+     ]
+    },
+    {
+     "key": "battleship",
+     "name": "BATTLESHIP",
+     "desc": "Big-gun dreadnought. Heavy artillery + missiles; immense but can pivot on the spot.",
+     "media": "media/battleship.gif",
+     "accent": "#565c66",
+     "bars": [
+      [
+       "Speed",
+       3,
+       27
+      ],
+      [
+       "Hull",
+       67,
+       1900
+      ],
+      [
+       "Turn",
+       28,
+       1.2
+      ]
+     ],
+     "tags": [
+      "heavy_arty",
+      "mlrs",
+      "ciws",
+      "harpoon"
+     ]
+    },
+    {
+     "key": "carrier",
+     "name": "AIRCRAFT CARRIER",
+     "desc": "Supercarrier — a mobile airbase. Immense and slow, but can turn on the spot.",
+     "media": "media/carrier.gif",
+     "accent": "#525862",
+     "bars": [
+      [
+       "Speed",
+       3,
+       25
+      ],
+      [
+       "Hull",
+       100,
+       2800
+      ],
+      [
+       "Turn",
+       20,
+       1.0
+      ]
+     ],
+     "tags": [
+      "aa_missile",
+      "flak",
+      "torpedo",
+      "rockets"
+     ]
+    },
+    {
+     "key": "corvette",
+     "name": "MISSILE CORVETTE",
+     "desc": "Fast light missile boat — ship-killer + AA missiles. Quick and agile, lighter armour than a frigate.",
+     "media": "media/corvette.gif",
+     "accent": "#606874",
+     "bars": [
+      [
+       "Speed",
+       2,
+       21
+      ],
+      [
+       "Hull",
+       19,
+       600
+      ],
+      [
+       "Turn",
+       44,
+       1.6
+      ]
+     ],
+     "tags": [
+      "harpoon",
+      "rapid_navgun",
+      "aa_missile",
+      "torpedo"
+     ]
+    },
+    {
+     "key": "cruiser",
+     "name": "MISSILE CRUISER",
+     "desc": "Ticonderoga AEGIS cruiser — long-reach SPY radar + a huge VLS arsenal (cruise + ballistic land-attack). The fleet's missile/sensor flagship: slower and lighter-hulled than a destroyer, but out-ranges and out-shoots it.",
+     "media": "media/cruiser.gif",
+     "accent": "#6e7887",
+     "bars": [
+      [
+       "Speed",
+       3,
+       25
+      ],
+      [
+       "Hull",
+       30,
+       900
+      ],
+      [
+       "Turn",
+       25,
+       1.15
+      ]
+     ],
+     "tags": [
+      "harpoon",
+      "aa_missile",
+      "ciws",
+      "cruise",
+      "ballistic"
+     ]
+    },
+    {
+     "key": "destroyer",
+     "name": "STEALTH DESTROYER",
+     "desc": "Angular stealth destroyer — VLS land-attack + AA, a deck gun + CIWS. Fast for its size.",
+     "media": "media/destroyer.gif",
+     "accent": "#5c646e",
+     "bars": [
+      [
+       "Speed",
+       2,
+       20
+      ],
+      [
+       "Hull",
+       37,
+       1100
+      ],
+      [
+       "Turn",
+       28,
+       1.2
+      ]
+     ],
+     "tags": [
+      "cannon",
+      "mlrs",
+      "ciws",
+      "harpoon"
+     ]
+    },
+    {
+     "key": "frigate",
+     "name": "GUIDED-MISSILE FRIGATE",
+     "desc": "Fast escort warship. Deck gun, AA and ship-killer missiles. Water only.",
+     "media": "media/frigate.gif",
+     "accent": "#606874",
+     "bars": [
+      [
+       "Speed",
+       2,
+       23
+      ],
+      [
+       "Hull",
+       23,
+       700
+      ],
+      [
+       "Turn",
+       35,
+       1.4
+      ]
+     ],
+     "tags": [
+      "cannon",
+      "ciws",
+      "harpoon",
+      "heavy_torpedo"
+     ]
+    },
+    {
+     "key": "hovercraft",
+     "name": "LCAC HOVERCRAFT",
+     "desc": "Air-cushion landing craft — skims water AND land. Gatling + rockets.",
+     "media": "media/hovercraft.gif",
+     "accent": "#78786e",
+     "bars": [
+      [
+       "Speed",
+       5,
+       31
+      ],
+      [
+       "Hull",
+       7,
+       280
+      ],
+      [
+       "Turn",
+       60,
+       2.0
+      ]
+     ],
+     "tags": [
+      "gatling",
+      "rockets",
+      "aa_missile"
+     ]
+    },
+    {
+     "key": "hydrofoil",
+     "name": "HYDROFOIL GUNBOAT",
+     "desc": "Rides on foils clear of the water — the fastest hull afloat. A rapid gun, nothing more.",
+     "media": "media/hydrofoil.gif",
+     "accent": "#6e7a8a",
+     "bars": [
+      [
+       "Speed",
+       6,
+       37
+      ],
+      [
+       "Hull",
+       2,
+       140
+      ],
+      [
+       "Turn",
+       64,
+       2.1
+      ]
+     ],
+     "tags": [
+      "rapid_navgun",
+      "ciws",
+      "sidewinder"
+     ]
+    },
+    {
+     "key": "landing_ship",
+     "name": "AMPHIBIOUS LANDING SHIP",
+     "desc": "A floating garage with a bow ramp. Slow, tough, barely armed — it delivers, not fights.",
+     "media": "media/landing_ship.gif",
+     "accent": "#646a5c",
+     "bars": [
+      [
+       "Speed",
+       0,
+       12
+      ],
+      [
+       "Hull",
+       48,
+       1400
+      ],
+      [
+       "Turn",
+       2,
+       0.55
+      ]
+     ],
+     "tags": [
+      "ciws",
+      "rapid_navgun",
+      "flak"
+     ]
+    },
+    {
+     "key": "missile_boat",
+     "name": "FAST ATTACK CRAFT",
+     "desc": "Missile boat — four anti-ship canisters and enormous speed. One hit and it is gone.",
+     "media": "media/missile_boat.gif",
+     "accent": "#687484",
+     "bars": [
+      [
+       "Speed",
+       4,
+       29
+      ],
+      [
+       "Hull",
+       3,
+       170
+      ],
+      [
+       "Turn",
+       56,
+       1.9
+      ]
+     ],
+     "tags": [
+      "asm_canister",
+      "rapid_navgun",
+      "harpoon"
+     ]
+    },
+    {
+     "key": "patrol_boat",
+     "name": "PT GUNBOAT",
+     "desc": "Fast attack boat. Minigun, rockets and a deck cannon. Water only.",
+     "media": "media/patrol_boat.gif",
+     "accent": "#5a6e82",
+     "bars": [
+      [
+       "Speed",
+       5,
+       32
+      ],
+      [
+       "Hull",
+       7,
+       280
+      ],
+      [
+       "Turn",
+       52,
+       1.8
+      ]
+     ],
+     "tags": [
+      "cannon",
+      "minigun",
+      "harpoon",
+      "torpedo"
+     ]
+    },
+    {
+     "key": "submarine",
+     "name": "ATTACK SUBMARINE",
+     "desc": "Nuclear attack sub — runs at periscope depth (sail + scope show) and can DIVE (F) to hide, then SURFACE to fire. VLS missiles BREACH the water and climb like sub-launched rounds. Torpedoes, anti-ship + land-attack + ballistic missiles.",
+     "media": "media/submarine.gif",
+     "accent": "#46505a",
+     "bars": [
+      [
+       "Speed",
+       2,
+       23
+      ],
+      [
+       "Hull",
+       21,
+       650
+      ],
+      [
+       "Turn",
+       35,
+       1.4
+      ]
+     ],
+     "tags": [
+      "heavy_torpedo",
+      "harpoon",
+      "cruise",
+      "ballistic"
+     ]
+    }
+   ]
+  }
+ ],
+ "mechs": {
+  "cards": [
+   {
+    "key": "giant_anvil",
+    "name": "ANVIL",
+    "desc": "The brawler — a particle cannon on each arm and missile pods over both shoulders. Symmetrical and unsubtle.",
+    "media": "media/giant_anvil_walk.gif",
+    "accent": "#78c8a0",
+    "tall": true,
+    "tags": [
+     "71u tall"
+    ]
+   },
+   {
+    "key": "giant_barrage",
+    "name": "BARRAGE",
+    "desc": "Fire-support mech — two HAIL boxes over the shoulders. Shoots from behind the ridge and walks away.",
+    "media": "media/giant_barrage_walk.gif",
+    "accent": "#56b0d0",
+    "tall": true,
+    "tags": [
+     "59u tall"
+    ]
+   },
+   {
+    "key": "giant_bastion",
+    "name": "BASTION",
+    "desc": "A medium with a beaked sensor head, a rotary cannon and a grappling claw with a MAUL in it. Quick for its weight.",
+    "media": "media/giant_bastion_walk.gif",
+    "accent": "#96803e",
+    "tall": true,
+    "tags": [
+     "60u tall"
+    ]
+   },
+   {
+    "key": "giant_bulwark",
+    "name": "BULWARK",
+    "desc": "Hundred-ton assault mech. A MAUL in one fist, QUILL racks on the arms and HAIL boxes over the shoulders. Nothing stops it; nothing hurries it.",
+    "media": "media/giant_bulwark_walk.gif",
+    "accent": "#b08434",
+    "tall": true,
+    "tags": [
+     "72u tall"
+    ]
+   },
+   {
+    "key": "giant_caisson",
+    "name": "CAISSON",
+    "desc": "Armless: two vast missile pods where the arms should be. A launcher on legs, and nothing else.",
+    "media": "media/giant_caisson_walk.gif",
+    "accent": "#e6963c",
+    "tall": true,
+    "tags": [
+     "68u tall"
+    ]
+   },
+   {
+    "key": "giant_gantry",
+    "name": "GANTRY",
+    "desc": "Low, hunched and forward-leaning on bird legs, with particle cannons slung under both arms. All shoulders and stride.",
+    "media": "media/giant_gantry_walk.gif",
+    "accent": "#b078c8",
+    "tall": true,
+    "tags": [
+     "70u tall"
+    ]
+   },
+   {
+    "key": "giant_monolith",
+    "name": "MONOLITH",
+    "desc": "No head. A sensor strip set into the chest, four launch blocks and nothing to look at you with.",
+    "media": "media/giant_monolith_walk.gif",
+    "accent": "#946034",
+    "tall": true,
+    "tags": [
+     "73u tall"
+    ]
+   },
+   {
+    "key": "giant_outrider",
+    "name": "OUTRIDER",
+    "desc": "The fast one — shoulder railgun and pulse lasers. Outruns what it cannot out-armour.",
+    "media": "media/giant_outrider_walk.gif",
+    "accent": "#d25a46",
+    "tall": true,
+    "tags": [
+     "78u tall"
+    ]
+   },
+   {
+    "key": "giant_picket",
+    "name": "PICKET",
+    "desc": "Built to clear ground — a flamer on one arm, a rotary cannon on the other, and legs that get there first. QUILL racks over the shoulders for what the flamer cannot touch.",
+    "media": "media/giant_picket_walk.gif",
+    "accent": "#9e6c34",
+    "tall": true,
+    "tags": [
+     "56u tall"
+    ]
+   },
+   {
+    "key": "giant_rampart",
+    "name": "RAMPART",
+    "desc": "The tallest thing that walks, and the only one with a comms mast. Sees the fight before the fight sees it.",
+    "media": "media/giant_rampart_walk.gif",
+    "accent": "#9e9276",
+    "tall": true,
+    "tags": [
+     "70u tall"
+    ]
+   },
+   {
+    "key": "giant_redoubt",
+    "name": "REDOUBT",
+    "desc": "A squat armoured drum on stubby bird legs carrying a cannon far too big for it. Funny right up until it fires.",
+    "media": "media/giant_redoubt_walk.gif",
+    "accent": "#9e5c2c",
+    "tall": true,
+    "tags": [
+     "48u tall"
+    ]
+   },
+   {
+    "key": "giant_sledge",
+    "name": "SLEDGE",
+    "desc": "Squat, enormously wide, and carrying a gauss cannon bigger than its own torso. Do not stand in front of it.",
+    "media": "media/giant_sledge_walk.gif",
+    "accent": "#d6a836",
+    "tall": true,
+    "tags": [
+     "69u tall"
+    ]
+   },
+   {
+    "key": "giant_spire",
+    "name": "SPIRE",
+    "desc": "A knight. A tower shield on one arm and a molten sword on the other. It walks slowly because nothing it meets survives the wait.",
+    "media": "media/giant_spire_walk.gif",
+    "accent": "#dcbe5a",
+    "tall": true,
+    "tags": [
+     "74u tall"
+    ]
+   },
+   {
+    "key": "giant_trestle",
+    "name": "TRESTLE",
+    "desc": "Four-legged gun platform. Twin siege cannon, stable enough to fire everything at once.",
+    "media": "media/giant_trestle_walk.gif",
+    "accent": "#c4802c",
+    "tall": true,
+    "tags": [
+     "51u tall"
+    ]
+   }
+  ],
+  "turning": [
+   {
+    "key": "giant_anvil",
+    "name": "ANVIL",
+    "media": "media/giant_anvil.gif"
+   },
+   {
+    "key": "giant_barrage",
+    "name": "BARRAGE",
+    "media": "media/giant_barrage.gif"
+   },
+   {
+    "key": "giant_bastion",
+    "name": "BASTION",
+    "media": "media/giant_bastion.gif"
+   },
+   {
+    "key": "giant_bulwark",
+    "name": "BULWARK",
+    "media": "media/giant_bulwark.gif"
+   },
+   {
+    "key": "giant_caisson",
+    "name": "CAISSON",
+    "media": "media/giant_caisson.gif"
+   },
+   {
+    "key": "giant_gantry",
+    "name": "GANTRY",
+    "media": "media/giant_gantry.gif"
+   },
+   {
+    "key": "giant_monolith",
+    "name": "MONOLITH",
+    "media": "media/giant_monolith.gif"
+   },
+   {
+    "key": "giant_outrider",
+    "name": "OUTRIDER",
+    "media": "media/giant_outrider.gif"
+   },
+   {
+    "key": "giant_picket",
+    "name": "PICKET",
+    "media": "media/giant_picket.gif"
+   },
+   {
+    "key": "giant_rampart",
+    "name": "RAMPART",
+    "media": "media/giant_rampart.gif"
+   },
+   {
+    "key": "giant_redoubt",
+    "name": "REDOUBT",
+    "media": "media/giant_redoubt.gif"
+   },
+   {
+    "key": "giant_sledge",
+    "name": "SLEDGE",
+    "media": "media/giant_sledge.gif"
+   },
+   {
+    "key": "giant_spire",
+    "name": "SPIRE",
+    "media": "media/giant_spire.gif"
+   },
+   {
+    "key": "giant_trestle",
+    "name": "TRESTLE",
+    "media": "media/giant_trestle.gif"
+   }
+  ]
+ },
+ "arsenal": [
+  {
+   "key": "arc_laser",
+   "name": "ARC LASER",
+   "kind": "beam",
+   "guidance": "unguided",
+   "dps": 240,
+   "reach": 2400,
+   "blast": 10,
+   "ammo": 600,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "mech_pulse_laser",
+   "name": "TWIN PULSE LASER",
+   "kind": "beam",
+   "guidance": "unguided",
+   "dps": 291,
+   "reach": 2600,
+   "blast": 14,
+   "ammo": null,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "railgun",
+   "name": "RAILGUN",
+   "kind": "beam",
+   "guidance": "unguided",
+   "dps": 294,
+   "reach": 3400,
+   "blast": 40,
+   "ammo": 30,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "sunder",
+   "name": "SUNDER",
+   "kind": "beam",
+   "guidance": "unguided",
+   "dps": 175,
+   "reach": 3200,
+   "blast": 42,
+   "ammo": null,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "tesla",
+   "name": "ARC TESLA",
+   "kind": "beam",
+   "guidance": "unguided",
+   "dps": 110,
+   "reach": 900,
+   "blast": 16,
+   "ammo": 120,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "bomb",
+   "name": "BOMB",
+   "kind": "bomb",
+   "guidance": "unguided",
+   "dps": 343,
+   "reach": 1080,
+   "blast": 140,
+   "ammo": 25,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "bunker_buster",
+   "name": "BUNKER BUSTER",
+   "kind": "bomb",
+   "guidance": "unguided",
+   "dps": 233,
+   "reach": 1350,
+   "blast": 70,
+   "ammo": 10,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "cluster",
+   "name": "CLUSTER BOMB",
+   "kind": "bomb",
+   "guidance": "unguided",
+   "dps": 73,
+   "reach": 1080,
+   "blast": 48,
+   "ammo": 16,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "jdam",
+   "name": "JDAM GBU",
+   "kind": "bomb",
+   "guidance": "cmd",
+   "dps": 250,
+   "reach": 1870,
+   "blast": 130,
+   "ammo": 14,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "napalm",
+   "name": "NAPALM",
+   "kind": "bomb",
+   "guidance": "unguided",
+   "dps": 122,
+   "reach": 1080,
+   "blast": 95,
+   "ammo": 20,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "thermobaric",
+   "name": "THERMOBARIC",
+   "kind": "bomb",
+   "guidance": "unguided",
+   "dps": 120,
+   "reach": 1170,
+   "blast": 175,
+   "ammo": 12,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "aa_twin30",
+   "name": "TWIN 30mm AA",
+   "kind": "bullet",
+   "guidance": "unguided",
+   "dps": 340,
+   "reach": 2596,
+   "blast": 9,
+   "ammo": 1400,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "autocannon",
+   "name": "AUTOCANNON",
+   "kind": "bullet",
+   "guidance": "unguided",
+   "dps": 288,
+   "reach": 4400,
+   "blast": 14,
+   "ammo": null,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "churn",
+   "name": "CHURN",
+   "kind": "bullet",
+   "guidance": "unguided",
+   "dps": 383,
+   "reach": 3068,
+   "blast": 13,
+   "ammo": 600,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "ciws",
+   "name": "CIWS PHALANX",
+   "kind": "bullet",
+   "guidance": "unguided",
+   "dps": 393,
+   "reach": 2340,
+   "blast": 7,
+   "ammo": null,
+   "engages": [
+    "a",
+    "i",
+    "r"
+   ]
+  },
+  {
+   "key": "door_gun",
+   "name": "TWIN DOOR MINIGUNS",
+   "kind": "bullet",
+   "guidance": "unguided",
+   "dps": 320,
+   "reach": 1530,
+   "blast": 5,
+   "ammo": null,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "gatling",
+   "name": "GATLING",
+   "kind": "bullet",
+   "guidance": "unguided",
+   "dps": 283,
+   "reach": 2940,
+   "blast": 9,
+   "ammo": null,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "hmg",
+   "name": ".50 CAL M2",
+   "kind": "bullet",
+   "guidance": "unguided",
+   "dps": 109,
+   "reach": 5750,
+   "blast": 7,
+   "ammo": null,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "mech_flamer",
+   "name": "HEAVY FLAMER",
+   "kind": "bullet",
+   "guidance": "unguided",
+   "dps": 367,
+   "reach": 357,
+   "blast": 30,
+   "ammo": 900,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "mech_railgun",
+   "name": "MECH RAILGUN",
+   "kind": "bullet",
+   "guidance": "unguided",
+   "dps": 200,
+   "reach": 5720,
+   "blast": 44,
+   "ammo": 40,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "minigun",
+   "name": "MINIGUN",
+   "kind": "bullet",
+   "guidance": "unguided",
+   "dps": 178,
+   "reach": 3220,
+   "blast": 6,
+   "ammo": null,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "rapid_navgun",
+   "name": "RAPID NAVAL GUN",
+   "kind": "bullet",
+   "guidance": "unguided",
+   "dps": 227,
+   "reach": 3150,
+   "blast": 20,
+   "ammo": 900,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "side_40",
+   "name": "40mm SIDE CANNON",
+   "kind": "bullet",
+   "guidance": "unguided",
+   "dps": 246,
+   "reach": 2992,
+   "blast": 26,
+   "ammo": 260,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "zsu_quad23",
+   "name": "QUAD 23mm",
+   "kind": "bullet",
+   "guidance": "unguided",
+   "dps": 300,
+   "reach": 1323,
+   "blast": 6,
+   "ammo": null,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "aa_missile",
+   "name": "AA MISSILE",
+   "kind": "missile",
+   "guidance": "ir",
+   "dps": 230,
+   "reach": 10000,
+   "blast": 44,
+   "ammo": 24,
+   "engages": [
+    "air"
+   ]
+  },
+  {
+   "key": "amraam",
+   "name": "AMRAAM",
+   "kind": "missile",
+   "guidance": "radar",
+   "dps": 200,
+   "reach": 12160,
+   "blast": 44,
+   "ammo": 16,
+   "engages": [
+    "air"
+   ]
+  },
+  {
+   "key": "arsenal_vls",
+   "name": "ARSENAL VLS",
+   "kind": "missile",
+   "guidance": "cmd",
+   "dps": 278,
+   "reach": 11200,
+   "blast": 98,
+   "ammo": 140,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "asm_canister",
+   "name": "ANTI-SHIP CANISTER",
+   "kind": "missile",
+   "guidance": "radar",
+   "dps": 262,
+   "reach": 9360,
+   "blast": 110,
+   "ammo": 8,
+   "engages": [
+    "naval"
+   ]
+  },
+  {
+   "key": "ballistic",
+   "name": "BALLISTIC VLS",
+   "kind": "missile",
+   "guidance": "cmd",
+   "dps": 178,
+   "reach": 13800,
+   "blast": 130,
+   "ammo": 12,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "cruise",
+   "name": "CRUISE MISSILE",
+   "kind": "missile",
+   "guidance": "cmd",
+   "dps": 217,
+   "reach": 6480,
+   "blast": 150,
+   "ammo": 8,
+   "engages": [
+    "ground",
+    "naval"
+   ]
+  },
+  {
+   "key": "hail",
+   "name": "HAIL",
+   "kind": "missile",
+   "guidance": "radar",
+   "dps": 244,
+   "reach": 5040,
+   "blast": 62,
+   "ammo": 200,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "harm",
+   "name": "HARM A-RAD",
+   "kind": "missile",
+   "guidance": "radar",
+   "dps": 196,
+   "reach": 8640,
+   "blast": 56,
+   "ammo": 14,
+   "engages": [
+    "radar"
+   ]
+  },
+  {
+   "key": "harpoon",
+   "name": "HARPOON ASM",
+   "kind": "missile",
+   "guidance": "cmd",
+   "dps": 343,
+   "reach": 8640,
+   "blast": 96,
+   "ammo": 12,
+   "engages": [
+    "naval"
+   ]
+  },
+  {
+   "key": "hellfire",
+   "name": "HELLFIRE",
+   "kind": "missile",
+   "guidance": "cmd",
+   "dps": 281,
+   "reach": 5740,
+   "blast": 40,
+   "ammo": 24,
+   "engages": [
+    "ground",
+    "naval"
+   ]
+  },
+  {
+   "key": "hypersonic",
+   "name": "HYPERSONIC",
+   "kind": "missile",
+   "guidance": "radar",
+   "dps": 171,
+   "reach": 13500,
+   "blast": 72,
+   "ammo": 10,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "javelin",
+   "name": "JAVELIN ATGM",
+   "kind": "missile",
+   "guidance": "cmd",
+   "dps": 336,
+   "reach": 4480,
+   "blast": 34,
+   "ammo": 20,
+   "engages": [
+    "ground"
+   ]
+  },
+  {
+   "key": "latch",
+   "name": "LATCH",
+   "kind": "missile",
+   "guidance": "ir",
+   "dps": 215,
+   "reach": 2856,
+   "blast": 48,
+   "ammo": 90,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "loiter",
+   "name": "LOITER DRONE",
+   "kind": "missile",
+   "guidance": "cmd",
+   "dps": 91,
+   "reach": 6600,
+   "blast": 54,
+   "ammo": 12,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "missile",
+   "name": "MISSILE",
+   "kind": "missile",
+   "guidance": "ir",
+   "dps": 217,
+   "reach": 7150,
+   "blast": 56,
+   "ammo": 40,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "quill",
+   "name": "QUILL",
+   "kind": "missile",
+   "guidance": "ir",
+   "dps": 350,
+   "reach": 3100,
+   "blast": 54,
+   "ammo": 120,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "sam_short",
+   "name": "SHORT-RANGE SAM",
+   "kind": "missile",
+   "guidance": "ir",
+   "dps": 156,
+   "reach": 5750,
+   "blast": 64,
+   "ammo": 16,
+   "engages": [
+    "air",
+    "heli",
+    "jet"
+   ]
+  },
+  {
+   "key": "sidewinder",
+   "name": "SIDEWINDER",
+   "kind": "missile",
+   "guidance": "ir",
+   "dps": 217,
+   "reach": 5760,
+   "blast": 36,
+   "ammo": 28,
+   "engages": [
+    "air"
+   ]
+  },
+  {
+   "key": "stinger",
+   "name": "STINGER MANPADS",
+   "kind": "missile",
+   "guidance": "ir",
+   "dps": 169,
+   "reach": 5400,
+   "blast": 30,
+   "ammo": 52,
+   "engages": [
+    "air"
+   ]
+  },
+  {
+   "key": "swarm",
+   "name": "SWARM MICROS",
+   "kind": "missile",
+   "guidance": "ir",
+   "dps": 258,
+   "reach": 4680,
+   "blast": 24,
+   "ammo": 64,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "tv_missile",
+   "name": "TV MISSILE",
+   "kind": "missile",
+   "guidance": "unguided",
+   "dps": 63,
+   "reach": 3440,
+   "blast": 64,
+   "ammo": 4,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "laser",
+   "name": "PULSE LASER",
+   "kind": "plasma",
+   "guidance": "unguided",
+   "dps": 260,
+   "reach": 5100,
+   "blast": 10,
+   "ammo": null,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "plasma",
+   "name": "PLASMA",
+   "kind": "plasma",
+   "guidance": "unguided",
+   "dps": 191,
+   "reach": 2860,
+   "blast": 32,
+   "ammo": 160,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "apam_rockets",
+   "name": "CLUSTER ROCKET POD",
+   "kind": "rocket",
+   "guidance": "unguided",
+   "dps": 86,
+   "reach": 3000,
+   "blast": 30,
+   "ammo": 38,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "dragonfire",
+   "name": "DRAGON FIRE",
+   "kind": "rocket",
+   "guidance": "unguided",
+   "dps": 222,
+   "reach": 3360,
+   "blast": 44,
+   "ammo": 90,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "grad_salvo",
+   "name": "GRAD 40-TUBE RIPPLE",
+   "kind": "rocket",
+   "guidance": "unguided",
+   "dps": 271,
+   "reach": 5040,
+   "blast": 44,
+   "ammo": 120,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "mlrs",
+   "name": "MLRS SALVO",
+   "kind": "rocket",
+   "guidance": "unguided",
+   "dps": 382,
+   "reach": 4800,
+   "blast": 58,
+   "ammo": 72,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "prop_rockets",
+   "name": "HEAVY ROCKET RAIL",
+   "kind": "rocket",
+   "guidance": "unguided",
+   "dps": 168,
+   "reach": 2000,
+   "blast": 74,
+   "ammo": 38,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "rockets",
+   "name": "ROCKETS",
+   "kind": "rocket",
+   "guidance": "unguided",
+   "dps": 306,
+   "reach": 4480,
+   "blast": 46,
+   "ammo": 120,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "scout_rockets",
+   "name": "7-SHOT ROCKET POD",
+   "kind": "rocket",
+   "guidance": "unguided",
+   "dps": 520,
+   "reach": 2184,
+   "blast": 38,
+   "ammo": 42,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "smerch_salvo",
+   "name": "SMERCH HEAVY MRL",
+   "kind": "rocket",
+   "guidance": "unguided",
+   "dps": 158,
+   "reach": 11520,
+   "blast": 86,
+   "ammo": 36,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "zuni",
+   "name": "ZUNI 5-INCH ROCKETS",
+   "kind": "rocket",
+   "guidance": "unguided",
+   "dps": 236,
+   "reach": 3300,
+   "blast": 66,
+   "ammo": 28,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "arty_152",
+   "name": "152MM HE",
+   "kind": "shell",
+   "guidance": "unguided",
+   "dps": 93,
+   "reach": 32640,
+   "blast": 144,
+   "ammo": 50,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "arty_155",
+   "name": "155MM HE",
+   "kind": "shell",
+   "guidance": "unguided",
+   "dps": 104,
+   "reach": 33600,
+   "blast": 150,
+   "ammo": 48,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "arty_155_l52",
+   "name": "155MM HE L52",
+   "kind": "shell",
+   "guidance": "unguided",
+   "dps": 91,
+   "reach": 43680,
+   "blast": 150,
+   "ammo": 40,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "arty_excalibur",
+   "name": "155MM EXCALIBUR (GPS)",
+   "kind": "shell",
+   "guidance": "unguided",
+   "dps": 100,
+   "reach": 39520,
+   "blast": 92,
+   "ammo": 12,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "arty_krasnopol",
+   "name": "152MM KRASNOPOL (LASER)",
+   "kind": "shell",
+   "guidance": "unguided",
+   "dps": 106,
+   "reach": 33600,
+   "blast": 86,
+   "ammo": 10,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "arty_mrsi",
+   "name": "155MM MRSI x4",
+   "kind": "shell",
+   "guidance": "unguided",
+   "dps": 25,
+   "reach": 43680,
+   "blast": 140,
+   "ammo": 6,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "arty_smart",
+   "name": "155MM SMArt (TOP ATTACK)",
+   "kind": "shell",
+   "guidance": "unguided",
+   "dps": 79,
+   "reach": 39520,
+   "blast": 12,
+   "ammo": 10,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "avenger",
+   "name": "GAU-8 AVENGER",
+   "kind": "shell",
+   "guidance": "unguided",
+   "dps": 322,
+   "reach": 3570,
+   "blast": 14,
+   "ammo": 350,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "buckshot",
+   "name": "BUCKSHOT",
+   "kind": "shell",
+   "guidance": "unguided",
+   "dps": 242,
+   "reach": 3280,
+   "blast": 34,
+   "ammo": 140,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "cannon",
+   "name": "CANNON",
+   "kind": "shell",
+   "guidance": "unguided",
+   "dps": 162,
+   "reach": 4050,
+   "blast": 24,
+   "ammo": null,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "flak",
+   "name": "FLAK CANNON",
+   "kind": "shell",
+   "guidance": "unguided",
+   "dps": 120,
+   "reach": 3280,
+   "blast": 34,
+   "ammo": null,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "flechette",
+   "name": "FLECHETTE CANISTER",
+   "kind": "shell",
+   "guidance": "unguided",
+   "dps": 250,
+   "reach": 1026,
+   "blast": 10,
+   "ammo": 60,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "gauss",
+   "name": "GAUSS SLUG",
+   "kind": "shell",
+   "guidance": "unguided",
+   "dps": 310,
+   "reach": 6750,
+   "blast": 22,
+   "ammo": 40,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "guided_shell",
+   "name": "GUIDED 155MM (EXCALIBUR)",
+   "kind": "shell",
+   "guidance": "cmd",
+   "dps": 197,
+   "reach": 5040,
+   "blast": 108,
+   "ammo": 12,
+   "engages": [
+    "ground",
+    "naval"
+   ]
+  },
+  {
+   "key": "heavy_arty",
+   "name": "155mm HOWITZER",
+   "kind": "shell",
+   "guidance": "unguided",
+   "dps": 123,
+   "reach": 10800,
+   "blast": 155,
+   "ammo": 20,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "howitzer",
+   "name": "HOWITZER",
+   "kind": "shell",
+   "guidance": "unguided",
+   "dps": 150,
+   "reach": 10200,
+   "blast": 120,
+   "ammo": 30,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "howitzer_152",
+   "name": "152mm HOWITZER",
+   "kind": "shell",
+   "guidance": "unguided",
+   "dps": 78,
+   "reach": 5640,
+   "blast": 104,
+   "ammo": 60,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "maul",
+   "name": "MAUL",
+   "kind": "shell",
+   "guidance": "unguided",
+   "dps": 252,
+   "reach": 3800,
+   "blast": 78,
+   "ammo": 90,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "mech_gauss",
+   "name": "GAUSS CANNON",
+   "kind": "shell",
+   "guidance": "unguided",
+   "dps": 187,
+   "reach": 6080,
+   "blast": 70,
+   "ammo": 32,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "mech_siege_cannon",
+   "name": "TWIN SIEGE CANNON",
+   "kind": "shell",
+   "guidance": "unguided",
+   "dps": 242,
+   "reach": 4550,
+   "blast": 92,
+   "ammo": 70,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "mk19",
+   "name": "Mk19 AGL",
+   "kind": "shell",
+   "guidance": "unguided",
+   "dps": 209,
+   "reach": 1920,
+   "blast": 40,
+   "ammo": 220,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "mortar",
+   "name": "HEAVY MORTAR",
+   "kind": "shell",
+   "guidance": "unguided",
+   "dps": 129,
+   "reach": 3300,
+   "blast": 82,
+   "ammo": 48,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "sabot",
+   "name": "APFSDS SABOT",
+   "kind": "shell",
+   "guidance": "unguided",
+   "dps": 194,
+   "reach": 6290,
+   "blast": 14,
+   "ammo": 40,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "side_105",
+   "name": "105mm SIDE HOWITZER",
+   "kind": "shell",
+   "guidance": "unguided",
+   "dps": 121,
+   "reach": 5200,
+   "blast": 112,
+   "ammo": 40,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "tank_120",
+   "name": "120MM APFSDS",
+   "kind": "shell",
+   "guidance": "unguided",
+   "dps": 122,
+   "reach": 6720,
+   "blast": 16,
+   "ammo": 40,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "tank_120_heat",
+   "name": "120MM HEAT-MP",
+   "kind": "shell",
+   "guidance": "unguided",
+   "dps": 94,
+   "reach": 6210,
+   "blast": 48,
+   "ammo": 22,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "asw_torpedo",
+   "name": "ASW TORPEDO",
+   "kind": "torpedo",
+   "guidance": "cmd",
+   "dps": 209,
+   "reach": 3060,
+   "blast": 98,
+   "ammo": 6,
+   "engages": [
+    "naval"
+   ]
+  },
+  {
+   "key": "heavy_torpedo",
+   "name": "WAKE-HOMING TORPEDO",
+   "kind": "torpedo",
+   "guidance": "cmd",
+   "dps": 238,
+   "reach": 3600,
+   "blast": 120,
+   "ammo": 4,
+   "engages": [
+    "naval"
+   ]
+  },
+  {
+   "key": "torpedo",
+   "name": "TORPEDO",
+   "kind": "torpedo",
+   "guidance": "cmd",
+   "dps": 320,
+   "reach": 2970,
+   "blast": 92,
+   "ammo": 18,
+   "engages": [
+    "naval"
+   ]
+  }
+ ],
+ "ordnance": {
+  "cards": [
+   {
+    "key": "bomb",
+    "name": "BOMB",
+    "media": "media/round_bomb.gif",
+    "flown_by": [
+     "bomb",
+     "bunker_buster",
+     "cluster",
+     "jdam",
+     "napalm",
+     "thermobaric"
+    ],
+    "tags": [
+     "bomb",
+     "bunker_buster",
+     "cluster",
+     "jdam",
+     "napalm",
+     "thermobaric"
+    ]
+   },
+   {
+    "key": "missile",
+    "name": "MISSILE",
+    "media": "media/round_missile.gif",
+    "flown_by": [],
+    "tags": []
+   },
+   {
+    "key": "missile_aam",
+    "name": "MISSILE AAM",
+    "media": "media/round_missile_aam.gif",
+    "flown_by": [
+     "aa_missile",
+     "amraam",
+     "hypersonic",
+     "missile",
+     "sam_short",
+     "sidewinder",
+     "stinger"
+    ],
+    "tags": [
+     "aa_missile",
+     "amraam",
+     "hypersonic",
+     "missile",
+     "sam_short",
+     "sidewinder",
+     "stinger"
+    ]
+   },
+   {
+    "key": "missile_arm",
+    "name": "MISSILE ARM",
+    "media": "media/round_missile_arm.gif",
+    "flown_by": [
+     "harm"
+    ],
+    "tags": [
+     "harm"
+    ]
+   },
+   {
+    "key": "missile_asm",
+    "name": "MISSILE ASM",
+    "media": "media/round_missile_asm.gif",
+    "flown_by": [
+     "asm_canister",
+     "harpoon"
+    ],
+    "tags": [
+     "asm_canister",
+     "harpoon"
+    ]
+   },
+   {
+    "key": "missile_atgm",
+    "name": "MISSILE ATGM",
+    "media": "media/round_missile_atgm.gif",
+    "flown_by": [
+     "hellfire",
+     "javelin"
+    ],
+    "tags": [
+     "hellfire",
+     "javelin"
+    ]
+   },
+   {
+    "key": "missile_cruise",
+    "name": "MISSILE CRUISE",
+    "media": "media/round_missile_cruise.gif",
+    "flown_by": [
+     "arsenal_vls",
+     "ballistic",
+     "cruise",
+     "loiter"
+    ],
+    "tags": [
+     "arsenal_vls",
+     "ballistic",
+     "cruise",
+     "loiter"
+    ]
+   },
+   {
+    "key": "missile_lrm",
+    "name": "MISSILE LRM",
+    "media": "media/round_missile_lrm.gif",
+    "flown_by": [
+     "hail",
+     "latch",
+     "quill",
+     "swarm"
+    ],
+    "tags": [
+     "hail",
+     "latch",
+     "quill",
+     "swarm"
+    ]
+   },
+   {
+    "key": "missile_tv",
+    "name": "MISSILE TV",
+    "media": "media/round_missile_tv.gif",
+    "flown_by": [
+     "tv_missile"
+    ],
+    "tags": [
+     "tv_missile"
+    ]
+   },
+   {
+    "key": "rocket",
+    "name": "ROCKET",
+    "media": "media/round_rocket.gif",
+    "flown_by": [
+     "apam_rockets",
+     "dragonfire",
+     "grad_salvo",
+     "mlrs",
+     "prop_rockets",
+     "rockets",
+     "scout_rockets",
+     "smerch_salvo",
+     "zuni"
+    ],
+    "tags": [
+     "apam_rockets",
+     "dragonfire",
+     "grad_salvo",
+     "mlrs",
+     "prop_rockets",
+     "rockets",
+     "scout_rockets"
+    ]
+   },
+   {
+    "key": "shell",
+    "name": "SHELL",
+    "media": "media/round_shell.gif",
+    "flown_by": [
+     "arty_152",
+     "arty_155",
+     "arty_155_l52",
+     "arty_excalibur",
+     "arty_krasnopol",
+     "arty_mrsi",
+     "arty_smart",
+     "buckshot",
+     "guided_shell",
+     "heavy_arty",
+     "howitzer",
+     "howitzer_152",
+     "maul",
+     "mech_gauss",
+     "mech_siege_cannon",
+     "mk19",
+     "mortar",
+     "side_105",
+     "tank_120_heat"
+    ],
+    "tags": [
+     "arty_152",
+     "arty_155",
+     "arty_155_l52",
+     "arty_excalibur",
+     "arty_krasnopol",
+     "arty_mrsi",
+     "arty_smart"
+    ]
+   },
+   {
+    "key": "torpedo",
+    "name": "TORPEDO",
+    "media": "media/round_torpedo.gif",
+    "flown_by": [
+     "asw_torpedo",
+     "heavy_torpedo",
+     "torpedo"
+    ],
+    "tags": [
+     "asw_torpedo",
+     "heavy_torpedo",
+     "torpedo"
+    ]
+   }
+  ],
+  "tracers": [
+   "aa_twin30",
+   "arc_laser",
+   "autocannon",
+   "avenger",
+   "cannon",
+   "churn",
+   "ciws",
+   "door_gun",
+   "flak",
+   "flechette",
+   "gatling",
+   "gauss",
+   "hmg",
+   "laser",
+   "mech_flamer",
+   "mech_pulse_laser",
+   "mech_railgun",
+   "minigun",
+   "plasma",
+   "railgun",
+   "rapid_navgun",
+   "sabot",
+   "side_40",
+   "sunder",
+   "tank_120",
+   "tesla",
+   "zsu_quad23"
+  ]
+ },
+ "opposition": [
+  {
+   "key": "aa_truck",
+   "name": "AA TRUCK",
+   "media": "media/enemy_aa.gif",
+   "tags": [
+    "ground",
+    "80 hp",
+    "?"
+   ]
+  },
+  {
+   "key": "aaa",
+   "name": "AAA FLAK",
+   "media": "media/enemy_aaa.gif",
+   "tags": [
+    "static",
+    "90 hp",
+    "?"
+   ]
+  },
+  {
+   "key": "airliner",
+   "name": "AIRLINER",
+   "media": "media/airliner.gif",
+   "tags": [
+    "air",
+    "120 hp",
+    "?"
+   ]
+  },
+  {
+   "key": "arsenal_barge",
+   "name": "ARSENAL SHIP",
+   "media": "media/enemy_arsenal.gif",
+   "tags": [
+    "naval",
+    "1500 hp",
+    "naval"
+   ]
+  },
+  {
+   "key": "artillery",
+   "name": "ARTILLERY",
+   "media": "media/enemy_artillery.gif",
+   "tags": [
+    "static",
+    "150 hp",
+    "?"
+   ]
+  },
+  {
+   "key": "attack_prop",
+   "name": "ATTACK TURBOPROP",
+   "media": "media/enemy_prop.gif",
+   "tags": [
+    "jet",
+    "160 hp",
+    "air"
+   ]
+  },
+  {
+   "key": "awacs_plane",
+   "name": "AEW RADAR PLANE",
+   "media": "media/enemy_awacs.gif",
+   "tags": [
+    "air",
+    "420 hp",
+    "air"
+   ]
+  },
+  {
+   "key": "battleship",
+   "name": "BATTLESHIP",
+   "media": "media/battleship.gif",
+   "tags": [
+    "naval",
+    "1100 hp",
+    "naval"
+   ]
+  },
+  {
+   "key": "bomber",
+   "name": "BOMBER",
+   "media": "media/bomber.gif",
+   "tags": [
+    "air",
+    "320 hp",
+    "?"
+   ]
+  },
+  {
+   "key": "buggy",
+   "name": "RECON BUGGY",
+   "media": "media/buggy.gif",
+   "tags": [
+    "ground",
+    "55 hp",
+    "?"
+   ]
+  },
+  {
+   "key": "bunker",
+   "name": "BUNKER",
+   "media": "media/enemy_bunker.gif",
+   "tags": [
+    "static",
+    "520 hp",
+    "hard"
+   ]
+  },
+  {
+   "key": "cargo_ship",
+   "name": "CARGO SHIP",
+   "media": "media/cargo_ship.gif",
+   "tags": [
+    "naval",
+    "300 hp",
+    "?"
+   ]
+  },
+  {
+   "key": "carrier",
+   "name": "AIRCRAFT CARRIER",
+   "media": "media/carrier.gif",
+   "tags": [
+    "naval",
+    "1400 hp",
+    "naval"
+   ]
+  },
+  {
+   "key": "destroyer",
+   "name": "ENEMY DESTROYER",
+   "media": "media/enemy_warship.gif",
+   "tags": [
+    "naval",
+    "440 hp",
+    "?"
+   ]
+  },
+  {
+   "key": "drone",
+   "name": "DRONE",
+   "media": "media/enemy_drone.gif",
+   "tags": [
+    "air",
+    "50 hp",
+    "?"
+   ]
+  },
+  {
+   "key": "drone_carrier",
+   "name": "DRONE CARRIER",
+   "media": "media/enemy_drone_carrier.gif",
+   "tags": [
+    "ground",
+    "260 hp",
+    "?"
+   ]
+  },
+  {
+   "key": "fast_attack_craft",
+   "name": "FAST ATTACK CRAFT",
+   "media": "media/enemy_missile_boat.gif",
+   "tags": [
+    "naval",
+    "220 hp",
+    "naval"
+   ]
+  },
+  {
+   "key": "flak_tank",
+   "name": "FLAKPANZER",
+   "media": "media/enemy_flak.gif",
+   "tags": [
+    "ground",
+    "110 hp",
+    "hard"
+   ]
+  },
+  {
+   "key": "frigate",
+   "name": "ESCORT FRIGATE",
+   "media": "media/frigate.gif",
+   "tags": [
+    "naval",
+    "320 hp",
+    "naval"
+   ]
+  },
+  {
+   "key": "fuel_depot",
+   "name": "FUEL DEPOT",
+   "media": "media/enemy_fuel.gif",
+   "tags": [
+    "static",
+    "40 hp",
+    "structure"
+   ]
+  },
+  {
+   "key": "gunboat",
+   "name": "ENEMY GUNBOAT",
+   "media": "media/enemy_boat.gif",
+   "tags": [
+    "naval",
+    "120 hp",
+    "?"
+   ]
+  },
+  {
+   "key": "gunship_plane",
+   "name": "AC-130 SPECTRE",
+   "media": "media/gunship_plane.gif",
+   "tags": [
+    "air",
+    "300 hp",
+    "?"
+   ]
+  },
+  {
+   "key": "heavy_airlifter",
+   "name": "HEAVY AIRLIFTER",
+   "media": "media/enemy_lifter.gif",
+   "tags": [
+    "air",
+    "700 hp",
+    "air"
+   ]
+  },
+  {
+   "key": "heavy_sph",
+   "name": "HEAVY SP HOWITZER",
+   "media": "media/enemy_sph.gif",
+   "tags": [
+    "ground",
+    "300 hp",
+    "hard"
+   ]
+  },
+  {
+   "key": "heavy_transport_heli",
+   "name": "TANDEM TRANSPORT",
+   "media": "media/enemy_tandem.gif",
+   "tags": [
+    "heli",
+    "340 hp",
+    "air"
+   ]
+  },
+  {
+   "key": "helicopter",
+   "name": "HOSTILE GUNSHIP",
+   "media": "media/enemy_heli.gif",
+   "tags": [
+    "heli",
+    "150 hp",
+    "?"
+   ]
+  },
+  {
+   "key": "interceptor",
+   "name": "INTERCEPTOR",
+   "media": "media/enemy_interceptor.gif",
+   "tags": [
+    "jet",
+    "90 hp",
+    "?"
+   ]
+  },
+  {
+   "key": "jet",
+   "name": "HOSTILE JET",
+   "media": "media/enemy_jet.gif",
+   "tags": [
+    "jet",
+    "95 hp",
+    "?"
+   ]
+  },
+  {
+   "key": "mech_assault",
+   "name": "BULWARK MECH",
+   "media": "media/giant_bulwark.gif",
+   "tags": [
+    "ground",
+    "1750 hp",
+    "hard"
+   ]
+  },
+  {
+   "key": "mech_heavy",
+   "name": "ANVIL MECH",
+   "media": "media/giant_anvil.gif",
+   "tags": [
+    "ground",
+    "1150 hp",
+    "hard"
+   ]
+  },
+  {
+   "key": "mech_light",
+   "name": "OUTRIDER MECH",
+   "media": "media/giant_outrider.gif",
+   "tags": [
+    "ground",
+    "520 hp",
+    "hard"
+   ]
+  },
+  {
+   "key": "mlrs",
+   "name": "MLRS LAUNCHER",
+   "media": "media/enemy_mlrs.gif",
+   "tags": [
+    "ground",
+    "130 hp",
+    "?"
+   ]
+  },
+  {
+   "key": "mobile_radar",
+   "name": "RADAR VEHICLE",
+   "media": "media/mobile_radar.gif",
+   "tags": [
+    "ground",
+    "90 hp",
+    "?"
+   ]
+  },
+  {
+   "key": "quad_aa",
+   "name": "QUAD AA SPAAG",
+   "media": "media/enemy_spaag.gif",
+   "tags": [
+    "ground",
+    "210 hp",
+    "hard"
+   ]
+  },
+  {
+   "key": "rocket_barrage",
+   "name": "MLRS BARRAGE",
+   "media": "media/enemy_rocket_artillery.gif",
+   "tags": [
+    "ground",
+    "180 hp",
+    "?"
+   ]
+  },
+  {
+   "key": "rocket_ripple",
+   "name": "ROCKET RIPPLE MRL",
+   "media": "media/enemy_grad.gif",
+   "tags": [
+    "ground",
+    "180 hp",
+    "soft"
+   ]
+  },
+  {
+   "key": "sam",
+   "name": "SAM SITE",
+   "media": "media/enemy_sam.gif",
+   "tags": [
+    "static",
+    "170 hp",
+    "?"
+   ]
+  },
+  {
+   "key": "scout_heli",
+   "name": "ARMED SCOUT HELI",
+   "media": "media/enemy_scout_heli.gif",
+   "tags": [
+    "heli",
+    "150 hp",
+    "air"
+   ]
+  },
+  {
+   "key": "spg",
+   "name": "SP HOWITZER",
+   "media": "media/enemy_sph.gif",
+   "tags": [
+    "ground",
+    "140 hp",
+    "?"
+   ]
+  },
+  {
+   "key": "stealth_bomber",
+   "name": "STEALTH BOMBER",
+   "media": "media/stealth_bomber.gif",
+   "tags": [
+    "air",
+    "240 hp",
+    "?"
+   ]
+  },
+  {
+   "key": "strike_drone",
+   "name": "UCAV STRIKE DRONE",
+   "media": "media/enemy_ucav.gif",
+   "tags": [
+    "jet",
+    "120 hp",
+    "air"
+   ]
+  },
+  {
+   "key": "supply_truck",
+   "name": "SUPPLY TRUCK",
+   "media": "media/supply_truck.gif",
+   "tags": [
+    "ground",
+    "45 hp",
+    "?"
+   ]
+  },
+  {
+   "key": "swing_strike",
+   "name": "SWING-WING STRIKE",
+   "media": "media/enemy_swingwing.gif",
+   "tags": [
+    "jet",
+    "280 hp",
+    "air"
+   ]
+  },
+  {
+   "key": "tank",
+   "name": "TANK",
+   "media": "media/enemy_tank.gif",
+   "tags": [
+    "ground",
+    "130 hp",
+    "hard"
+   ]
+  },
+  {
+   "key": "tanker_ship",
+   "name": "OIL TANKER",
+   "media": "media/tanker_ship.gif",
+   "tags": [
+    "naval",
+    "340 hp",
+    "?"
+   ]
+  },
+  {
+   "key": "transport_heli",
+   "name": "TRANSPORT HELI",
+   "media": "media/transport_heli.gif",
+   "tags": [
+    "heli",
+    "200 hp",
+    "?"
+   ]
+  },
+  {
+   "key": "turret",
+   "name": "TURRET",
+   "media": "media/enemy_turret.gif",
+   "tags": [
+    "static",
+    "70 hp",
+    "?"
+   ]
+  }
+ ],
+ "campaign": [
+  {
+   "key": "angel_flight",
+   "name": "ANGEL FLIGHT",
+   "machine": "raptor",
+   "objective": "THREATS",
+   "stages": 1,
+   "weather": "fair"
+  },
+  {
+   "key": "carrier_killer",
+   "name": "CARRIER KILLER",
+   "machine": "warthog",
+   "objective": "CARRIER",
+   "stages": 3,
+   "weather": "overcast"
+  },
+  {
+   "key": "dark_side",
+   "name": "DARK SIDE",
+   "machine": "missile_truck",
+   "objective": "BATTERIES",
+   "stages": 3,
+   "weather": "clear"
+  },
+  {
+   "key": "decapitation",
+   "name": "DECAPITATION",
+   "machine": "lightning",
+   "objective": "HVT",
+   "stages": 2,
+   "weather": "clear"
+  },
+  {
+   "key": "deck_recovery",
+   "name": "DECK RECOVERY",
+   "machine": "havoc",
+   "objective": "THREATS",
+   "stages": 2,
+   "weather": "clear"
+  },
+  {
+   "key": "desert_thunder",
+   "name": "DESERT THUNDER",
+   "machine": "abrams",
+   "objective": "ARMOUR",
+   "stages": 3,
+   "weather": "clear"
+  },
+  {
+   "key": "final_dawn",
+   "name": "FINAL DAWN",
+   "machine": "comanche",
+   "objective": "SEED",
+   "stages": 3,
+   "weather": "clear"
+  },
+  {
+   "key": "first_blood",
+   "name": "FIRST BLOOD",
+   "machine": "warthog",
+   "objective": "ARMOUR",
+   "stages": 3,
+   "weather": "clear"
+  },
+  {
+   "key": "fleet_strike",
+   "name": "FLEET STRIKE",
+   "machine": "harrier",
+   "objective": "FLEET",
+   "stages": 3,
+   "weather": "overcast"
+  },
+  {
+   "key": "into_the_inferno",
+   "name": "INTO THE INFERNO",
+   "machine": "havoc",
+   "objective": "HOLD",
+   "stages": 2,
+   "weather": "clear"
+  },
+  {
+   "key": "iron_curtain",
+   "name": "IRON CURTAIN",
+   "machine": "warthog",
+   "objective": "EMITTERS",
+   "stages": 3,
+   "weather": "fair"
+  },
+  {
+   "key": "iron_gauntlet",
+   "name": "IRON GAUNTLET",
+   "machine": "warthog",
+   "objective": "HEADQUARTERS",
+   "stages": 1,
+   "weather": "clear"
+  },
+  {
+   "key": "iron_gauntlet_hard",
+   "name": "IRON ANVIL",
+   "machine": "raptor",
+   "objective": "HEADQUARTERS",
+   "stages": 1,
+   "weather": "clear"
+  },
+  {
+   "key": "last_stand",
+   "name": "LAST STAND",
+   "machine": "gunship",
+   "objective": "HOLD",
+   "stages": 2,
+   "weather": "storm"
+  },
+  {
+   "key": "lone_wolf",
+   "name": "LONE WOLF",
+   "machine": "comanche",
+   "objective": "ACES",
+   "stages": 2,
+   "weather": "fair"
+  },
+  {
+   "key": "night_strike",
+   "name": "NIGHT STRIKE",
+   "machine": "lightning",
+   "objective": "HUB",
+   "stages": 3,
+   "weather": "storm"
+  },
+  {
+   "key": "open_frontier",
+   "name": "OPEN FRONTIER",
+   "machine": "warthog",
+   "objective": "DEFENCES",
+   "stages": 3,
+   "weather": "clear"
+  },
+  {
+   "key": "open_water",
+   "name": "OPEN WATER",
+   "machine": "harrier",
+   "objective": "CONVOY",
+   "stages": 3,
+   "weather": "fair"
+  },
+  {
+   "key": "red_horizon",
+   "name": "RED HORIZON",
+   "machine": "abrams",
+   "objective": "ARMOUR",
+   "stages": 3,
+   "weather": "clear"
+  },
+  {
+   "key": "second_horizon",
+   "name": "SECOND HORIZON",
+   "machine": "gepard",
+   "objective": "NODE",
+   "stages": 3,
+   "weather": "clear"
+  },
+  {
+   "key": "silent_hunter",
+   "name": "SILENT HUNTER",
+   "machine": "submarine",
+   "objective": "CONVOY",
+   "stages": 3,
+   "weather": "overcast"
+  },
+  {
+   "key": "steel_siege",
+   "name": "STEEL SIEGE",
+   "machine": "bradley",
+   "objective": "REMNANT",
+   "stages": 3,
+   "weather": "storm"
+  },
+  {
+   "key": "the_gauntlet",
+   "name": "THE GAUNTLET",
+   "machine": "gunship",
+   "objective": "HOLD",
+   "stages": 2,
+   "weather": "storm"
+  },
+  {
+   "key": "top_cover",
+   "name": "TOP COVER",
+   "machine": "raptor",
+   "objective": "BANDITS",
+   "stages": 3,
+   "weather": "clear"
+  },
+  {
+   "key": "urban_steel",
+   "name": "URBAN STEEL",
+   "machine": "bradley",
+   "objective": "OCCUPIERS",
+   "stages": 3,
+   "weather": "overcast"
+  },
+  {
+   "key": "xenon_grid",
+   "name": "XENON GRID",
+   "machine": "gepard",
+   "objective": "GRID",
+   "stages": 3,
+   "weather": "clear"
+  }
+ ],
+ "worlds": {
+  "presets": [
+   {
+    "key": "alien",
+    "water": 0.0,
+    "mountains": 1.0,
+    "relief": 3.0,
+    "forest": 0.0,
+    "theme": "alien"
+   },
+   {
+    "key": "alps",
+    "water": 0.22,
+    "mountains": 1.8,
+    "relief": 8.0,
+    "forest": 0.4,
+    "theme": "-"
+   },
+   {
+    "key": "archipelago",
+    "water": 0.5,
+    "mountains": 0.85,
+    "relief": 2.6,
+    "forest": 0.6,
+    "theme": "-"
+   },
+   {
+    "key": "arctic",
+    "water": 0.34,
+    "mountains": 1.0,
+    "relief": 3.5,
+    "forest": 0.12,
+    "theme": "-"
+   },
+   {
+    "key": "atoll",
+    "water": 0.56,
+    "mountains": 0.6,
+    "relief": 1.7,
+    "forest": 0.6,
+    "theme": "-"
+   },
+   {
+    "key": "backdrop",
+    "water": 0.32,
+    "mountains": 1.0,
+    "relief": 1.0,
+    "forest": 0.5,
+    "theme": "-"
+   },
+   {
+    "key": "badlands",
+    "water": 0.15,
+    "mountains": 1.35,
+    "relief": 3.6,
+    "forest": 0.12,
+    "theme": "-"
+   },
+   {
+    "key": "canyons",
+    "water": 0.2,
+    "mountains": 1.6,
+    "relief": 1.0,
+    "forest": 0.3,
+    "theme": "-"
+   },
+   {
+    "key": "delta",
+    "water": 0.42,
+    "mountains": 0.55,
+    "relief": 2.0,
+    "forest": 0.72,
+    "theme": "-"
+   },
+   {
+    "key": "dunes",
+    "water": 0.08,
+    "mountains": 0.18,
+    "relief": 0.7,
+    "forest": 0.03,
+    "theme": "-"
+   },
+   {
+    "key": "highlands",
+    "water": 0.26,
+    "mountains": 1.45,
+    "relief": 5.5,
+    "forest": 0.72,
+    "theme": "-"
+   },
+   {
+    "key": "huge",
+    "water": 0.34,
+    "mountains": 1.4,
+    "relief": 7.0,
+    "forest": 0.45,
+    "theme": "-"
+   },
+   {
+    "key": "islands",
+    "water": 0.34,
+    "mountains": 0.95,
+    "relief": 1.0,
+    "forest": 0.5,
+    "theme": "-"
+   },
+   {
+    "key": "jungle",
+    "water": 0.32,
+    "mountains": 0.8,
+    "relief": 2.5,
+    "forest": 1.7,
+    "theme": "-"
+   },
+   {
+    "key": "lava",
+    "water": 0.0,
+    "mountains": 1.5,
+    "relief": 4.5,
+    "forest": 0.0,
+    "theme": "lava"
+   },
+   {
+    "key": "mars",
+    "water": 0.0,
+    "mountains": 1.2,
+    "relief": 4.2,
+    "forest": 0.0,
+    "theme": "mars"
+   },
+   {
+    "key": "megacity",
+    "water": 0.28,
+    "mountains": 0.55,
+    "relief": 1.0,
+    "forest": 0.3,
+    "theme": "-"
+   },
+   {
+    "key": "moon",
+    "water": 0.0,
+    "mountains": 1.1,
+    "relief": 3.5,
+    "forest": 0.0,
+    "theme": "moon"
+   },
+   {
+    "key": "pacific",
+    "water": 0.46,
+    "mountains": 1.3,
+    "relief": 6.0,
+    "forest": 0.5,
+    "theme": "-"
+   },
+   {
+    "key": "plains",
+    "water": 0.26,
+    "mountains": 0.42,
+    "relief": 1.5,
+    "forest": 0.5,
+    "theme": "-"
+   },
+   {
+    "key": "random",
+    "water": 0.3,
+    "mountains": 1.0,
+    "relief": 1.0,
+    "forest": 0.5,
+    "theme": "-"
+   },
+   {
+    "key": "rivers",
+    "water": 0.18,
+    "mountains": 1.05,
+    "relief": 4.5,
+    "forest": 0.6,
+    "theme": "-"
+   },
+   {
+    "key": "tundra",
+    "water": 0.3,
+    "mountains": 1.15,
+    "relief": 4.2,
+    "forest": 0.34,
+    "theme": "-"
+   },
+   {
+    "key": "valley",
+    "water": 0.3,
+    "mountains": 1.3,
+    "relief": 1.0,
+    "forest": 0.65,
+    "theme": "-"
+   },
+   {
+    "key": "vast",
+    "water": 0.32,
+    "mountains": 1.05,
+    "relief": 4.0,
+    "forest": 0.5,
+    "theme": "-"
+   },
+   {
+    "key": "volcanic",
+    "water": 0.24,
+    "mountains": 1.95,
+    "relief": 5.0,
+    "forest": 0.32,
+    "theme": "-"
+   }
+  ],
+  "tiles": [
+   {
+    "key": "alien",
+    "media": "media/world_alien.jpg",
+    "label": "ALIEN: TOXIC WORLD (4K)",
+    "facts": {
+     "size": 4096,
+     "relief": 870.0,
+     "props": 471,
+     "powerlines": 16
+    }
+   },
+   {
+    "key": "alps",
+    "media": "media/world_alps.jpg",
+    "label": "FLIGHT SIM: ALPINE (4K)",
+    "facts": {
+     "size": 4096,
+     "relief": 1647.2,
+     "props": 3313,
+     "trees": 2336,
+     "roads": 53,
+     "powerlines": 10
+    }
+   },
+   {
+    "key": "archipelago",
+    "media": "media/world_archipelago.jpg",
+    "label": "PROC: ARCHIPELAGO (4K)",
+    "facts": {
+     "size": 4096,
+     "relief": 371.8,
+     "props": 733,
+     "trees": 3413,
+     "bridges": 4,
+     "powerlines": 5
+    }
+   },
+   {
+    "key": "arctic",
+    "media": "media/world_arctic.jpg",
+    "label": "PROC: ARCTIC ICE (4K)",
+    "facts": {
+     "size": 4096,
+     "relief": 672.6,
+     "props": 2959,
+     "trees": 37,
+     "roads": 14,
+     "powerlines": 9
+    }
+   },
+   {
+    "key": "atoll",
+    "media": "media/world_atoll.jpg",
+    "label": "PROC: TROPICAL ATOLLS (4K)",
+    "facts": {
+     "size": 4096,
+     "relief": 182.8,
+     "props": 131,
+     "trees": 3496,
+     "bridges": 1,
+     "powerlines": 1
+    }
+   },
+   {
+    "key": "badlands",
+    "media": "media/world_badlands.jpg",
+    "label": "PROC: BADLANDS MESA (4K)",
+    "facts": {
+     "size": 4096,
+     "relief": 828.5,
+     "props": 3158,
+     "trees": 1792,
+     "roads": 86,
+     "bridges": 3,
+     "powerlines": 14
+    }
+   },
+   {
+    "key": "canyons",
+    "media": "media/world_canyons.jpg",
+    "label": "PROC: CANYONS (4K)",
+    "facts": {
+     "size": 4096,
+     "relief": 240.6,
+     "props": 2486,
+     "trees": 1905,
+     "roads": 44,
+     "bridges": 3,
+     "powerlines": 11
+    }
+   },
+   {
+    "key": "delta",
+    "media": "media/world_delta.jpg",
+    "label": "PROC: RIVER DELTA (4K)",
+    "facts": {
+     "size": 4096,
+     "relief": 342.9,
+     "props": 1658,
+     "trees": 2486,
+     "roads": 1,
+     "bridges": 3,
+     "powerlines": 6
+    }
+   },
+   {
+    "key": "dunes",
+    "media": "media/world_dunes.jpg",
+    "label": "PROC: DESERT DUNES (4K)",
+    "facts": {
+     "size": 4096,
+     "relief": 184.2,
+     "props": 1897,
+     "trees": 1711,
+     "roads": 58,
+     "bridges": 1,
+     "powerlines": 14
+    }
+   },
+   {
+    "key": "highlands",
+    "media": "media/world_highlands.jpg",
+    "label": "PROC: HIGHLAND VALLEYS (4K)",
+    "facts": {
+     "size": 4096,
+     "relief": 1164.0,
+     "props": 3077,
+     "trees": 4102,
+     "roads": 51,
+     "bridges": 4,
+     "powerlines": 9
+    }
+   },
+   {
+    "key": "huge",
+    "media": "media/world_huge.jpg",
+    "label": "FLIGHT SIM: HUGE CONTINENT (4K)",
+    "facts": {
+     "size": 4096,
+     "relief": 1196.1,
+     "props": 1103,
+     "trees": 4512,
+     "roads": 5,
+     "powerlines": 2
+    }
+   },
+   {
+    "key": "islands",
+    "media": "media/world_islands.jpg",
+    "label": "PROC: ISLANDS + CITY (4K)",
+    "facts": {
+     "size": 4096,
+     "relief": 200.7,
+     "props": 2411,
+     "trees": 3788,
+     "roads": 21,
+     "bridges": 3,
+     "powerlines": 3
+    }
+   },
+   {
+    "key": "jungle",
+    "media": "media/world_jungle.jpg",
+    "label": "PROC: JUNGLE (4K)",
+    "facts": {
+     "size": 4096,
+     "relief": 497.5,
+     "props": 2991,
+     "trees": 3071,
+     "roads": 37,
+     "bridges": 4,
+     "powerlines": 10
+    }
+   },
+   {
+    "key": "lava",
+    "media": "media/world_lava.jpg",
+    "label": "ALIEN: VOLCANIC HELL (4K)",
+    "facts": {
+     "size": 4096,
+     "relief": 1299.0,
+     "props": 438,
+     "powerlines": 16
+    }
+   },
+   {
+    "key": "mars",
+    "media": "media/world_mars.jpg",
+    "label": "ALIEN: MARS (4K)",
+    "facts": {
+     "size": 4096,
+     "relief": 1213.2,
+     "props": 420,
+     "powerlines": 16
+    }
+   },
+   {
+    "key": "megacity",
+    "media": "media/world_megacity.jpg",
+    "label": "PROC: MEGACITY (4K)",
+    "facts": {
+     "size": 4096,
+     "relief": 241.6,
+     "props": 4022,
+     "trees": 984,
+     "roads": 58,
+     "bridges": 3,
+     "powerlines": 11
+    }
+   },
+   {
+    "key": "moon",
+    "media": "media/world_moon.jpg",
+    "label": "ALIEN: THE MOON (4K)",
+    "facts": {
+     "size": 4096,
+     "relief": 1013.0,
+     "props": 444,
+     "powerlines": 16
+    }
+   },
+   {
+    "key": "pacific",
+    "media": "media/world_pacific.jpg",
+    "label": "FLIGHT SIM: PACIFIC ISLES (4K)",
+    "facts": {
+     "size": 4096,
+     "relief": 938.3,
+     "props": 1637,
+     "trees": 3569,
+     "bridges": 4,
+     "powerlines": 8
+    }
+   },
+   {
+    "key": "plains",
+    "media": "media/world_plains.jpg",
+    "label": "PROC: GREAT PLAINS (4K)",
+    "facts": {
+     "size": 4096,
+     "relief": 329.2,
+     "props": 2787,
+     "trees": 3531,
+     "roads": 25,
+     "bridges": 1,
+     "powerlines": 10
+    }
+   },
+   {
+    "key": "rivers",
+    "media": "media/world_rivers.jpg",
+    "label": "PROC: INLAND RIVERS (no ocean) (4K)",
+    "facts": {
+     "size": 4096,
+     "relief": 1055.3,
+     "props": 3571,
+     "trees": 4587,
+     "roads": 81,
+     "powerlines": 15
+    }
+   },
+   {
+    "key": "tundra",
+    "media": "media/world_tundra.jpg",
+    "label": "PROC: ARCTIC TUNDRA (4K)",
+    "facts": {
+     "size": 4096,
+     "relief": 852.8,
+     "props": 2676,
+     "trees": 1614,
+     "roads": 32,
+     "bridges": 2,
+     "powerlines": 9
+    }
+   },
+   {
+    "key": "valley",
+    "media": "media/world_valley.jpg",
+    "label": "PROC: RIVER VALLEY (4K)",
+    "facts": {
+     "size": 4096,
+     "relief": 211.8,
+     "props": 3111,
+     "trees": 3398,
+     "roads": 38,
+     "bridges": 4,
+     "powerlines": 11
+    }
+   },
+   {
+    "key": "vast",
+    "media": "media/world_vast.jpg",
+    "label": "PROC: VAST ISLANDS (4K)",
+    "facts": {
+     "size": 4096,
+     "relief": 789.8,
+     "props": 2666,
+     "trees": 2495,
+     "roads": 23,
+     "bridges": 1,
+     "powerlines": 7
+    }
+   },
+   {
+    "key": "volcanic",
+    "media": "media/world_volcanic.jpg",
+    "label": "PROC: VOLCANIC PEAKS (4K)",
+    "facts": {
+     "size": 4096,
+     "relief": 1010.1,
+     "props": 3429,
+     "trees": 1245,
+     "roads": 58,
+     "bridges": 3,
+     "powerlines": 11
+    }
+   }
+  ]
+ },
+ "biomes": [
+  {
+   "key": "alpine",
+   "palette": [
+    [
+     126,
+     126,
+     120
+    ],
+    [
+     116,
+     112,
+     106
+    ],
+    [
+     150,
+     152,
+     150
+    ]
+   ],
+   "climate": {
+    "temp": [
+     0.1,
+     0.44
+    ],
+    "moist": [
+     0.3,
+     0.9
+    ],
+    "elev": [
+     0.62,
+     0.88
+    ]
+   },
+   "grows": [
+    "spruce",
+    "pine",
+    "dead"
+   ]
+  },
+  {
+   "key": "arctic",
+   "palette": [
+    [
+     228,
+     234,
+     240
+    ],
+    [
+     168,
+     178,
+     190
+    ],
+    [
+     200,
+     214,
+     228
+    ]
+   ],
+   "climate": {
+    "temp": [
+     0.0,
+     0.16
+    ],
+    "moist": [
+     0.0,
+     1.0
+    ],
+    "elev": [
+     0.02,
+     0.8
+    ]
+   },
+   "grows": [
+    "dead"
+   ]
+  },
+  {
+   "key": "badlands",
+   "palette": [
+    [
+     158,
+     116,
+     88
+    ],
+    [
+     150,
+     112,
+     88
+    ],
+    [
+     132,
+     96,
+     74
+    ]
+   ],
+   "climate": {
+    "temp": [
+     0.48,
+     0.86
+    ],
+    "moist": [
+     0.0,
+     0.34
+    ],
+    "elev": [
+     0.3,
+     0.74
+    ]
+   },
+   "grows": [
+    "dead",
+    "shrub"
+   ]
+  },
+  {
+   "key": "boreal",
+   "palette": [
+    [
+     58,
+     82,
+     56
+    ],
+    [
+     104,
+     102,
+     96
+    ],
+    [
+     38,
+     64,
+     46
+    ]
+   ],
+   "climate": {
+    "temp": [
+     0.18,
+     0.42
+    ],
+    "moist": [
+     0.45,
+     1.0
+    ],
+    "elev": [
+     0.06,
+     0.66
+    ]
+   },
+   "grows": [
+    "spruce",
+    "pine",
+    "dead"
+   ]
+  },
+  {
+   "key": "coast",
+   "palette": [
+    [
+     208,
+     198,
+     156
+    ],
+    [
+     150,
+     140,
+     120
+    ],
+    [
+     190,
+     182,
+     148
+    ]
+   ],
+   "climate": {
+    "temp": [
+     0.3,
+     1.0
+    ],
+    "moist": [
+     0.3,
+     1.0
+    ],
+    "elev": [
+     0.0,
+     0.08
+    ]
+   },
+   "grows": [
+    "shrub",
+    "palm"
+   ]
+  },
+  {
+   "key": "desert",
+   "palette": [
+    [
+     216,
+     198,
+     150
+    ],
+    [
+     178,
+     148,
+     110
+    ],
+    [
+     200,
+     176,
+     128
+    ]
+   ],
+   "climate": {
+    "temp": [
+     0.66,
+     1.2
+    ],
+    "moist": [
+     0.0,
+     0.3
+    ],
+    "elev": [
+     0.02,
+     0.42
+    ]
+   },
+   "grows": [
+    "dead"
+   ]
+  },
+  {
+   "key": "grassland",
+   "palette": [
+    [
+     104,
+     132,
+     70
+    ],
+    [
+     120,
+     116,
+     104
+    ],
+    [
+     86,
+     118,
+     58
+    ]
+   ],
+   "climate": {
+    "temp": [
+     0.42,
+     0.7
+    ],
+    "moist": [
+     0.38,
+     0.6
+    ],
+    "elev": [
+     0.02,
+     0.4
+    ]
+   },
+   "grows": [
+    "shrub",
+    "round"
+   ]
+  },
+  {
+   "key": "hill_country",
+   "palette": [
+    [
+     86,
+     112,
+     64
+    ],
+    [
+     112,
+     108,
+     98
+    ],
+    [
+     64,
+     94,
+     54
+    ]
+   ],
+   "climate": {
+    "temp": [
+     0.34,
+     0.64
+    ],
+    "moist": [
+     0.42,
+     0.8
+    ],
+    "elev": [
+     0.34,
+     0.62
+    ]
+   },
+   "grows": [
+    "pine",
+    "round",
+    "birch",
+    "shrub"
+   ]
+  },
+  {
+   "key": "savanna",
+   "palette": [
+    [
+     150,
+     142,
+     84
+    ],
+    [
+     140,
+     120,
+     92
+    ],
+    [
+     120,
+     116,
+     62
+    ]
+   ],
+   "climate": {
+    "temp": [
+     0.6,
+     1.2
+    ],
+    "moist": [
+     0.34,
+     0.58
+    ],
+    "elev": [
+     0.02,
+     0.46
+    ]
+   },
+   "grows": [
+    "acacia",
+    "shrub",
+    "dead"
+   ]
+  },
+  {
+   "key": "steppe",
+   "palette": [
+    [
+     150,
+     140,
+     96
+    ],
+    [
+     128,
+     122,
+     108
+    ],
+    [
+     132,
+     126,
+     84
+    ]
+   ],
+   "climate": {
+    "temp": [
+     0.24,
+     0.52
+    ],
+    "moist": [
+     0.14,
+     0.4
+    ],
+    "elev": [
+     0.06,
+     0.52
+    ]
+   },
+   "grows": [
+    "shrub",
+    "dead"
+   ]
+  },
+  {
+   "key": "temperate_forest",
+   "palette": [
+    [
+     74,
+     118,
+     60
+    ],
+    [
+     108,
+     104,
+     96
+    ],
+    [
+     52,
+     96,
+     50
+    ]
+   ],
+   "climate": {
+    "temp": [
+     0.4,
+     0.66
+    ],
+    "moist": [
+     0.55,
+     1.0
+    ],
+    "elev": [
+     0.04,
+     0.52
+    ]
+   },
+   "grows": [
+    "round",
+    "birch",
+    "pine",
+    "shrub"
+   ]
+  },
+  {
+   "key": "tropical",
+   "palette": [
+    [
+     46,
+     104,
+     52
+    ],
+    [
+     96,
+     96,
+     84
+    ],
+    [
+     28,
+     78,
+     40
+    ]
+   ],
+   "climate": {
+    "temp": [
+     0.62,
+     1.2
+    ],
+    "moist": [
+     0.62,
+     1.0
+    ],
+    "elev": [
+     0.0,
+     0.4
+    ]
+   },
+   "grows": [
+    "jungle",
+    "bamboo",
+    "palm",
+    "round"
+   ]
+  },
+  {
+   "key": "tundra",
+   "palette": [
+    [
+     120,
+     130,
+     112
+    ],
+    [
+     126,
+     124,
+     118
+    ],
+    [
+     96,
+     112,
+     100
+    ]
+   ],
+   "climate": {
+    "temp": [
+     0.06,
+     0.28
+    ],
+    "moist": [
+     0.3,
+     0.8
+    ],
+    "elev": [
+     0.04,
+     0.58
+    ]
+   },
+   "grows": [
+    "dwarf birch",
+    "shrub",
+    "dead",
+    "spruce"
+   ]
+  },
+  {
+   "key": "wetland",
+   "palette": [
+    [
+     66,
+     100,
+     62
+    ],
+    [
+     88,
+     92,
+     80
+    ],
+    [
+     52,
+     86,
+     58
+    ]
+   ],
+   "climate": {
+    "temp": [
+     0.45,
+     0.85
+    ],
+    "moist": [
+     0.72,
+     1.0
+    ],
+    "elev": [
+     0.0,
+     0.2
+    ]
+   },
+   "grows": [
+    "cypress",
+    "shrub",
+    "round",
+    "dead"
+   ]
+  }
+ ],
+ "scenery": [
+  {
+   "group": "blocks",
+   "cards": [
+    {
+     "key": "prop_bld_apartment",
+     "name": "APARTMENT",
+     "desc": "Apartment block -- warm-toned, balconies, residential window grid.",
+     "media": "media/prop_bld_apartment.gif",
+     "tags": [
+      "115 hp",
+      "concrete",
+      "topples",
+      "5u hull",
+      "30u tall"
+     ]
+    },
+    {
+     "key": "prop_bld_brick",
+     "name": "BRICK",
+     "desc": "Brick low/mid-rise -- red-brown masonry, smaller windows.",
+     "media": "media/prop_bld_brick.gif",
+     "tags": [
+      "105 hp",
+      "concrete",
+      "topples",
+      "4u hull",
+      "20u tall"
+     ]
+    },
+    {
+     "key": "prop_bld_concrete",
+     "name": "CONCRETE",
+     "desc": "Concrete tower -- pale grey, heavy massing, big windows.",
+     "media": "media/prop_bld_concrete.gif",
+     "tags": [
+      "150 hp",
+      "concrete",
+      "topples",
+      "5u hull",
+      "37u tall"
+     ]
+    },
+    {
+     "key": "prop_bld_glass",
+     "name": "GLASS",
+     "desc": "Glass-curtain skyscraper -- reflective blue facade, lit windows.",
+     "media": "media/prop_bld_glass.gif",
+     "tags": [
+      "135 hp",
+      "concrete",
+      "topples",
+      "5u hull",
+      "88u tall"
+     ]
+    },
+    {
+     "key": "prop_bld_office",
+     "name": "OFFICE",
+     "desc": "Boxy mid-rise office block -- grey panel facade, regular windows.",
+     "media": "media/prop_bld_office.gif",
+     "tags": [
+      "128 hp",
+      "concrete",
+      "topples",
+      "6u hull",
+      "54u tall"
+     ]
+    },
+    {
+     "key": "prop_bld_retail",
+     "name": "RETAIL",
+     "desc": "Retail / shop block -- low, mixed colour storefronts.",
+     "media": "media/prop_bld_retail.gif",
+     "tags": [
+      "88 hp",
+      "metal",
+      "topples",
+      "9u hull",
+      "9u tall"
+     ]
+    },
+    {
+     "key": "prop_bld_tower",
+     "name": "TOWER",
+     "desc": "Slim tall skyscraper -- the TALLEST building style (a 'tower').",
+     "media": "media/prop_bld_tower.gif",
+     "tags": [
+      "160 hp",
+      "concrete",
+      "topples",
+      "5u hull",
+      "129u tall"
+     ]
+    },
+    {
+     "key": "prop_bld_warehouse",
+     "name": "WAREHOUSE",
+     "desc": "Wide low warehouse -- tan corrugated walls, roof gear.",
+     "media": "media/prop_bld_warehouse.gif",
+     "tags": [
+      "100 hp",
+      "metal",
+      "topples",
+      "8u hull",
+      "9u tall"
+     ]
+    }
+   ]
+  },
+  {
+   "group": "structures",
+   "cards": [
+    {
+     "key": "prop_adobe_house",
+     "name": "ADOBE HOUSE",
+     "desc": "Desert adobe house -- thick mud-brick walls, FLAT roof with a parapet and projecting vigas. Regional dwelling for desert/badlands/steppe.",
+     "media": "media/prop_adobe_house_sheet.png",
+     "tags": [
+      "104 hp",
+      "concrete",
+      "pancakes",
+      "5u hull",
+      "5u tall",
+      "4 rolls shown"
+     ]
+    },
+    {
+     "key": "prop_barn",
+     "name": "BARN",
+     "desc": "Farm barn -- pancakes/collapses when destroyed.",
+     "media": "media/prop_barn.gif",
+     "tags": [
+      "60 hp",
+      "wood",
+      "pancakes",
+      "6u hull",
+      "12u tall"
+     ]
+    },
+    {
+     "key": "prop_billboard",
+     "name": "BILLBOARD",
+     "desc": "Roadside billboard / sign.",
+     "media": "media/prop_billboard.gif",
+     "tags": [
+      "35 hp",
+      "wood",
+      "topples",
+      "6u hull",
+      "17u tall"
+     ]
+    },
+    {
+     "key": "prop_car",
+     "name": "CAR",
+     "desc": "Civilian saloon car -- low roofline, parked on village streets and farm tracks.",
+     "media": "media/prop_car_sheet.png",
+     "tags": [
+      "30 hp",
+      "metal",
+      "topples",
+      "2u hull",
+      "2u tall",
+      "4 rolls shown"
+     ]
+    },
+    {
+     "key": "prop_celltower",
+     "name": "CELLTOWER",
+     "desc": "Cell tower -- tall steel lattice mast w/ antennas. Topples when destroyed.",
+     "media": "media/prop_celltower.gif",
+     "tags": [
+      "95 hp",
+      "metal",
+      "topples",
+      "7u hull",
+      "40u tall"
+     ]
+    },
+    {
+     "key": "prop_chimney",
+     "name": "CHIMNEY",
+     "desc": "Industrial smokestack / chimney.",
+     "media": "media/prop_chimney.gif",
+     "tags": [
+      "70 hp",
+      "concrete",
+      "topples",
+      "3u hull",
+      "34u tall"
+     ]
+    },
+    {
+     "key": "prop_church",
+     "name": "CHURCH",
+     "desc": "Village church -- low nave + TALL square tower and tapering spire. The settlement landmark you navigate by; topples rather than pancakes.",
+     "media": "media/prop_church.gif",
+     "tags": [
+      "130 hp",
+      "concrete",
+      "topples",
+      "5u hull",
+      "28u tall"
+     ]
+    },
+    {
+     "key": "prop_commtower",
+     "name": "COMMTOWER",
+     "desc": "Comms / radio mast -- guyed lattice mast, red beacon.",
+     "media": "media/prop_commtower.gif",
+     "tags": [
+      "55 hp",
+      "metal",
+      "topples",
+      "4u hull",
+      "42u tall"
+     ]
+    },
+    {
+     "key": "prop_cooling_tower",
+     "name": "COOLING TOWER",
+     "desc": "Power-station cooling tower -- hyperboloid concrete shell (narrow waist, flared lip) on a ring of raked inlet columns. The toughest scatter structure; PANCAKES straight down on its own footprint.",
+     "media": "media/prop_cooling_tower.gif",
+     "tags": [
+      "260 hp",
+      "concrete",
+      "pancakes",
+      "17u hull",
+      "26u tall"
+     ]
+    },
+    {
+     "key": "prop_cottage",
+     "name": "COTTAGE",
+     "desc": "Small single-storey rural cottage -- same roof idiom as the farmhouse. Collapses.",
+     "media": "media/prop_cottage_sheet.png",
+     "tags": [
+      "74 hp",
+      "wood",
+      "pancakes",
+      "4u hull",
+      "8u tall",
+      "4 rolls shown"
+     ]
+    },
+    {
+     "key": "prop_crane",
+     "name": "CRANE",
+     "desc": "Construction tower crane -- mast + jib.",
+     "media": "media/prop_crane.gif",
+     "tags": [
+      "55 hp",
+      "metal",
+      "topples",
+      "3u hull",
+      "33u tall"
+     ]
+    },
+    {
+     "key": "prop_crop_rows",
+     "name": "CROP ROWS",
+     "desc": "Standing cereal crop in furrowed rows -- planted ground, not a green rectangle.",
+     "media": "media/prop_crop_rows_sheet.png",
+     "tags": [
+      "11 hp",
+      "organic",
+      "shreds",
+      "1u tall",
+      "4 rolls shown"
+     ]
+    },
+    {
+     "key": "prop_derrick",
+     "name": "DERRICK",
+     "desc": "Oil derrick -- lattice drilling tower.",
+     "media": "media/prop_derrick.gif",
+     "tags": [
+      "60 hp",
+      "metal",
+      "topples",
+      "5u hull",
+      "29u tall"
+     ]
+    },
+    {
+     "key": "prop_factory",
+     "name": "FACTORY",
+     "desc": "Factory hall with a SAWTOOTH north-light roof (the row of angled glazed teeth), brick chimney, loading bays. Pancakes.",
+     "media": "media/prop_factory.gif",
+     "tags": [
+      "185 hp",
+      "concrete",
+      "pancakes",
+      "21u hull",
+      "29u tall"
+     ]
+    },
+    {
+     "key": "prop_farmhouse",
+     "name": "FARMHOUSE",
+     "desc": "Two-storey farmhouse -- clapboard walls, pitched roof, porch, chimney, lit windows. Collapses.",
+     "media": "media/prop_farmhouse_sheet.png",
+     "tags": [
+      "92 hp",
+      "wood",
+      "pancakes",
+      "5u hull",
+      "12u tall",
+      "4 rolls shown"
+     ]
+    },
+    {
+     "key": "prop_field_gate",
+     "name": "FIELD GATE",
+     "desc": "Five-bar field gate -- sits in a gap in a hedgerow run.",
+     "media": "media/prop_field_gate.gif",
+     "tags": [
+      "11 hp",
+      "wood",
+      "shreds",
+      "4u tall"
+     ]
+    },
+    {
+     "key": "prop_fueltank",
+     "name": "FUELTANK",
+     "desc": "Fuel storage tank -- explodes in a fireball when destroyed.",
+     "media": "media/prop_fueltank.gif",
+     "tags": [
+      "55 hp",
+      "metal",
+      "pancakes",
+      "6u hull",
+      "12u tall"
+     ]
+    },
+    {
+     "key": "prop_gas_holder",
+     "name": "GAS HOLDER",
+     "desc": "Gas holder -- banded cylindrical gasometer.",
+     "media": "media/prop_gas_holder.gif",
+     "tags": [
+      "18 hp",
+      "metal",
+      "shreds",
+      "8u tall"
+     ]
+    },
+    {
+     "key": "prop_general_store",
+     "name": "GENERAL STORE",
+     "desc": "Village general store -- false front, projecting awning on posts, signboard, boardwalk.",
+     "media": "media/prop_general_store_sheet.png",
+     "tags": [
+      "82 hp",
+      "wood",
+      "pancakes",
+      "5u hull",
+      "6u tall",
+      "4 rolls shown"
+     ]
+    },
+    {
+     "key": "prop_grain_elevator",
+     "name": "GRAIN ELEVATOR",
+     "desc": "Grain elevator -- a bank of four concrete silos with a headhouse across the top and a conveyor gallery. Taller than wide, so it TOPPLES.",
+     "media": "media/prop_grain_elevator.gif",
+     "tags": [
+      "190 hp",
+      "concrete",
+      "topples",
+      "16u hull",
+      "23u tall"
+     ]
+    },
+    {
+     "key": "prop_hangar",
+     "name": "HANGAR",
+     "desc": "Aircraft hangar -- barrel-vaulted ribbed shell on straight side walls, full-width sliding doors. WIDE -> pancakes.",
+     "media": "media/prop_hangar.gif",
+     "tags": [
+      "150 hp",
+      "metal",
+      "pancakes",
+      "24u hull",
+      "31u tall"
+     ]
+    },
+    {
+     "key": "prop_hedgerow",
+     "name": "HEDGEROW",
+     "desc": "Hedgerow section -- field boundary. Placed in RUNS along a bearing; what turns open green into a legible patchwork from the air.",
+     "media": "media/prop_hedgerow_sheet.png",
+     "tags": [
+      "11 hp",
+      "organic",
+      "shreds",
+      "3u tall",
+      "4 rolls shown"
+     ]
+    },
+    {
+     "key": "prop_lighthouse",
+     "name": "LIGHTHOUSE",
+     "desc": "Coastal lighthouse -- banded tapering tower, gallery rail, glazed lantern room, keeper's building at the base. Slim + tall -> topples.",
+     "media": "media/prop_lighthouse.gif",
+     "tags": [
+      "140 hp",
+      "concrete",
+      "topples",
+      "5u hull",
+      "39u tall"
+     ]
+    },
+    {
+     "key": "prop_log_cabin",
+     "name": "LOG CABIN",
+     "desc": "Boreal log cabin -- stacked log courses, steep snow-shedding roof, stone chimney. Regional dwelling for boreal/tundra/alpine/arctic.",
+     "media": "media/prop_log_cabin_sheet.png",
+     "tags": [
+      "84 hp",
+      "wood",
+      "pancakes",
+      "4u hull",
+      "9u tall",
+      "4 rolls shown"
+     ]
+    },
+    {
+     "key": "prop_monument",
+     "name": "MONUMENT",
+     "desc": "Stone monument / obelisk.",
+     "media": "media/prop_monument.gif",
+     "tags": [
+      "95 hp",
+      "concrete",
+      "topples",
+      "4u hull",
+      "23u tall"
+     ]
+    },
+    {
+     "key": "prop_orchard_tree",
+     "name": "ORCHARD TREE",
+     "desc": "Pruned fruit tree -- uniform round crown. Placed in rows: uniformity is what reads as PLANTED vs wild forest.",
+     "media": "media/prop_orchard_tree_sheet.png",
+     "tags": [
+      "11 hp",
+      "organic",
+      "shreds",
+      "5u tall",
+      "4 rolls shown"
+     ]
+    },
+    {
+     "key": "prop_parking_garage",
+     "name": "PARKING GARAGE",
+     "desc": "Multi-storey parking garage -- open decks on columns, spandrel bands, corner ramp, stair core. Mostly void, which is what makes it read. Pancakes.",
+     "media": "media/prop_parking_garage.gif",
+     "tags": [
+      "210 hp",
+      "concrete",
+      "pancakes",
+      "18u hull",
+      "28u tall"
+     ]
+    },
+    {
+     "key": "prop_pickup",
+     "name": "PICKUP",
+     "desc": "Farm pickup truck -- cab forward, open bed behind.",
+     "media": "media/prop_pickup_sheet.png",
+     "tags": [
+      "34 hp",
+      "metal",
+      "topples",
+      "2u hull",
+      "3u tall",
+      "4 rolls shown"
+     ]
+    },
+    {
+     "key": "prop_pylon",
+     "name": "PYLON",
+     "desc": "Power pylon -- steel transmission tower (strings power-lines).",
+     "media": "media/prop_pylon.gif",
+     "tags": [
+      "45 hp",
+      "metal",
+      "topples",
+      "5u hull",
+      "26u tall"
+     ]
+    },
+    {
+     "key": "prop_radar",
+     "name": "RADAR",
+     "desc": "Radar dish on a base.",
+     "media": "media/prop_radar.gif",
+     "tags": [
+      "50 hp",
+      "metal",
+      "topples",
+      "4u hull",
+      "13u tall"
+     ]
+    },
+    {
+     "key": "prop_radiotelescope",
+     "name": "RADIOTELESCOPE",
+     "desc": "Giant radio-telescope dish on a fork mount with a feed boom -- science landmark.",
+     "media": "media/prop_radiotelescope.gif",
+     "tags": [
+      "90 hp",
+      "metal",
+      "topples",
+      "8u hull",
+      "26u tall"
+     ]
+    },
+    {
+     "key": "prop_rubble",
+     "name": "RUBBLE",
+     "desc": "Generic wreck/rubble pile (what a destroyed structure settles into).",
+     "media": "media/prop_rubble.gif",
+     "tags": [
+      "scenery",
+      "3u tall"
+     ]
+    },
+    {
+     "key": "prop_shed",
+     "name": "SHED",
+     "desc": "Small outbuilding / tractor shelter -- mono-pitch roof (reads distinct from the peaked dwellings).",
+     "media": "media/prop_shed_sheet.png",
+     "tags": [
+      "44 hp",
+      "wood",
+      "pancakes",
+      "3u hull",
+      "4u tall",
+      "4 rolls shown"
+     ]
+    },
+    {
+     "key": "prop_shop",
+     "name": "SHOP",
+     "desc": "Small corner shop building.",
+     "media": "media/prop_shop.gif",
+     "tags": [
+      "48 hp",
+      "wood",
+      "pancakes",
+      "4u hull",
+      "6u tall"
+     ]
+    },
+    {
+     "key": "prop_silos",
+     "name": "SILOS",
+     "desc": "Grain silos -- clustered cylindrical tanks.",
+     "media": "media/prop_silos.gif",
+     "tags": [
+      "80 hp",
+      "concrete",
+      "topples",
+      "7u hull",
+      "20u tall"
+     ]
+    },
+    {
+     "key": "prop_stilt_hut",
+     "name": "STILT HUT",
+     "desc": "Wetland stilt hut -- thatched box lifted clear of the water on posts, with a ladder. Regional dwelling for wetland/coast/tropical.",
+     "media": "media/prop_stilt_hut_sheet.png",
+     "tags": [
+      "52 hp",
+      "wood",
+      "pancakes",
+      "4u hull",
+      "12u tall",
+      "4 rolls shown"
+     ]
+    },
+    {
+     "key": "prop_tractor",
+     "name": "TRACTOR",
+     "desc": "Farm tractor -- big rear wheels, boxy cab, exhaust stack. Metal debris when destroyed.",
+     "media": "media/prop_tractor_sheet.png",
+     "tags": [
+      "40 hp",
+      "metal",
+      "topples",
+      "2u hull",
+      "5u tall",
+      "4 rolls shown"
+     ]
+    },
+    {
+     "key": "prop_water_well",
+     "name": "WATER WELL",
+     "desc": "Stone water well w/ roof.",
+     "media": "media/prop_water_well.gif",
+     "tags": [
+      "14 hp",
+      "wood",
+      "shreds",
+      "9u tall"
+     ]
+    },
+    {
+     "key": "prop_watermill",
+     "name": "WATERMILL",
+     "desc": "Watermill -- stone mill house with a big undershot wheel on its flank. Belongs on a river bank.",
+     "media": "media/prop_watermill.gif",
+     "tags": [
+      "96 hp",
+      "concrete",
+      "pancakes",
+      "4u hull",
+      "9u tall"
+     ]
+    },
+    {
+     "key": "prop_watertower",
+     "name": "WATERTOWER",
+     "desc": "Water tower -- tank on legs.",
+     "media": "media/prop_watertower.gif",
+     "tags": [
+      "70 hp",
+      "metal",
+      "topples",
+      "6u hull",
+      "21u tall"
+     ]
+    },
+    {
+     "key": "prop_windmill",
+     "name": "WINDMILL",
+     "desc": "Old farm windmill -- wooden tower + spinning sail blades.",
+     "media": "media/prop_windmill.gif",
+     "tags": [
+      "70 hp",
+      "wood",
+      "topples",
+      "7u hull",
+      "32u tall"
+     ]
+    },
+    {
+     "key": "prop_windturbine",
+     "name": "WINDTURBINE",
+     "desc": "Modern wind turbine -- white tower + 3-blade rotor.",
+     "media": "media/prop_windturbine.gif",
+     "tags": [
+      "60 hp",
+      "metal",
+      "topples",
+      "4u hull",
+      "40u tall"
+     ]
+    }
+   ]
+  },
+  {
+   "group": "street",
+   "cards": [
+    {
+     "key": "prop_apartment_walkup",
+     "name": "APARTMENT WALKUP",
+     "desc": "Three-storey walk-up -- brick, stacked balconies down the front, an entrance stair.",
+     "media": "media/prop_apartment_walkup_sheet.png",
+     "tags": [
+      "118 hp",
+      "concrete",
+      "pancakes",
+      "5u hull",
+      "12u tall",
+      "4 rolls shown"
+     ]
+    },
+    {
+     "key": "prop_bollard_row",
+     "name": "BOLLARD ROW",
+     "desc": "Bollard row -- five short steel bollards with orange reflective caps, linked by a chain.",
+     "media": "media/prop_bollard_row.png",
+     "tags": [
+      "18 hp",
+      "metal",
+      "shreds",
+      "2u tall"
+     ]
+    },
+    {
+     "key": "prop_boulder",
+     "name": "BOULDER",
+     "desc": "Boulder -- becomes a rolling rock when a blast dislodges it.",
+     "media": "media/prop_boulder.png",
+     "tags": [
+      "rolls when hit",
+      "topples",
+      "4u tall"
+     ]
+    },
+    {
+     "key": "prop_boulder2",
+     "name": "BOULDER2",
+     "desc": "Boulder, shape 2 of 5 -- a different procedural rock; rolls when a blast dislodges it.",
+     "media": "media/prop_boulder2.png",
+     "tags": [
+      "rolls when hit",
+      "topples",
+      "5u tall"
+     ]
+    },
+    {
+     "key": "prop_boulder3",
+     "name": "BOULDER3",
+     "desc": "Boulder, shape 3 of 5 -- a different procedural rock; rolls when a blast dislodges it.",
+     "media": "media/prop_boulder3.png",
+     "tags": [
+      "rolls when hit",
+      "topples",
+      "5u tall"
+     ]
+    },
+    {
+     "key": "prop_boulder4",
+     "name": "BOULDER4",
+     "desc": "Boulder, shape 4 of 5 -- a different procedural rock; rolls when a blast dislodges it.",
+     "media": "media/prop_boulder4.png",
+     "tags": [
+      "rolls when hit",
+      "topples",
+      "5u tall"
+     ]
+    },
+    {
+     "key": "prop_boulder5",
+     "name": "BOULDER5",
+     "desc": "Boulder, shape 5 of 5 -- a different procedural rock; rolls when a blast dislodges it.",
+     "media": "media/prop_boulder5.png",
+     "tags": [
+      "rolls when hit",
+      "topples",
+      "3u tall"
+     ]
+    },
+    {
+     "key": "prop_box_truck",
+     "name": "BOX TRUCK",
+     "desc": "Box truck -- rigid delivery lorry, cab and box body on one six-wheel frame.",
+     "media": "media/prop_box_truck_sheet.png",
+     "tags": [
+      "46 hp",
+      "metal",
+      "shreds",
+      "2u hull",
+      "4u tall",
+      "4 rolls shown"
+     ]
+    },
+    {
+     "key": "prop_bus",
+     "name": "BUS",
+     "desc": "Single-deck bus -- long, flat-sided, brightly painted so it shows from the air.",
+     "media": "media/prop_bus_sheet.png",
+     "tags": [
+      "54 hp",
+      "metal",
+      "shreds",
+      "2u hull",
+      "4u tall",
+      "4 rolls shown"
+     ]
+    },
+    {
+     "key": "prop_bus_stop",
+     "name": "BUS STOP",
+     "desc": "Bus stop -- glass shelter with a bench and a pole flying a blue bus-stop flag. Topples.",
+     "media": "media/prop_bus_stop.png",
+     "tags": [
+      "14 hp",
+      "wood",
+      "shreds",
+      "6u tall"
+     ]
+    },
+    {
+     "key": "prop_cactus",
+     "name": "CACTUS",
+     "desc": "Saguaro cactus -- fluted column with two raised arms.",
+     "media": "media/prop_cactus.png",
+     "tags": [
+      "12 hp",
+      "organic",
+      "topples",
+      "2u hull",
+      "8u tall"
+     ]
+    },
+    {
+     "key": "prop_combine",
+     "name": "COMBINE",
+     "desc": "Combine harvester -- tall glass cab, grain tank, side unloading auger, wide cutting header.",
+     "media": "media/prop_combine_sheet.png",
+     "tags": [
+      "44 hp",
+      "metal",
+      "shreds",
+      "3u hull",
+      "6u tall",
+      "4 rolls shown"
+     ]
+    },
+    {
+     "key": "prop_crash_barrier",
+     "name": "CRASH BARRIER",
+     "desc": "Crash barrier -- a run of steel Armco along a highway shoulder.",
+     "media": "media/prop_crash_barrier.png",
+     "tags": [
+      "15 hp",
+      "metal",
+      "shreds",
+      "1u tall"
+     ]
+    },
+    {
+     "key": "prop_diner",
+     "name": "DINER",
+     "desc": "Roadside diner -- long low glazed box, barrel roof, stripe down the flank, sign on a pole.",
+     "media": "media/prop_diner_sheet.png",
+     "tags": [
+      "70 hp",
+      "metal",
+      "pancakes",
+      "6u hull",
+      "8u tall",
+      "4 rolls shown"
+     ]
+    },
+    {
+     "key": "prop_dock_piling",
+     "name": "DOCK PILING",
+     "desc": "Dock pilings -- three or four weathered timber posts tied with cross-beams. Topples.",
+     "media": "media/prop_dock_piling.png",
+     "tags": [
+      "14 hp",
+      "wood",
+      "shreds",
+      "8u tall"
+     ]
+    },
+    {
+     "key": "prop_driftwood",
+     "name": "DRIFTWOOD",
+     "desc": "Driftwood -- sun-greyed log on the sand with a snapped root fork.",
+     "media": "media/prop_driftwood_sheet.png",
+     "tags": [
+      "14 hp",
+      "wood",
+      "shreds",
+      "2u tall",
+      "4 rolls shown"
+     ]
+    },
+    {
+     "key": "prop_dump_truck",
+     "name": "DUMP TRUCK",
+     "desc": "Dump truck -- construction tipper with its skip raised.",
+     "media": "media/prop_dump_truck_sheet.png",
+     "tags": [
+      "50 hp",
+      "metal",
+      "shreds",
+      "2u hull",
+      "4u tall",
+      "4 rolls shown"
+     ]
+    },
+    {
+     "key": "prop_dumpster",
+     "name": "DUMPSTER",
+     "desc": "Dumpster -- green steel waste bin with sloped sides, two lids and casters.",
+     "media": "media/prop_dumpster.png",
+     "tags": [
+      "18 hp",
+      "metal",
+      "shreds",
+      "3u tall"
+     ]
+    },
+    {
+     "key": "prop_fence_run",
+     "name": "FENCE RUN",
+     "desc": "Fence run -- timber posts joined by two rails.",
+     "media": "media/prop_fence_run.png",
+     "tags": [
+      "14 hp",
+      "wood",
+      "shreds",
+      "4u tall"
+     ]
+    },
+    {
+     "key": "prop_fire_hydrant",
+     "name": "FIRE HYDRANT",
+     "desc": "Fire hydrant -- squat red barrel with a domed cap and two side outlets.",
+     "media": "media/prop_fire_hydrant.png",
+     "tags": [
+      "18 hp",
+      "metal",
+      "shreds",
+      "5u tall"
+     ]
+    },
+    {
+     "key": "prop_fire_station",
+     "name": "FIRE STATION",
+     "desc": "Fire station -- two tall appliance bays with roller doors, a crew wing and a hose-drying tower.",
+     "media": "media/prop_fire_station_sheet.png",
+     "tags": [
+      "126 hp",
+      "concrete",
+      "pancakes",
+      "7u hull",
+      "13u tall",
+      "4 rolls shown"
+     ]
+    },
+    {
+     "key": "prop_freight_car",
+     "name": "FREIGHT CAR",
+     "desc": "Freight wagon -- covered boxcar, repeated down a train.",
+     "media": "media/prop_freight_car_sheet.png",
+     "tags": [
+      "48 hp",
+      "metal",
+      "shreds",
+      "3u hull",
+      "5u tall",
+      "4 rolls shown"
+     ]
+    },
+    {
+     "key": "prop_frozen_snag",
+     "name": "FROZEN SNAG",
+     "desc": "Frozen snag -- dead wind-stripped trunk glazed with rime ice.",
+     "media": "media/prop_frozen_snag_sheet.png",
+     "tags": [
+      "26 hp",
+      "wood",
+      "topples",
+      "1u hull",
+      "8u tall",
+      "4 rolls shown"
+     ]
+    },
+    {
+     "key": "prop_gas_station",
+     "name": "GAS STATION",
+     "desc": "Fuel station -- flat canopy on four columns over the pumps, glazed kiosk beside.",
+     "media": "media/prop_gas_station_sheet.png",
+     "tags": [
+      "64 hp",
+      "metal",
+      "pancakes",
+      "8u hull",
+      "8u tall",
+      "4 rolls shown"
+     ]
+    },
+    {
+     "key": "prop_genset",
+     "name": "GENSET",
+     "desc": "Diesel generator -- boxy enclosure on a skid with a radiator end, exhaust stack and panel.",
+     "media": "media/prop_genset.png",
+     "tags": [
+      "18 hp",
+      "metal",
+      "shreds",
+      "8u tall"
+     ]
+    },
+    {
+     "key": "prop_grain_cart",
+     "name": "GRAIN CART",
+     "desc": "Grain cart -- slatted wooden wagon heaped with grain, two iron-rimmed wheels.",
+     "media": "media/prop_grain_cart.png",
+     "tags": [
+      "14 hp",
+      "wood",
+      "shreds",
+      "4u tall"
+     ]
+    },
+    {
+     "key": "prop_hatchback",
+     "name": "HATCHBACK",
+     "desc": "Hatchback -- small car, shorter than the saloon, roof carried right back to the tail.",
+     "media": "media/prop_hatchback_sheet.png",
+     "tags": [
+      "26 hp",
+      "metal",
+      "shreds",
+      "2u hull",
+      "2u tall",
+      "4 rolls shown"
+     ]
+    },
+    {
+     "key": "prop_hay_wagon",
+     "name": "HAY WAGON",
+     "desc": "Hay wagon -- four-wheel flatbed piled high with bales.",
+     "media": "media/prop_hay_wagon.png",
+     "tags": [
+      "14 hp",
+      "wood",
+      "shreds",
+      "5u tall"
+     ]
+    },
+    {
+     "key": "prop_hopper",
+     "name": "HOPPER",
+     "desc": "Material hopper -- inverted-cone bin on four splayed legs with a chute. Topples.",
+     "media": "media/prop_hopper.png",
+     "tags": [
+      "18 hp",
+      "metal",
+      "shreds",
+      "13u tall"
+     ]
+    },
+    {
+     "key": "prop_ice_floe",
+     "name": "ICE FLOE",
+     "desc": "Ice floe -- flat pale pan of sea ice, bevelled rim + meltwater cracks.",
+     "media": "media/prop_ice_floe_sheet.png",
+     "tags": [
+      "22 hp",
+      "ice",
+      "shreds",
+      "1u tall",
+      "4 rolls shown"
+     ]
+    },
+    {
+     "key": "prop_lamppost",
+     "name": "LAMPPOST",
+     "desc": "Street lamp -- slim tapered pole, curved arm, warm glowing lamp head. Topples.",
+     "media": "media/prop_lamppost.png",
+     "tags": [
+      "12 hp",
+      "metal",
+      "topples",
+      "1u hull",
+      "11u tall"
+     ]
+    },
+    {
+     "key": "prop_locomotive",
+     "name": "LOCOMOTIVE",
+     "desc": "Diesel locomotive -- long, heavy and cab-ended; heads a freight train.",
+     "media": "media/prop_locomotive_sheet.png",
+     "tags": [
+      "88 hp",
+      "metal",
+      "shreds",
+      "3u hull",
+      "6u tall",
+      "4 rolls shown"
+     ]
+    },
+    {
+     "key": "prop_mooring_buoy",
+     "name": "MOORING BUOY",
+     "desc": "Mooring buoy -- round red float with a white band and a mooring ring, resting ashore.",
+     "media": "media/prop_mooring_buoy.png",
+     "tags": [
+      "18 hp",
+      "metal",
+      "shreds",
+      "8u tall"
+     ]
+    },
+    {
+     "key": "prop_motel",
+     "name": "MOTEL",
+     "desc": "Motel -- one storey, a long line of identical rooms behind a walkway, office at one end.",
+     "media": "media/prop_motel_sheet.png",
+     "tags": [
+      "96 hp",
+      "concrete",
+      "pancakes",
+      "11u hull",
+      "9u tall",
+      "4 rolls shown"
+     ]
+    },
+    {
+     "key": "prop_news_box",
+     "name": "NEWS BOX",
+     "desc": "News box -- coin-op newspaper box on stubby legs with a sloped window.",
+     "media": "media/prop_news_box.png",
+     "tags": [
+      "14 hp",
+      "wood",
+      "shreds",
+      "4u tall"
+     ]
+    },
+    {
+     "key": "prop_park_bench",
+     "name": "PARK BENCH",
+     "desc": "Park bench -- slatted wooden seat and back on cast-iron end frames.",
+     "media": "media/prop_park_bench.png",
+     "tags": [
+      "14 hp",
+      "wood",
+      "shreds",
+      "2u tall"
+     ]
+    },
+    {
+     "key": "prop_phone_booth",
+     "name": "PHONE BOOTH",
+     "desc": "Phone booth -- tall red-framed glass box with a peaked cap. Topples.",
+     "media": "media/prop_phone_booth.png",
+     "tags": [
+      "14 hp",
+      "wood",
+      "shreds",
+      "9u tall"
+     ]
+    },
+    {
+     "key": "prop_pipe_rack",
+     "name": "PIPE RACK",
+     "desc": "Pipe rack -- two steel A-frames carrying a bundle of insulated process pipes.",
+     "media": "media/prop_pipe_rack.png",
+     "tags": [
+      "18 hp",
+      "metal",
+      "shreds",
+      "7u tall"
+     ]
+    },
+    {
+     "key": "prop_pressure_ridge",
+     "name": "PRESSURE RIDGE",
+     "desc": "Pressure ridge -- broken wall of ice thrown up where floes collide.",
+     "media": "media/prop_pressure_ridge_sheet.png",
+     "tags": [
+      "22 hp",
+      "ice",
+      "shreds",
+      "5u tall",
+      "4 rolls shown"
+     ]
+    },
+    {
+     "key": "prop_rail_signal",
+     "name": "RAIL SIGNAL",
+     "desc": "Rail signal -- tall thin colour-light signal beside the track.",
+     "media": "media/prop_rail_signal.png",
+     "tags": [
+      "18 hp",
+      "metal",
+      "shreds",
+      "1u hull",
+      "9u tall"
+     ]
+    },
+    {
+     "key": "prop_rail_track",
+     "name": "RAIL TRACK",
+     "desc": "Rail track section -- sleepers and twin rails on ballast. Cut it to break a supply line.",
+     "media": "media/prop_rail_track.png",
+     "tags": [
+      "22 hp",
+      "metal",
+      "shreds",
+      "2u hull",
+      "1u tall"
+     ]
+    },
+    {
+     "key": "prop_research_hut",
+     "name": "RESEARCH HUT",
+     "desc": "Polar research hut -- red prefab on stilts, met mast + fuel drum.",
+     "media": "media/prop_research_hut.png",
+     "tags": [
+      "62 hp",
+      "wood",
+      "pancakes",
+      "5u hull",
+      "8u tall"
+     ]
+    },
+    {
+     "key": "prop_road_sign",
+     "name": "ROAD SIGN",
+     "desc": "Road sign -- roadside direction sign on posts.",
+     "media": "media/prop_road_sign_sheet.png",
+     "tags": [
+      "13 hp",
+      "metal",
+      "shreds",
+      "1u hull",
+      "7u tall",
+      "4 rolls shown"
+     ]
+    },
+    {
+     "key": "prop_rock_cluster",
+     "name": "ROCK CLUSTER",
+     "desc": "Rock cluster -- low pile of rounded field stones, moss in the gaps, loose pebbles.",
+     "media": "media/prop_rock_cluster_sheet.png",
+     "tags": [
+      "16 hp",
+      "concrete",
+      "shreds",
+      "1u tall",
+      "4 rolls shown"
+     ]
+    },
+    {
+     "key": "prop_semi_truck",
+     "name": "SEMI TRUCK",
+     "desc": "Semi truck -- eighteen-wheeler: tractor unit and a long box trailer.",
+     "media": "media/prop_semi_truck_sheet.png",
+     "tags": [
+      "62 hp",
+      "metal",
+      "shreds",
+      "3u hull",
+      "4u tall",
+      "4 rolls shown"
+     ]
+    },
+    {
+     "key": "prop_snow_drift",
+     "name": "SNOW DRIFT",
+     "desc": "Snow drift (sastruga) -- wind-carved crescent, scoured face + soft lee.",
+     "media": "media/prop_snow_drift_sheet.png",
+     "tags": [
+      "6 hp",
+      "snow",
+      "shreds",
+      "2u tall",
+      "4 rolls shown"
+     ]
+    },
+    {
+     "key": "prop_spool_rack",
+     "name": "SPOOL RACK",
+     "desc": "Cable spool rack -- low steel frame holding three big wooden cable drums.",
+     "media": "media/prop_spool_rack.png",
+     "tags": [
+      "18 hp",
+      "metal",
+      "shreds",
+      "4u tall"
+     ]
+    },
+    {
+     "key": "prop_street_planter",
+     "name": "STREET PLANTER",
+     "desc": "Street planter -- stone-rimmed raised bed with a small leafy shrub.",
+     "media": "media/prop_street_planter.png",
+     "tags": [
+      "18 hp",
+      "metal",
+      "shreds",
+      "3u tall"
+     ]
+    },
+    {
+     "key": "prop_tank_car",
+     "name": "TANK CAR",
+     "desc": "Rail tank wagon -- a round barrel on a frame.",
+     "media": "media/prop_tank_car.png",
+     "tags": [
+      "44 hp",
+      "metal",
+      "shreds",
+      "3u hull",
+      "5u tall"
+     ]
+    },
+    {
+     "key": "prop_tanker_truck",
+     "name": "TANKER TRUCK",
+     "desc": "Fuel tanker truck -- semi running gear under a cylindrical tank.",
+     "media": "media/prop_tanker_truck_sheet.png",
+     "tags": [
+      "52 hp",
+      "metal",
+      "shreds",
+      "3u hull",
+      "4u tall",
+      "4 rolls shown"
+     ]
+    },
+    {
+     "key": "prop_trafficlight",
+     "name": "TRAFFICLIGHT",
+     "desc": "Traffic signal -- pole and mast arm with a red/amber/green head. Topples.",
+     "media": "media/prop_trafficlight.png",
+     "tags": [
+      "14 hp",
+      "metal",
+      "topples",
+      "1u hull",
+      "7u tall"
+     ]
+    },
+    {
+     "key": "prop_transformer",
+     "name": "TRANSFORMER",
+     "desc": "Transformer -- oil-filled case with cooling fins and three ceramic bushings, on a pad.",
+     "media": "media/prop_transformer.png",
+     "tags": [
+      "18 hp",
+      "metal",
+      "shreds",
+      "9u tall"
+     ]
+    },
+    {
+     "key": "prop_valve_cluster",
+     "name": "VALVE CLUSTER",
+     "desc": "Valve cluster -- header pipe with three risers, each topped by a red hand-wheel.",
+     "media": "media/prop_valve_cluster.png",
+     "tags": [
+      "18 hp",
+      "metal",
+      "shreds",
+      "5u tall"
+     ]
+    },
+    {
+     "key": "prop_van",
+     "name": "VAN",
+     "desc": "Panel van -- courier's box on a car chassis.",
+     "media": "media/prop_van_sheet.png",
+     "tags": [
+      "34 hp",
+      "metal",
+      "shreds",
+      "2u hull",
+      "3u tall",
+      "4 rolls shown"
+     ]
+    },
+    {
+     "key": "prop_water_trough",
+     "name": "WATER TROUGH",
+     "desc": "Water trough -- long low plank tank of still water on stub legs.",
+     "media": "media/prop_water_trough.png",
+     "tags": [
+      "14 hp",
+      "wood",
+      "shreds",
+      "3u tall"
+     ]
+    }
+   ]
+  },
+  {
+   "group": "figures",
+   "cards": [
+    {
+     "key": "person",
+     "name": "PERSON",
+     "desc": "A civilian, about 2.1 units tall -- 40 looks (colours, build, hair or a hat, sleeves, trousers/shorts/skirt) x 3 walking poses (game/people.py): the little people on the streets, yards and roadsides.",
+     "media": "media/person.png",
+     "tags": [
+      "scenery",
+      "2u tall"
+     ]
+    }
+   ]
+  }
+ ],
+ "flora": [
+  {
+   "key": "prop_agave",
+   "name": "AGAVE",
+   "media": "media/prop_agave_strip.png",
+   "variants": 4,
+   "where": "desert, badlands"
+  },
+  {
+   "key": "prop_beehive_row",
+   "name": "BEEHIVE ROW",
+   "media": "media/prop_beehive_row_strip.png",
+   "variants": 1,
+   "where": ""
+  },
+  {
+   "key": "prop_bush",
+   "name": "BUSH",
+   "media": "media/prop_bush_strip.png",
+   "variants": 4,
+   "where": "tropical, grassland, hill_country, temperate_forest, savanna"
+  },
+  {
+   "key": "prop_cattails",
+   "name": "CATTAILS",
+   "media": "media/prop_cattails_strip.png",
+   "variants": 4,
+   "where": "wetland, coast"
+  },
+  {
+   "key": "prop_coral_head",
+   "name": "CORAL HEAD",
+   "media": "media/prop_coral_head_strip.png",
+   "variants": 4,
+   "where": ""
+  },
+  {
+   "key": "prop_crop_rows",
+   "name": "CROP ROWS",
+   "media": "media/prop_crop_rows_strip.png",
+   "variants": 4,
+   "where": ""
+  },
+  {
+   "key": "prop_dead_log",
+   "name": "DEAD LOG",
+   "media": "media/prop_dead_log_strip.png",
+   "variants": 4,
+   "where": "boreal, hill_country, temperate_forest, tropical, badlands"
+  },
+  {
+   "key": "prop_dead_palm",
+   "name": "DEAD PALM",
+   "media": "media/prop_dead_palm_strip.png",
+   "variants": 4,
+   "where": "desert"
+  },
+  {
+   "key": "prop_dune_grass_tuft",
+   "name": "DUNE GRASS TUFT",
+   "media": "media/prop_dune_grass_tuft_strip.png",
+   "variants": 4,
+   "where": "savanna, steppe, desert, badlands"
+  },
+  {
+   "key": "prop_fern_clump",
+   "name": "FERN CLUMP",
+   "media": "media/prop_fern_clump_strip.png",
+   "variants": 4,
+   "where": "tropical, hill_country, temperate_forest"
+  },
+  {
+   "key": "prop_flower_patch",
+   "name": "FLOWER PATCH",
+   "media": "media/prop_flower_patch_strip.png",
+   "variants": 4,
+   "where": "grassland, hill_country, temperate_forest, tropical"
+  },
+  {
+   "key": "prop_haystack",
+   "name": "HAYSTACK",
+   "media": "media/prop_haystack_strip.png",
+   "variants": 4,
+   "where": ""
+  },
+  {
+   "key": "prop_hedgerow",
+   "name": "HEDGEROW",
+   "media": "media/prop_hedgerow_strip.png",
+   "variants": 4,
+   "where": ""
+  },
+  {
+   "key": "prop_joshua_tree",
+   "name": "JOSHUA TREE",
+   "media": "media/prop_joshua_tree_strip.png",
+   "variants": 4,
+   "where": "desert"
+  },
+  {
+   "key": "prop_orchard_tree",
+   "name": "ORCHARD TREE",
+   "media": "media/prop_orchard_tree_strip.png",
+   "variants": 4,
+   "where": ""
+  },
+  {
+   "key": "prop_reed_clump",
+   "name": "REED CLUMP",
+   "media": "media/prop_reed_clump_strip.png",
+   "variants": 4,
+   "where": "wetland, coast"
+  },
+  {
+   "key": "prop_scarecrow",
+   "name": "SCARECROW",
+   "media": "media/prop_scarecrow_strip.png",
+   "variants": 1,
+   "where": ""
+  },
+  {
+   "key": "prop_tree_stump",
+   "name": "STUMP",
+   "media": "media/prop_tree_stump_strip.png",
+   "variants": 4,
+   "where": "boreal, hill_country, temperate_forest, tropical, alpine"
+  },
+  {
+   "key": "tree_acacia",
+   "name": "ACACIA",
+   "media": "media/tree_acacia_strip.png",
+   "variants": 4,
+   "where": "savanna"
+  },
+  {
+   "key": "tree_bamboo",
+   "name": "BAMBOO",
+   "media": "media/tree_bamboo_strip.png",
+   "variants": 4,
+   "where": "tropical"
+  },
+  {
+   "key": "tree_birch",
+   "name": "BIRCH",
+   "media": "media/tree_birch_strip.png",
+   "variants": 4,
+   "where": "temperate_forest, hill_country"
+  },
+  {
+   "key": "tree_cypress",
+   "name": "CYPRESS",
+   "media": "media/tree_cypress_strip.png",
+   "variants": 4,
+   "where": "wetland"
+  },
+  {
+   "key": "tree_dead",
+   "name": "DEAD",
+   "media": "media/tree_dead_strip.png",
+   "variants": 4,
+   "where": "arctic, badlands, desert, tundra, alpine"
+  },
+  {
+   "key": "tree_dwarf_birch",
+   "name": "DWARF BIRCH",
+   "media": "media/tree_dwarf_birch_strip.png",
+   "variants": 4,
+   "where": "tundra"
+  },
+  {
+   "key": "tree_jungle",
+   "name": "JUNGLE",
+   "media": "media/tree_jungle_strip.png",
+   "variants": 4,
+   "where": "tropical"
+  },
+  {
+   "key": "tree_palm",
+   "name": "PALM",
+   "media": "media/tree_palm_strip.png",
+   "variants": 4,
+   "where": "tropical, coast"
+  },
+  {
+   "key": "tree_pine",
+   "name": "PINE",
+   "media": "media/tree_pine_strip.png",
+   "variants": 4,
+   "where": "boreal, hill_country, alpine, temperate_forest"
+  },
+  {
+   "key": "tree_round",
+   "name": "ROUND",
+   "media": "media/tree_round_strip.png",
+   "variants": 4,
+   "where": "temperate_forest, hill_country, grassland, tropical, wetland"
+  },
+  {
+   "key": "tree_shrub",
+   "name": "SHRUB",
+   "media": "media/tree_shrub_strip.png",
+   "variants": 4,
+   "where": "grassland, steppe, coast, savanna, tundra"
+  },
+  {
+   "key": "tree_spruce",
+   "name": "SPRUCE",
+   "media": "media/tree_spruce_strip.png",
+   "variants": 4,
+   "where": "boreal, alpine, tundra"
+  }
+ ],
+ "numbers": {
+  "facts": {
+   "models": 441,
+   "props": 119,
+   "vehicles": 66,
+   "mechs": 14,
+   "weapons": 85,
+   "enemies": 47,
+   "missions": 26,
+   "scenarios": 7,
+   "biomes": 14,
+   "presets": 26,
+   "engine_loc": 106815,
+   "modules": 54,
+   "checks": 1037,
+   "checks_pass": 1037,
+   "checks_secs": 8437.996211051941,
+   "checks_partial": true,
+   "lessons": 871,
+   "log_lines": 21942,
+   "perf": {
+    "terrain": {
+     "kernel_ms": 0.292,
+     "res": 230400
+    },
+    "stream_scroll": {
+     "gen_ms": 4.476,
+     "far_lod_ms": 1.126,
+     "scroll_ms": 5.601,
+     "buf": 2048,
+     "strip_cells": 16384
+    },
+    "billboard_draw": {
+     "draw_ms": 5.049,
+     "billboards": 9000,
+     "blits": 1046,
+     "tree_keys": 3,
+     "prop_keys": 3
+    },
+    "entity_fan": {
+     "render_ms": 1.231,
+     "math_ms": 0.903,
+     "draw_ms": 0.432,
+     "authored_voxels": 32004
+    },
+    "combat_update": {
+     "update_ms": 1.233,
+     "particles": 2917,
+     "enemies": 24,
+     "projectiles": 0
+    },
+    "combat_draw": {
+     "render_ms": 3.71,
+     "particles": 3062,
+     "enemies": 24,
+     "projectiles": 0
+    },
+    "particles_peak": {
+     "update_ms": 0.21,
+     "particles": 1916,
+     "cap": 3500
+    },
+    "warhead_spike": {
+     "worst_update_ms": 208.797,
+     "carve_cells": 78961,
+     "particles": 3457
+    },
+    "sustained_fire": {
+     "sustained_worst_ms": 31.093,
+     "sustained_mean_ms": 20.068,
+     "sustained_pair_tests": 2,
+     "sustained_scenery_calls": 62,
+     "sustained_rounds": 1542
+    }
+   }
+  },
+  "sample_checks": [
+   "RWR means something",
+   "a missile leaves the way it is mounted",
+   "an enemy battlemech loses limbs too",
+   "enemy:spg",
+   "fly+fire:pzh2000",
+   "model:airliner",
+   "model:missile_aam",
+   "model:prop_crop_rows_v2",
+   "model:prop_ice_floe_v1",
+   "model:prop_tractor_v1",
+   "model:tree_spruce_v1",
+   "the little people walk the streets"
+  ],
+  "work": [
+   {
+    "sha": "af7dfdf",
+    "date": "2026-09-29",
+    "subject": "trailer v7: one city strike instead of five of the same lake, the AC-130 on its 25 mm Gatling, the music louder over the game's sound (-9 LUFS)"
+   },
+   {
+    "sha": "d5957ce",
+    "date": "2026-09-29",
+    "subject": "trailer v6: canyon runs (a Gripen between the badlands mesas, an F-22 in the highlands and the Alps) with a wing camera, cameras that see their subject, per-angle peaks, a filmic grade, a blockbuster score (horns, whooshes, reverse swells, a ticking open, silence before the logo, mastering)"
+   },
+   {
+    "sha": "6363f5f",
+    "date": "2026-09-29",
+    "subject": "trailer v5: other worlds (Mars, dunes, arctic, jungle, lava, alien) and other weapons (Ka-52 swarm, AC-130 105, Gepard flak, a carrier group, Viper, B-2 napalm, Su-57), speed ramps in the edit, 0.25x slow angles, an epic score (choir, low brass, taiko rolls, the finale lifted a tone, a hush on every slow clip) at -11 LUFS; 161 clips"
+   },
+   {
+    "sha": "cc205d4",
+    "date": "2026-09-29",
+    "subject": "trailer v4: on the deck (a Comanche 16 u off the ground), the drop (an F-22 dives into a valley), a strike for every weapon (JDAM, 30 mm, rockets, a Smerch salvo, thermobaric: 288 structures fall, Harrier rockets), strike runs at the menu's recruit difficulty, a heavier score (driven bass, kick, harder braams, impacts on cuts); 120 clips"
+   },
+   {
+    "sha": "dbabd5c",
+    "date": "2026-09-29",
+    "subject": "trailer: a composed score (trailer_score.py) that reads its sections from the edit -- title hit, the war on Dm-Bb-F-C with a brass theme, a hit on every slow-motion drop, a drum finale on the closing cuts; the game's sound under it; --remix redoes the sound in seconds, --music=track uses your own"
+   },
+   {
+    "sha": "450db29",
+    "date": "2026-09-29",
+    "subject": "trailer: six more scenes (storm run, dusk B-2 strike, artillery, dawn armour, mech duel, Seahawk over the islands), weather and time of day per take, the sea is a floor to the helmsman; re-filmed on the game's unit collision -- 83 clips, a 113 s v3 cut on the site"
+   },
+   {
+    "sha": "508d7bc",
+    "date": "2026-09-29",
+    "subject": "status.py: trailer.py and trailer_mix.py in the tool index (every tool is in the index)"
+   },
+   {
+    "sha": "caa2b63",
+    "date": "2026-09-29",
+    "subject": "a shoved machine's height follows the ground in the same frame and it is never shoved up a grade its own drive cannot climb (a tank read 3.0x its climb limit)"
+   },
+   {
+    "sha": "8253d8b",
+    "date": "2026-09-29",
+    "subject": "machines on the ground do not walk through each other: box footprints (a giant's over its stride and running lean), eased apart by mass, kept on their own surface, never carried faster than their own drive; a check asks what is drawn (79% -> 2.8%); the jetty fixture no longer seats units inside each other"
+   },
+   {
+    "sha": "ddd2135",
+    "date": "2026-09-29",
+    "subject": "trailer.py: a produced trailer and a numbered clip library from real GPU gameplay, with the game's own sound"
+   },
+   {
+    "sha": "54bdea1",
+    "date": "2026-09-22",
+    "subject": "SANDBOX_KIT.md: a self-contained kit to start a voxel dig-and-build open-world game on this architecture (stack + lock, engine design, tools, first checks, build order, a CLAUDE.md to copy); ENGINE.md, GAMEKIT.md, agent.md refreshed"
+   },
+   {
+    "sha": "a2b1560",
+    "date": "2026-09-22",
+    "subject": "a round beaten by a decoy hits you only by flying into you; a check's cached maps end with it; the crosshair fixture survives the new damage"
+   },
+   {
+    "sha": "15204f5",
+    "date": "2026-09-22",
+    "subject": "the shock ring is drawn by the terrain shader (it cost 4-12 ms a frame on the CPU); diagnose prints once, witness.py, the slowest checks 544 s -> 67 s, seeded maps cached"
+   },
+   {
+    "sha": "148d519",
+    "date": "2026-09-22",
+    "subject": "a land vehicle fords shallow water on the seabed and drowns slowly in deep, instead of sinking in any water in three seconds"
+   }
+  ]
+ }
+}

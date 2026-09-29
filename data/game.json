@@ -1,7 +1,7 @@
 {
  "build": {
   "stamp": "built 2026-09-29",
-  "commit": "af7dfdf"
+  "commit": "840ed4c"
  },
  "counts": {
   "vehicles": 66,
@@ -7016,8 +7016,8 @@
    "checks_pass": 1037,
    "checks_secs": 8437.996211051941,
    "checks_partial": true,
-   "lessons": 871,
-   "log_lines": 21942,
+   "lessons": 873,
+   "log_lines": 21973,
    "perf": {
     "terrain": {
      "kernel_ms": 0.292,
@@ -7090,6 +7090,16 @@
   ],
   "work": [
    {
+    "sha": "840ed4c",
+    "date": "2026-09-29",
+    "subject": "publish_site: the public mirror always commits as the account's no-reply address, never the personal email configured locally"
+   },
+   {
+    "sha": "6ba9d85",
+    "date": "2026-09-29",
+    "subject": "the website, re-architected: a hand-edited page (index.html, style.css, site.json, js/ modules) over generated data (sitedata.py -> data/game.json) and media; sitegen writes no HTML; every turntable re-rendered from the current models at 480x360; the trailer is the YouTube video behind a poster; the gate reads media from the data, partial test runs no longer rewrite the published figures, a section is stamped current only when rebuilt"
+   },
+   {
     "sha": "af7dfdf",
     "date": "2026-09-29",
     "subject": "trailer v7: one city strike instead of five of the same lake, the AC-130 on its 25 mm Gatling, the music louder over the game's sound (-9 LUFS)"
@@ -7148,16 +7158,6 @@
     "sha": "a2b1560",
     "date": "2026-09-22",
     "subject": "a round beaten by a decoy hits you only by flying into you; a check's cached maps end with it; the crosshair fixture survives the new damage"
-   },
-   {
-    "sha": "15204f5",
-    "date": "2026-09-22",
-    "subject": "the shock ring is drawn by the terrain shader (it cost 4-12 ms a frame on the CPU); diagnose prints once, witness.py, the slowest checks 544 s -> 67 s, seeded maps cached"
-   },
-   {
-    "sha": "148d519",
-    "date": "2026-09-22",
-    "subject": "a land vehicle fords shallow water on the seabed and drowns slowly in deep, instead of sinking in any water in three seconds"
    }
   ]
  }

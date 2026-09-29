@@ -8,7 +8,7 @@
   "replay_air": "clip_replay_air.mp4",
   "strike": "clip_strike.mp4"
  },
- "commit": "af7dfdf",
+ "commit": "840ed4c",
  "facts": {
   "biomes": 14,
   "check_names": [
@@ -1056,8 +1056,8 @@
   "checks_secs": 8437.996211051941,
   "enemies": 47,
   "engine_loc": 106815,
-  "lessons": 871,
-  "log_lines": 21942,
+  "lessons": 873,
+  "log_lines": 21973,
   "mechs": 14,
   "missions": 26,
   "models": 441,
@@ -1787,7 +1787,7 @@
    "game/biomes.py"
   ]
  },
- "source": "1ebf79d2d3dac503",
+ "source": "979a78c8b2d63617",
  "sources": {
   "game/biomes.py": "c0b5ab4a0a3f15e5",
   "game/content.py": "1b246a4719cc9671",
@@ -1797,7 +1797,7 @@
   "game/models.py": "7e7ce0c726c98aa8",
   "game/props.py": "3b7e018412580d6f",
   "inventory.py": "1b58162b5b0b4dc1",
-  "sitegen.py": "a40039d52cae57e2"
+  "sitegen.py": "208e83e5995029a7"
  },
  "stamp": "built 2026-09-29",
  "units": {
@@ -1937,6 +1937,16 @@
  "work": [
   {
    "date": "2026-09-29",
+   "sha": "840ed4c",
+   "subject": "publish_site: the public mirror always commits as the account's no-reply address, never the personal email configured locally"
+  },
+  {
+   "date": "2026-09-29",
+   "sha": "6ba9d85",
+   "subject": "the website, re-architected: a hand-edited page (index.html, style.css, site.json, js/ modules) over generated data (sitedata.py -> data/game.json) and media; sitegen writes no HTML; every turntable re-rendered from the current models at 480x360; the trailer is the YouTube video behind a poster; the gate reads media from the data, partial test runs no longer rewrite the published figures, a section is stamped current only when rebuilt"
+  },
+  {
+   "date": "2026-09-29",
    "sha": "af7dfdf",
    "subject": "trailer v7: one city strike instead of five of the same lake, the AC-130 on its 25 mm Gatling, the music louder over the game's sound (-9 LUFS)"
   },
@@ -1994,16 +2004,6 @@
    "date": "2026-09-22",
    "sha": "a2b1560",
    "subject": "a round beaten by a decoy hits you only by flying into you; a check's cached maps end with it; the crosshair fixture survives the new damage"
-  },
-  {
-   "date": "2026-09-22",
-   "sha": "15204f5",
-   "subject": "the shock ring is drawn by the terrain shader (it cost 4-12 ms a frame on the CPU); diagnose prints once, witness.py, the slowest checks 544 s -> 67 s, seeded maps cached"
-  },
-  {
-   "date": "2026-09-22",
-   "sha": "148d519",
-   "subject": "a land vehicle fords shallow water on the seabed and drowns slowly in deep, instead of sinking in any water in three seconds"
   }
  ],
  "worlds": {

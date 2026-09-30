@@ -209,3 +209,8 @@ ol.log time{font-family:var(--mono);font-size:11px;color:var(--faint);min-width:
 #lb.on{display:flex}
 #lb img{max-width:min(1100px,96vw);max-height:92vh;border-radius:8px;
   box-shadow:0 30px 90px rgba(0,0,0,.6)}
+
+/* the link to the engine write-up (voxelstrike-notes.pages.dev) */
+.notes-link{margin:.9rem 0 0}
+.notes-link a{display:inline-block;padding:.45rem .8rem;border:1px solid var(--hot);color:var(--hot);border-radius:4px;font-weight:600}
+nav.sticky a.ext{color:var(--hot)}

@@ -26,6 +26,7 @@
   <p class="lede">A combined-arms combat sim built on the per-column raycaster the Comanche games used, with the hot
     loop JIT-compiled across every core. Fly helicopters and jets, drive armour, take a warship to sea, or stand a
     hundred-tonne battlemech up out of a tank &mdash; over terrain you can dig holes in.</p>
+  <p class="notes-link"><a href="https://voxelstrike-notes.pages.dev/">How it&rsquo;s built: the engine write-up &rarr;</a></p>
   <div class="counts">
     <div><b data-count="vehicles"></b>Flyable machines</div>
     <div><b data-count="mechs"></b>Battlemechs</div>
@@ -62,6 +63,7 @@
   <a href="#flora">Flora</a>
   <a href="#engine">Engine</a>
   <a href="#data">Numbers</a>
+  <a href="https://voxelstrike-notes.pages.dev/" class="ext">How it&rsquo;s built &#8599;</a>
   <input id="q" type="search" placeholder="Filter models: try topple, torpedo, arctic, mech" aria-label="Filter everything on this page">
   <span id="qn" class="qn"></span>
 </div></nav>
@@ -193,7 +195,8 @@
   <h2>Engine</h2>
   <p class="sub">The terrain is a per-column raycast over a heightmap, JIT-compiled with Numba and run across every core;
     the GPU path casts the same field per pixel, which is what lets you look straight down over a city and see
-    buildings rather than a tilted map.</p>
+    buildings rather than a tilted map. The full story, in plain language, is in
+    <a href="https://voxelstrike-notes.pages.dev/">the engine write-up</a>.</p>
   <div class="grid">
     <article class="card"><div class="body"><div class="nm">Destructible terrain</div><div class="ds">Every explosion
       digs a real crater into the heightmap, revealing underground strata. The carve is a fused parallel kernel, so a
@@ -243,7 +246,8 @@
 </div></section>
 
 <footer><div class="wrap">
-  <div>Data read from the game&rsquo;s own tables by <code>sitedata.py</code>; the page itself is hand-built.</div>
+  <div>Data read from the game&rsquo;s own tables by <code>sitedata.py</code>; the page itself is hand-built.
+    How it&rsquo;s built: <a href="https://voxelstrike-notes.pages.dev/">voxelstrike-notes.pages.dev</a></div>
   <div class="stamp" data-render="stamp"></div>
 </div></footer>
 

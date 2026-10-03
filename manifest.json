@@ -8,7 +8,7 @@
   "replay_air": "clip_replay_air.mp4",
   "strike": "clip_strike.mp4"
  },
- "commit": "840ed4c",
+ "commit": "ab2c5c9",
  "facts": {
   "biomes": 14,
   "check_names": [
@@ -1055,13 +1055,13 @@
   "checks_pass": 1037,
   "checks_secs": 8437.996211051941,
   "enemies": 47,
-  "engine_loc": 106815,
-  "lessons": 873,
-  "log_lines": 21973,
+  "engine_loc": 109452,
+  "lessons": 936,
+  "log_lines": 23212,
   "mechs": 14,
   "missions": 26,
   "models": 441,
-  "modules": 54,
+  "modules": 56,
   "perf": {
    "billboard_draw": {
     "billboards": 9000,
@@ -1171,7 +1171,7 @@
  },
  "ordnance_facts": {
   "bomb": {
-   "h": 1.9
+   "h": 1.5
   },
   "missile": {
    "h": 2.1
@@ -1201,7 +1201,7 @@
    "h": 1.1
   },
   "shell": {
-   "h": 0.8
+   "h": 0.7
   },
   "torpedo": {
    "h": 1.8
@@ -1403,7 +1403,7 @@
    "rolls": 1
   },
   "prop_box_truck": {
-   "h": 4.2,
+   "h": 4.0,
    "rolls": 4
   },
   "prop_bus": {
@@ -1419,7 +1419,7 @@
    "rolls": 1
   },
   "prop_car": {
-   "h": 2.5,
+   "h": 1.8,
    "rolls": 4
   },
   "prop_celltower": {
@@ -1435,7 +1435,7 @@
    "rolls": 1
   },
   "prop_combine": {
-   "h": 6.0,
+   "h": 5.3,
    "rolls": 4
   },
   "prop_commtower": {
@@ -1479,7 +1479,7 @@
    "rolls": 4
   },
   "prop_dump_truck": {
-   "h": 4.3,
+   "h": 3.9,
    "rolls": 4
   },
   "prop_dumpster": {
@@ -1511,7 +1511,7 @@
    "rolls": 4
   },
   "prop_freight_car": {
-   "h": 5.4,
+   "h": 5.5,
    "rolls": 4
   },
   "prop_frozen_snag": {
@@ -1551,7 +1551,7 @@
    "rolls": 1
   },
   "prop_hatchback": {
-   "h": 2.3,
+   "h": 1.6,
    "rolls": 4
   },
   "prop_hay_wagon": {
@@ -1579,7 +1579,7 @@
    "rolls": 1
   },
   "prop_locomotive": {
-   "h": 6.1,
+   "h": 6.6,
    "rolls": 4
   },
   "prop_log_cabin": {
@@ -1595,7 +1595,7 @@
    "rolls": 1
   },
   "prop_motel": {
-   "h": 9.2,
+   "h": 9.6,
    "rolls": 4
   },
   "prop_news_box": {
@@ -1619,7 +1619,7 @@
    "rolls": 1
   },
   "prop_pickup": {
-   "h": 3.1,
+   "h": 2.4,
    "rolls": 4
   },
   "prop_pipe_rack": {
@@ -1635,7 +1635,7 @@
    "rolls": 1
   },
   "prop_radar": {
-   "h": 13.9,
+   "h": 11.0,
    "rolls": 1
   },
   "prop_radiotelescope": {
@@ -1667,7 +1667,7 @@
    "rolls": 1
   },
   "prop_semi_truck": {
-   "h": 4.9,
+   "h": 4.7,
    "rolls": 4
   },
   "prop_shed": {
@@ -1703,11 +1703,11 @@
    "rolls": 1
   },
   "prop_tanker_truck": {
-   "h": 4.7,
+   "h": 4.5,
    "rolls": 4
   },
   "prop_tractor": {
-   "h": 5.3,
+   "h": 4.3,
    "rolls": 4
   },
   "prop_trafficlight": {
@@ -1723,7 +1723,7 @@
    "rolls": 1
   },
   "prop_van": {
-   "h": 3.7,
+   "h": 3.1,
    "rolls": 4
   },
   "prop_water_trough": {
@@ -1787,19 +1787,19 @@
    "game/biomes.py"
   ]
  },
- "source": "979a78c8b2d63617",
+ "source": "1e7909bd2b7553e8",
  "sources": {
   "game/biomes.py": "c0b5ab4a0a3f15e5",
-  "game/content.py": "1b246a4719cc9671",
-  "game/entities.py": "98181336fa69f589",
-  "game/limbs.py": "d940e9c01f4264ea",
-  "game/mapgen.py": "bbc4258ec0aa344f",
-  "game/models.py": "7e7ce0c726c98aa8",
+  "game/content.py": "0a16b084cae6dee6",
+  "game/entities.py": "391b901e6ffbc4a6",
+  "game/limbs.py": "f33cd15e620da455",
+  "game/mapgen.py": "1692c875d69ced9c",
+  "game/models.py": "39df00541d7f6630",
   "game/props.py": "3b7e018412580d6f",
-  "inventory.py": "1b58162b5b0b4dc1",
+  "inventory.py": "3e0ec2c04af1946a",
   "sitegen.py": "208e83e5995029a7"
  },
- "stamp": "built 2026-09-29",
+ "stamp": "built 2026-10-03",
  "units": {
   "abrams": "abrams.gif",
   "ac130": "ac130.gif",
@@ -1936,74 +1936,74 @@
  },
  "work": [
   {
-   "date": "2026-09-29",
-   "sha": "840ed4c",
-   "subject": "publish_site: the public mirror always commits as the account's no-reply address, never the personal email configured locally"
+   "date": "2026-10-03",
+   "sha": "4cbd45c",
+   "subject": "trailer: re-filming what the cut uses takes ~10 min (was ~100 for everything) -- --cut-only, --jobs=N worker processes, the game's model/sound disk caches turned on (session build 26 s -> 6-14 s), NVENC, the readback straight to the encoder and double-buffered so it never waits on the GPU (one take 79 s -> 38 s, frames identical); per-stage timings in the log; log, lesson (936), board"
   },
   {
-   "date": "2026-09-29",
-   "sha": "6ba9d85",
-   "subject": "the website, re-architected: a hand-edited page (index.html, style.css, site.json, js/ modules) over generated data (sitedata.py -> data/game.json) and media; sitegen writes no HTML; every turntable re-rendered from the current models at 480x360; the trailer is the YouTube video behind a poster; the gate reads media from the data, partial test runs no longer rewrite the published figures, a section is stamped current only when rebuilt"
+   "date": "2026-10-03",
+   "sha": "f50be45",
+   "subject": "the canyon's cliffs: the hit is bisected to the side in the ground (the midpoint could be air in front of a wall, over the sea -- a checkerboard of rock and sea), a wall wears its own top cell's colour, and only a building's marked roof gets windows (config.bld_roof) -- every other crisp face is rock; two new GPU self-test parts, witnessed three ways; no measurable GPU cost"
   },
   {
-   "date": "2026-09-29",
-   "sha": "af7dfdf",
-   "subject": "trailer v7: one city strike instead of five of the same lake, the AC-130 on its 25 mm Gatling, the music louder over the game's sound (-9 LUFS)"
+   "date": "2026-10-02",
+   "sha": "c83aa75",
+   "subject": "trailer: every angle records the game version it was filmed on ('older game' in --list, and the cut names its clips from older code); all 187 angles re-filmed on the current game and the trailer re-cut; log, lesson (934), board (and the TTS fallback's write-up)"
   },
   {
-   "date": "2026-09-29",
-   "sha": "d5957ce",
-   "subject": "trailer v6: canyon runs (a Gripen between the badlands mesas, an F-22 in the highlands and the Alps) with a wing camera, cameras that see their subject, per-angle peaks, a filmic grade, a blockbuster score (horns, whooshes, reverse swells, a ticking open, silence before the logo, mastering)"
+   "date": "2026-10-02",
+   "sha": "b3cfdb7",
+   "subject": "tts: the box went quiet on its WireGuard address (10.8.0.9) while it still answered on the LAN, so every render failed on a timeout -- tts_tool now tries fallback_urls (192.168.1.3 by default) and says which it used; --list no longer crashes on a Windows console; the 8 voice lines that were missing rendered (iron gauntlet, deck recovery, recovered)"
   },
   {
-   "date": "2026-09-29",
-   "sha": "6363f5f",
-   "subject": "trailer v5: other worlds (Mars, dunes, arctic, jungle, lava, alien) and other weapons (Ka-52 swarm, AC-130 105, Gepard flak, a carrier group, Viper, B-2 napalm, Su-57), speed ramps in the edit, 0.25x slow angles, an epic score (choir, low brass, taiko rolls, the finale lifted a tone, a hush on every slow clip) at -11 LUFS; 161 clips"
+   "date": "2026-10-02",
+   "sha": "19db8b2",
+   "subject": "trailer re-cut with the ground views: LOW PASS (an F/A-18 overhead), THE FRONT (the fight at ground level), FROM ABOVE (an A-10 diving at the camera with napalm) and two finale cuts; 106 s at 1080p60; 187 numbered clips; log, lesson (933), board"
   },
   {
-   "date": "2026-09-29",
-   "sha": "cc205d4",
-   "subject": "trailer v4: on the deck (a Comanche 16 u off the ground), the drop (an F-22 dives into a valley), a strike for every weapon (JDAM, 30 mm, rockets, a Smerch salvo, thermobaric: 288 structures fall, Harrier rockets), strike runs at the menu's recruit difficulty, a heavier score (driven bass, kick, harder braams, impacts on cuts); 120 clips"
+   "date": "2026-10-02",
+   "sha": "3837e7d",
+   "subject": "trailer: three ground-view takes -- overhead (an F-16 low over the plains, cameras stood on the ground under its line), divebomb (an A-10 diving at a ground camera, napalm in the dive), groundwar (an armour fight with gunships, cameras in the grass); a fire_window, a per-angle zoom (the renderer's telescopic zoom), and a fixed camera no longer fades the trees round it to ghosts"
   },
   {
-   "date": "2026-09-29",
-   "sha": "dbabd5c",
-   "subject": "trailer: a composed score (trailer_score.py) that reads its sections from the edit -- title hit, the war on Dm-Bb-F-C with a brass theme, a hit on every slow-motion drop, a drum finale on the closing cuts; the game's sound under it; --remix redoes the sound in seconds, --music=track uses your own"
+   "date": "2026-10-01",
+   "sha": "b307d4f",
+   "subject": "graphics polish, from the game re-filmed: lakes and sea no longer ruled in stripes (each wave faded by the pixel's footprint along the view; row-to-row 7.28 -> 5.38 against 5.00 with no waves), hillsides no longer knitted close up (the sun-raked ground grain band-limited the same way; the fall-line streak made axis-aligned), and a shell's arc trace is a faint line instead of a row of white balls on the GPU path; two new self-test parts and a new check, all witnessed"
   },
   {
-   "date": "2026-09-29",
-   "sha": "450db29",
-   "subject": "trailer: six more scenes (storm run, dusk B-2 strike, artillery, dawn armour, mech duel, Seahawk over the islands), weather and time of day per take, the sea is a floor to the helmsman; re-filmed on the game's unit collision -- 83 clips, a 113 s v3 cut on the site"
+   "date": "2026-10-01",
+   "sha": "0e5d015",
+   "subject": "railways, trains and crash barriers run along their line: they were camera-facing billboards baked side-on, so looked down the line they stood across it; now drawn near the camera as models turned along it (heading from the next piece of the same kind, no network query; 0.82 ms), left out of the billboard field; the wagons no longer stand 1.6 u inside the locomotive; new check witnessed three ways"
   },
   {
-   "date": "2026-09-29",
-   "sha": "508d7bc",
-   "subject": "status.py: trailer.py and trailer_mix.py in the tool index (every tool is in the index)"
+   "date": "2026-10-01",
+   "sha": "367c17c",
+   "subject": "world models C/D: the bomb (Mk 80 shape, 117 voxels), shell and rocket round instead of square; the motel (numbered bays, AC units, door lamps, lit VACANCY sign, marked car park) and the radar (braced tower, orange-peel reflector, red obstruction light) rebuilt; 470 model/prop/ordnance/rail/traffic checks pass; log, lesson (930), board"
   },
   {
-   "date": "2026-09-29",
-   "sha": "caa2b63",
-   "subject": "a shoved machine's height follows the ground in the same frame and it is never shoved up a grade its own drive cannot climb (a tank read 3.0x its climb limit)"
+   "date": "2026-10-01",
+   "sha": "e85509a",
+   "subject": "world models B: the railway rebuilt -- a road-switcher locomotive (cab and nose, long hood with doors, radiator fans, dynamic-brake blister, walkways and handrails, fuel tank, three-axle bogies, head, ditch and rear lights at night), a ribbed boxcar with its sliding door, ladders and brake wheel, a round tank wagon with heads, manway platform and placards, a signal with mast, ladder and hooded lamps, and track with real rail profiles on concrete sleepers; rail checks pass"
   },
   {
-   "date": "2026-09-29",
-   "sha": "8253d8b",
-   "subject": "machines on the ground do not walk through each other: box footprints (a giant's over its stride and running lean), eased apart by mass, kept on their own surface, never carried faster than their own drive; a check asks what is drawn (79% -> 2.8%); the jetty fixture no longer seats units inside each other"
+   "date": "2026-10-01",
+   "sha": "f0c6f61",
+   "subject": "world models A: the road traffic rebuilt -- car, hatchback, pickup, van, box truck, bus, semi, tanker, tipper, tractor, combine: round wheels (tyre, sidewall, rim, hub) instead of cogs, tinted glass with pillars, door lines, mirrors, bumpers, grilles, plates, and head and tail lamps that light with the night; footprints and wheel counts kept (the semi still has 18); new check 'the road traffic is detailed' witnessed twice (the cog wheel, no tail lamps) -- it caught the tractor with none"
   },
   {
-   "date": "2026-09-29",
-   "sha": "ddd2135",
-   "subject": "trailer.py: a produced trailer and a numbered clip library from real GPU gameplay, with the game's own sound"
+   "date": "2026-10-01",
+   "sha": "492ee7d",
+   "subject": "docs: PERFORMANCE_PLAYBOOK.md -- every performance win in one reusable reference (the rules, the architecture and why, the method, ~50 patterns with before/after numbers, what lost, the instruments, a checklist); README brought up to date (realistic weapons + rearm, weapon roles, smoke + APS, wrecks, the V views, X); ENGINE/CLAUDE/CPU/GPU point at it; PORTING gains what landed on 09-30"
   },
   {
-   "date": "2026-09-22",
-   "sha": "54bdea1",
-   "subject": "SANDBOX_KIT.md: a self-contained kit to start a voxel dig-and-build open-world game on this architecture (stack + lock, engine design, tools, first checks, build order, a CLAUDE.md to copy); ENGINE.md, GAMEKIT.md, agent.md refreshed"
+   "date": "2026-10-01",
+   "sha": "980e4f4",
+   "subject": "lesson: a bound on the aim's lead is still a run-on"
   },
   {
-   "date": "2026-09-22",
-   "sha": "a2b1560",
-   "subject": "a round beaten by a decoy hits you only by flying into you; a check's cached maps end with it; the crosshair fixture survives the new damage"
+   "date": "2026-10-01",
+   "sha": "69999ba",
+   "subject": "the turret stops when the mouse stops: the aim leads the gun by one frame of its traverse (it ran on 7.4 deg over 0.17 s after the hand stopped; now 0.2 deg), still turning at the mount's full rate while the hand moves; the view check asserts the gun is where you look within 0.05 s; witnessed"
   }
  ],
  "worlds": {
@@ -2203,7 +2203,7 @@
    "label": "PROC: MEGACITY (4K)",
    "powerlines": 11,
    "props": 4022,
-   "relief": 241.6,
+   "relief": 241.7,
    "roads": 58,
    "size": 4096,
    "trees": 984,

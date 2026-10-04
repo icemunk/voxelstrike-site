@@ -1,22 +1,22 @@
 {
  "build": {
-  "stamp": "built 2026-10-03",
-  "commit": "ab2c5c9"
+  "stamp": "built 2026-10-04",
+  "commit": "cfcd561"
  },
  "counts": {
   "vehicles": 66,
   "mechs": 14,
-  "weapons": 85,
+  "weapons": 89,
   "missions": 26,
-  "models": 441,
-  "props": 119,
+  "models": 451,
+  "props": 122,
   "biomes": 14,
   "presets": 26,
-  "enemies": 47,
+  "enemies": 50,
   "ordnance": 12,
   "flora": 30,
-  "scenery": 106,
-  "carded": 261
+  "scenery": 116,
+  "carded": 271
  },
  "clips": [
   {
@@ -95,7 +95,7 @@
       ],
       [
        "Hull",
-       3,
+       5,
        160
       ],
       [
@@ -121,12 +121,12 @@
      "bars": [
       [
        "Speed",
-       53,
+       54,
        216
       ],
       [
        "Hull",
-       1,
+       3,
        110
       ],
       [
@@ -151,12 +151,12 @@
      "bars": [
       [
        "Speed",
-       49,
+       50,
        201
       ],
       [
        "Hull",
-       2,
+       4,
        140
       ],
       [
@@ -187,7 +187,7 @@
       ],
       [
        "Hull",
-       3,
+       5,
        175
       ],
       [
@@ -213,12 +213,12 @@
      "bars": [
       [
        "Speed",
-       38,
+       39,
        160
       ],
       [
        "Hull",
-       6,
+       8,
        250
       ],
       [
@@ -243,12 +243,12 @@
      "bars": [
       [
        "Speed",
-       41,
+       42,
        171
       ],
       [
        "Hull",
-       1,
+       3,
        120
       ],
       [
@@ -272,12 +272,12 @@
      "bars": [
       [
        "Speed",
-       52,
+       53,
        212
       ],
       [
        "Hull",
-       0,
+       2,
        75
       ],
       [
@@ -306,7 +306,7 @@
       ],
       [
        "Hull",
-       4,
+       6,
        200
       ],
       [
@@ -335,7 +335,7 @@
       ],
       [
        "Hull",
-       0,
+       2,
        70
       ],
       [
@@ -358,12 +358,12 @@
      "bars": [
       [
        "Speed",
-       40,
+       41,
        167
       ],
       [
        "Hull",
-       0,
+       2,
        80
       ],
       [
@@ -392,7 +392,7 @@
       ],
       [
        "Hull",
-       4,
+       6,
        190
       ],
       [
@@ -416,12 +416,12 @@
      "bars": [
       [
        "Speed",
-       28,
+       29,
        122
       ],
       [
        "Hull",
-       9,
+       11,
        340
       ],
       [
@@ -444,12 +444,12 @@
      "bars": [
       [
        "Speed",
-       35,
+       36,
        147
       ],
       [
        "Hull",
-       6,
+       8,
        240
       ],
       [
@@ -478,7 +478,7 @@
       ],
       [
        "Hull",
-       1,
+       3,
        120
       ],
       [
@@ -510,12 +510,12 @@
      "bars": [
       [
        "Speed",
-       35,
+       36,
        147
       ],
       [
        "Hull",
-       12,
+       14,
        420
       ],
       [
@@ -545,7 +545,7 @@
       ],
       [
        "Hull",
-       11,
+       13,
        380
       ],
       [
@@ -572,7 +572,7 @@
       ],
       [
        "Hull",
-       11,
+       13,
        380
       ],
       [
@@ -603,7 +603,7 @@
       ],
       [
        "Hull",
-       30,
+       31,
        900
       ],
       [
@@ -634,7 +634,7 @@
       ],
       [
        "Hull",
-       0,
+       2,
        95
       ],
       [
@@ -664,7 +664,7 @@
       ],
       [
        "Hull",
-       1,
+       3,
        120
       ],
       [
@@ -694,7 +694,7 @@
       ],
       [
        "Hull",
-       0,
+       2,
        82
       ],
       [
@@ -719,12 +719,12 @@
      "bars": [
       [
        "Speed",
-       38,
+       39,
        160
       ],
       [
        "Hull",
-       8,
+       10,
        300
       ],
       [
@@ -755,7 +755,7 @@
       ],
       [
        "Hull",
-       1,
+       3,
        110
       ],
       [
@@ -785,7 +785,7 @@
       ],
       [
        "Hull",
-       20,
+       21,
        620
       ],
       [
@@ -813,7 +813,7 @@
       ],
       [
        "Hull",
-       1,
+       3,
        120
       ],
       [
@@ -843,7 +843,7 @@
       ],
       [
        "Hull",
-       1,
+       3,
        110
       ],
       [
@@ -868,12 +868,12 @@
      "bars": [
       [
        "Speed",
-       31,
+       32,
        132
       ],
       [
        "Hull",
-       8,
+       10,
        300
       ],
       [
@@ -902,7 +902,7 @@
       ],
       [
        "Hull",
-       2,
+       4,
        150
       ],
       [
@@ -932,7 +932,7 @@
       ],
       [
        "Hull",
-       6,
+       8,
        260
       ],
       [
@@ -957,12 +957,12 @@
      "bars": [
       [
        "Speed",
-       48,
+       49,
        197
       ],
       [
        "Hull",
-       16,
+       18,
        520
       ],
       [
@@ -984,12 +984,12 @@
      "bars": [
       [
        "Speed",
-       32,
+       33,
        137
       ],
       [
        "Hull",
-       2,
+       4,
        140
       ],
       [
@@ -1018,7 +1018,7 @@
       ],
       [
        "Hull",
-       1,
+       3,
        110
       ],
       [
@@ -1047,7 +1047,7 @@
       ],
       [
        "Hull",
-       4,
+       6,
        185
       ],
       [
@@ -1079,12 +1079,12 @@
      "bars": [
       [
        "Speed",
-       7,
+       8,
        41
       ],
       [
        "Hull",
-       9,
+       10,
        320
       ],
       [
@@ -1108,12 +1108,12 @@
      "bars": [
       [
        "Speed",
-       8,
+       9,
        44
       ],
       [
        "Hull",
-       5,
+       7,
        210
       ],
       [
@@ -1137,12 +1137,12 @@
      "bars": [
       [
        "Speed",
-       8,
+       9,
        46
       ],
       [
        "Hull",
-       2,
+       4,
        140
       ],
       [
@@ -1172,7 +1172,7 @@
       ],
       [
        "Hull",
-       5,
+       7,
        220
       ],
       [
@@ -1198,12 +1198,12 @@
      "bars": [
       [
        "Speed",
-       6,
+       7,
        36
       ],
       [
        "Hull",
-       12,
+       13,
        400
       ],
       [
@@ -1227,12 +1227,12 @@
      "bars": [
       [
        "Speed",
-       24,
+       25,
        105
       ],
       [
        "Hull",
-       0,
+       2,
        90
       ],
       [
@@ -1255,12 +1255,12 @@
      "bars": [
       [
        "Speed",
-       16,
+       17,
        76
       ],
       [
        "Hull",
-       3,
+       5,
        165
       ],
       [
@@ -1290,7 +1290,7 @@
       ],
       [
        "Hull",
-       6,
+       8,
        240
       ],
       [
@@ -1314,12 +1314,12 @@
      "bars": [
       [
        "Speed",
-       11,
+       12,
        56
       ],
       [
        "Hull",
-       1,
+       3,
        120
       ],
       [
@@ -1348,7 +1348,7 @@
       ],
       [
        "Hull",
-       2,
+       4,
        130
       ],
       [
@@ -1378,7 +1378,7 @@
       ],
       [
        "Hull",
-       2,
+       4,
        130
       ],
       [
@@ -1402,12 +1402,12 @@
      "bars": [
       [
        "Speed",
-       8,
+       9,
        44
       ],
       [
        "Hull",
-       8,
+       10,
        296
       ],
       [
@@ -1431,12 +1431,12 @@
      "bars": [
       [
        "Speed",
-       12,
+       13,
        59
       ],
       [
        "Hull",
-       3,
+       5,
        170
       ],
       [
@@ -1462,12 +1462,12 @@
      "bars": [
       [
        "Speed",
-       7,
+       8,
        42
       ],
       [
        "Hull",
-       6,
+       8,
        250
       ],
       [
@@ -1491,12 +1491,12 @@
      "bars": [
       [
        "Speed",
-       6,
+       7,
        38
       ],
       [
        "Hull",
-       5,
+       7,
        230
       ],
       [
@@ -1521,12 +1521,12 @@
      "bars": [
       [
        "Speed",
-       7,
+       8,
        40
       ],
       [
        "Hull",
-       6,
+       8,
        250
       ],
       [
@@ -1557,7 +1557,7 @@
       ],
       [
        "Hull",
-       2,
+       4,
        150
       ],
       [
@@ -1581,12 +1581,12 @@
      "bars": [
       [
        "Speed",
-       6,
+       7,
        37
       ],
       [
        "Hull",
-       2,
+       4,
        150
       ],
       [
@@ -1610,12 +1610,12 @@
      "bars": [
       [
        "Speed",
-       18,
+       19,
        82
       ],
       [
        "Hull",
-       3,
+       5,
        175
       ],
       [
@@ -1644,7 +1644,7 @@
       ],
       [
        "Hull",
-       5,
+       7,
        210
       ],
       [
@@ -1675,12 +1675,12 @@
      "bars": [
       [
        "Speed",
-       17,
+       18,
        78
       ],
       [
        "Hull",
-       29,
+       31,
        880
       ],
       [
@@ -1705,7 +1705,7 @@
      "bars": [
       [
        "Speed",
-       3,
+       4,
        27
       ],
       [
@@ -1735,7 +1735,7 @@
      "bars": [
       [
        "Speed",
-       3,
+       4,
        25
       ],
       [
@@ -1765,12 +1765,12 @@
      "bars": [
       [
        "Speed",
-       2,
+       3,
        21
       ],
       [
        "Hull",
-       19,
+       21,
        600
       ],
       [
@@ -1795,12 +1795,12 @@
      "bars": [
       [
        "Speed",
-       3,
+       4,
        25
       ],
       [
        "Hull",
-       30,
+       31,
        900
       ],
       [
@@ -1831,7 +1831,7 @@
       ],
       [
        "Hull",
-       37,
+       38,
        1100
       ],
       [
@@ -1856,12 +1856,12 @@
      "bars": [
       [
        "Speed",
-       2,
+       3,
        23
       ],
       [
        "Hull",
-       23,
+       24,
        700
       ],
       [
@@ -1891,7 +1891,7 @@
       ],
       [
        "Hull",
-       7,
+       9,
        280
       ],
       [
@@ -1915,12 +1915,12 @@
      "bars": [
       [
        "Speed",
-       6,
+       7,
        37
       ],
       [
        "Hull",
-       2,
+       4,
        140
       ],
       [
@@ -1949,7 +1949,7 @@
       ],
       [
        "Hull",
-       48,
+       49,
        1400
       ],
       [
@@ -1973,12 +1973,12 @@
      "bars": [
       [
        "Speed",
-       4,
+       5,
        29
       ],
       [
        "Hull",
-       3,
+       5,
        170
       ],
       [
@@ -2002,12 +2002,12 @@
      "bars": [
       [
        "Speed",
-       5,
+       6,
        32
       ],
       [
        "Hull",
-       7,
+       9,
        280
       ],
       [
@@ -2032,12 +2032,12 @@
      "bars": [
       [
        "Speed",
-       2,
+       3,
        23
       ],
       [
        "Hull",
-       21,
+       22,
        650
       ],
       [
@@ -2524,6 +2524,19 @@
    ]
   },
   {
+   "key": "lmg",
+   "name": "M249 SAW",
+   "kind": "bullet",
+   "guidance": "unguided",
+   "dps": 73,
+   "reach": 1425,
+   "blast": 2,
+   "ammo": 800,
+   "engages": [
+    "any"
+   ]
+  },
+  {
    "key": "mech_flamer",
    "name": "HEAVY FLAMER",
    "kind": "bullet",
@@ -2571,6 +2584,19 @@
    "reach": 3150,
    "blast": 20,
    "ammo": 900,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "rifle",
+   "name": "M4 CARBINE",
+   "kind": "bullet",
+   "guidance": "unguided",
+   "dps": 38,
+   "reach": 1600,
+   "blast": 2,
+   "ammo": 300,
    "engages": [
     "any"
    ]
@@ -2920,6 +2946,19 @@
    ]
   },
   {
+   "key": "at_rocket",
+   "name": "M3 RECOILLESS",
+   "kind": "rocket",
+   "guidance": "unguided",
+   "dps": 127,
+   "reach": 1000,
+   "blast": 14,
+   "ammo": 8,
+   "engages": [
+    "any"
+   ]
+  },
+  {
    "key": "dragonfire",
    "name": "DRAGON FIRE",
    "kind": "rocket",
@@ -3188,6 +3227,19 @@
    "reach": 6750,
    "blast": 22,
    "ammo": 40,
+   "engages": [
+    "any"
+   ]
+  },
+  {
+   "key": "grenade",
+   "name": "M67 GRENADE",
+   "kind": "shell",
+   "guidance": "unguided",
+   "dps": 50,
+   "reach": 240,
+   "blast": 17,
+   "ammo": 4,
    "engages": [
     "any"
    ]
@@ -3543,6 +3595,7 @@
     "media": "media/round_rocket.gif",
     "flown_by": [
      "apam_rockets",
+     "at_rocket",
      "dragonfire",
      "grad_salvo",
      "mlrs",
@@ -3554,12 +3607,12 @@
     ],
     "tags": [
      "apam_rockets",
+     "at_rocket",
      "dragonfire",
      "grad_salvo",
      "mlrs",
      "prop_rockets",
-     "rockets",
-     "scout_rockets"
+     "rockets"
     ]
    },
    {
@@ -3575,6 +3628,7 @@
      "arty_mrsi",
      "arty_smart",
      "buckshot",
+     "grenade",
      "guided_shell",
      "heavy_arty",
      "howitzer",
@@ -3628,6 +3682,7 @@
    "gauss",
    "hmg",
    "laser",
+   "lmg",
    "mech_flamer",
    "mech_pulse_laser",
    "mech_railgun",
@@ -3635,6 +3690,7 @@
    "plasma",
    "railgun",
    "rapid_navgun",
+   "rifle",
    "sabot",
    "side_40",
    "sunder",
@@ -5531,7 +5587,7 @@
     {
      "key": "prop_barn",
      "name": "BARN",
-     "desc": "Farm barn -- pancakes/collapses when destroyed.",
+     "desc": "Farm barn -- red board-and-batten on a stone footing, gambrel roof, white-trimmed double doors with the X brace, hayloft door under a hay hood, cupola. Pancakes/collapses when destroyed.",
      "media": "media/prop_barn.gif",
      "tags": [
       "60 hp",
@@ -5819,7 +5875,7 @@
     {
      "key": "prop_log_cabin",
      "name": "LOG CABIN",
-     "desc": "Boreal log cabin -- stacked log courses, steep snow-shedding roof, stone chimney. Regional dwelling for boreal/tundra/alpine/arctic.",
+     "desc": "Boreal log cabin -- round logs crossing at notched corners, chinking, steep standing-seam roof, porch on log posts, lit windows, fieldstone chimney, woodpile. Regional dwelling for boreal/tundra/alpine/arctic.",
      "media": "media/prop_log_cabin_sheet.png",
      "tags": [
       "84 hp",
@@ -5846,7 +5902,7 @@
     {
      "key": "prop_orchard_tree",
      "name": "ORCHARD TREE",
-     "desc": "Pruned fruit tree -- uniform round crown. Placed in rows: uniformity is what reads as PLANTED vs wild forest.",
+     "desc": "Pruned fruit tree -- whitewashed trunk, four scaffold limbs, a layered round crown hung with fruit. Placed in rows: uniformity is what reads as PLANTED vs wild forest.",
      "media": "media/prop_orchard_tree_sheet.png",
      "tags": [
       "11 hp",
@@ -6070,6 +6126,16 @@
    "group": "street",
    "cards": [
     {
+     "key": "prop_ammo_crate",
+     "name": "AMMO CRATE",
+     "desc": "AMMO RESUPPLY POINT -- a wooden pallet stacked two tiers high with olive ammo cans (lids, latches, handles), two long green rifle-ammo crates on top with yellow stencil bands and rope handles, a ratchet strap, and a pole with a bright green marker panel. Where a soldier on foot refills (stand at it); shown as a green R on the minimap.",
+     "media": "media/prop_ammo_crate.png",
+     "tags": [
+      "scenery",
+      "3u tall"
+     ]
+    },
+    {
      "key": "prop_apartment_walkup",
      "name": "APARTMENT WALKUP",
      "desc": "Three-storey walk-up -- brick, stacked balconies down the front, an entrance stair.",
@@ -6098,52 +6164,74 @@
     {
      "key": "prop_boulder",
      "name": "BOULDER",
-     "desc": "Boulder -- becomes a rolling rock when a blast dislodges it.",
+     "desc": "Glacial erratic -- a car-sized rounded granite boulder (3.3 u tall), speckled grain, lichen on the crown, moss on the shaded side, a crack across it, sunk in its own spalled stones; temperate and cold country. Rolls when a blast dislodges it.",
      "media": "media/prop_boulder.png",
      "tags": [
       "rolls when hit",
       "topples",
-      "4u tall"
+      "3u tall"
      ]
     },
     {
      "key": "prop_boulder2",
      "name": "BOULDER2",
-     "desc": "Boulder, shape 2 of 5 -- a different procedural rock; rolls when a blast dislodges it.",
+     "desc": "Fractured block -- an angular gneiss boulder (3.7 u), flat fracture faces paler than its weathered skin, banded foliation, two joints and the wedge that split off lying at its foot. Rolls when dislodged.",
      "media": "media/prop_boulder2.png",
      "tags": [
       "rolls when hit",
       "topples",
-      "5u tall"
+      "3u tall"
      ]
     },
     {
      "key": "prop_boulder3",
      "name": "BOULDER3",
-     "desc": "Boulder, shape 3 of 5 -- a different procedural rock; rolls when a blast dislodges it.",
+     "desc": "Sandstone slabs -- four flat beds of banded ochre sandstone (3.1 u, 8 u long), weathered back at different rates, dark desert varnish streaking down the faces; dry country. Rolls when dislodged.",
      "media": "media/prop_boulder3.png",
      "tags": [
       "rolls when hit",
       "topples",
-      "5u tall"
+      "3u tall"
      ]
     },
     {
      "key": "prop_boulder4",
      "name": "BOULDER4",
-     "desc": "Boulder, shape 4 of 5 -- a different procedural rock; rolls when a blast dislodges it.",
+     "desc": "Granite tor -- a house-sized outcrop (9.6 u) of rounded corestones stacked on a bedrock base, the joints between them shadowed; rare. Rolls when dislodged.",
      "media": "media/prop_boulder4.png",
      "tags": [
       "rolls when hit",
       "topples",
-      "5u tall"
+      "9u tall"
      ]
     },
     {
      "key": "prop_boulder5",
      "name": "BOULDER5",
-     "desc": "Boulder, shape 5 of 5 -- a different procedural rock; rolls when a blast dislodges it.",
+     "desc": "Half-buried stone -- a waist-high weathered dome (1.6 u) mostly under the ground, soil heaped round its foot. Rolls when dislodged.",
      "media": "media/prop_boulder5.png",
+     "tags": [
+      "rolls when hit",
+      "topples",
+      "1u tall"
+     ]
+    },
+    {
+     "key": "prop_boulder6",
+     "name": "BOULDER6",
+     "desc": "Columnar basalt -- a house-sized outcrop (6.7 u) of dark hexagonal columns at different heights, dark joints between them, rusty weathered tops, one broken off low. Rolls when dislodged.",
+     "media": "media/prop_boulder6.png",
+     "tags": [
+      "rolls when hit",
+      "topples",
+      "6u tall"
+     ]
+    },
+    {
+     "key": "prop_boulder7",
+     "name": "BOULDER7",
+     "desc": "Snow-capped boulder -- an upstanding angular granite block (3.4 u) with snow lying on its flat top and shoulders, a second stone leaning on it; cold and alpine country. Rolls when dislodged.",
+     "media": "media/prop_boulder7.png",
      "tags": [
       "rolls when hit",
       "topples",
@@ -6193,7 +6281,7 @@
     {
      "key": "prop_cactus",
      "name": "CACTUS",
-     "desc": "Saguaro cactus -- fluted column with two raised arms.",
+     "desc": "Saguaro cactus -- fluted, spined column with two elbowed arms and white blossoms on top.",
      "media": "media/prop_cactus.png",
      "tags": [
       "12 hp",
@@ -6264,7 +6352,7 @@
       "14 hp",
       "wood",
       "shreds",
-      "2u tall",
+      "3u tall",
       "4 rolls shown"
      ]
     },
@@ -6619,14 +6707,26 @@
     {
      "key": "prop_rock_cluster",
      "name": "ROCK CLUSTER",
-     "desc": "Rock cluster -- low pile of rounded field stones, moss in the gaps, loose pebbles.",
+     "desc": "Field stones -- eight rounded stones, the biggest knee-high to a soldier (0.8 u), each sunk in the ground, lichen and moss.",
      "media": "media/prop_rock_cluster_sheet.png",
      "tags": [
       "16 hp",
       "concrete",
       "shreds",
-      "1u tall",
+      "0u tall",
       "4 rolls shown"
+     ]
+    },
+    {
+     "key": "prop_scree",
+     "name": "SCREE",
+     "desc": "Scree -- a talus fan of angular fragments (1.5 u high, 7 u across) heaped highest at the back; alpine and dry slopes.",
+     "media": "media/prop_scree.png",
+     "tags": [
+      "16 hp",
+      "concrete",
+      "shreds",
+      "1u tall"
      ]
     },
     {
@@ -6776,10 +6876,70 @@
    "group": "figures",
    "cards": [
     {
+     "key": "enemy_soldier",
+     "name": "INFANTRY",
+     "desc": "Enemy RIFLEMAN -- olive-and-green uniform in camouflage blotches, a rounder flared helmet with cover, band, NVG bracket and counterweight, a scarf, a green plate carrier with magazine pouches and a red tab, radio, belt kit, knee pads, black boots; an AK-style rifle with wood furniture and the curved magazine, held in both hands.",
+     "media": "media/enemy_soldier.png",
+     "tags": [
+      "scenery",
+      "2u tall"
+     ]
+    },
+    {
+     "key": "enemy_soldier_at",
+     "name": "AT TEAM",
+     "desc": "Enemy AT GUNNER -- the rifleman's kit with an RPG-7 on the right shoulder (olive tube, wood heat guards, venturi, optic, the bulbous PG-7 warhead with its fins) and a rocket bag with two spare rounds.",
+     "media": "media/enemy_soldier_at.png",
+     "tags": [
+      "scenery",
+      "2u tall"
+     ]
+    },
+    {
+     "key": "enemy_soldier_mg",
+     "name": "MACHINE GUNNER",
+     "desc": "Enemy MACHINE GUNNER -- the rifleman's kit with a PKM-style gun (skeleton stock, long fluted barrel, carrying handle, the green ammunition box feeding a brass belt, folded bipod) and an ammunition pack.",
+     "media": "media/enemy_soldier_mg.png",
+     "tags": [
+      "scenery",
+      "2u tall"
+     ]
+    },
+    {
      "key": "person",
      "name": "PERSON",
-     "desc": "A civilian, about 2.1 units tall -- 40 looks (colours, build, hair or a hat, sleeves, trousers/shorts/skirt) x 3 walking poses (game/people.py): the little people on the streets, yards and roadsides.",
+     "desc": "A civilian (shoes, belt, collar, hands, a face), about 2.1 units tall -- 40 looks (colours, build, hair or a hat, sleeves, trousers/shorts/skirt) x 3 walking poses (game/people.py): the little people on the streets, yards and roadsides.",
      "media": "media/person.png",
+     "tags": [
+      "scenery",
+      "2u tall"
+     ]
+    },
+    {
+     "key": "soldier",
+     "name": "RIFLEMAN",
+     "desc": "Friendly RIFLEMAN -- multicam-tan uniform in camouflage blotches, a high-cut helmet with its cover, rails, NVG mount and the goggles stowed up, ballistic glasses, a coyote plate carrier with three magazine pouches, an admin pouch and a radio with its whip, battle belt, knee pads, tan boots, gloves; an M4-style carbine with an optic, held in both hands. Walks on the native mech rig (12 stride frames) and falls over backwards when killed.",
+     "media": "media/soldier.png",
+     "tags": [
+      "scenery",
+      "2u tall"
+     ]
+    },
+    {
+     "key": "soldier_at",
+     "name": "AT GUNNER",
+     "desc": "Friendly AT GUNNER -- the rifleman's kit with a recoilless rifle on the right shoulder (drab tube, venturi, sight, shoulder pad) and two spare rounds standing in his pack.",
+     "media": "media/soldier_at.png",
+     "tags": [
+      "scenery",
+      "2u tall"
+     ]
+    },
+    {
+     "key": "soldier_mg",
+     "name": "MACHINE GUNNER",
+     "desc": "Friendly MACHINE GUNNER -- the rifleman's kit with an M249-style belt-fed gun (heat shield, soft 200-round pouch, optic, folded bipod), an ammunition pack and a spare-barrel bag on his back.",
+     "media": "media/soldier_mg.png",
      "tags": [
       "scenery",
       "2u tall"
@@ -7002,164 +7162,109 @@
  ],
  "numbers": {
   "facts": {
-   "models": 441,
-   "props": 119,
+   "models": 451,
+   "props": 122,
    "vehicles": 66,
    "mechs": 14,
-   "weapons": 85,
-   "enemies": 47,
+   "weapons": 89,
+   "enemies": 50,
    "missions": 26,
    "scenarios": 7,
    "biomes": 14,
    "presets": 26,
-   "engine_loc": 109452,
-   "modules": 56,
-   "checks": 1037,
-   "checks_pass": 1037,
-   "checks_secs": 8437.996211051941,
-   "checks_partial": true,
-   "lessons": 936,
-   "log_lines": 23212,
-   "perf": {
-    "terrain": {
-     "kernel_ms": 0.292,
-     "res": 230400
-    },
-    "stream_scroll": {
-     "gen_ms": 4.476,
-     "far_lod_ms": 1.126,
-     "scroll_ms": 5.601,
-     "buf": 2048,
-     "strip_cells": 16384
-    },
-    "billboard_draw": {
-     "draw_ms": 5.049,
-     "billboards": 9000,
-     "blits": 1046,
-     "tree_keys": 3,
-     "prop_keys": 3
-    },
-    "entity_fan": {
-     "render_ms": 1.231,
-     "math_ms": 0.903,
-     "draw_ms": 0.432,
-     "authored_voxels": 32004
-    },
-    "combat_update": {
-     "update_ms": 1.233,
-     "particles": 2917,
-     "enemies": 24,
-     "projectiles": 0
-    },
-    "combat_draw": {
-     "render_ms": 3.71,
-     "particles": 3062,
-     "enemies": 24,
-     "projectiles": 0
-    },
-    "particles_peak": {
-     "update_ms": 0.21,
-     "particles": 1916,
-     "cap": 3500
-    },
-    "warhead_spike": {
-     "worst_update_ms": 208.797,
-     "carve_cells": 78961,
-     "particles": 3457
-    },
-    "sustained_fire": {
-     "sustained_worst_ms": 31.093,
-     "sustained_mean_ms": 20.068,
-     "sustained_pair_tests": 2,
-     "sustained_scenery_calls": 62,
-     "sustained_rounds": 1542
-    }
-   }
+   "engine_loc": 114164,
+   "modules": 58,
+   "checks": 1104,
+   "checks_pass": 1101,
+   "checks_secs": 8020.827410697937,
+   "checks_partial": false,
+   "lessons": 958,
+   "log_lines": 23851
   },
   "sample_checks": [
    "RWR means something",
-   "a missile leaves the way it is mounted",
-   "an enemy battlemech loses limbs too",
-   "enemy:spg",
-   "fly+fire:pzh2000",
-   "model:airliner",
-   "model:missile_aam",
-   "model:prop_crop_rows_v2",
-   "model:prop_ice_floe_v1",
-   "model:prop_tractor_v1",
-   "model:tree_spruce_v1",
-   "the little people walk the streets"
+   "a machine knocked down does not swing its legs round in one frame",
+   "an AI tank on a hillside is drawn lying on it",
+   "enemy:infantry",
+   "fly+fire:leopard",
+   "mapgen:rivers",
+   "model:humvee",
+   "model:prop_crane",
+   "model:prop_ice_floe_v2",
+   "model:prop_tree_stump_v1",
+   "more land assets",
+   "the little people die in red and stay dead"
   ],
   "work": [
    {
-    "sha": "4cbd45c",
+    "sha": "cfcd561",
+    "date": "2026-10-04",
+    "subject": "the over-the-shoulder aim gate under the dev's video state: the fixture held a man in the air with his fall speed on him and its mouse loop never stopped at 1910 px (vz zeroed, the stop one mouse count); the gate now runs under the default and fullscreen/ultra/upscaled video, witnessed; log, lesson (958)"
+   },
+   {
+    "sha": "e7d8dae",
+    "date": "2026-10-04",
+    "subject": "diagnose: the over-the-shoulder aim gate says, when the round misses, what the shot reckoned from (origin against the drawn lens, the range it converged at against his, what the solution named) -- the CHASE 30 u up failure reported on 105d58c does not reproduce here (27/27, alone x2, on-foot x2)"
+   },
+   {
+    "sha": "105d58c",
+    "date": "2026-10-04",
+    "subject": "merge feature/infantry-ammo-aim-walk onto main (squad vehicles): session conflict resolved (the per-gait strides into _setup_machine), docs unioned and the branch's log references re-pointed, lessons 957; the boarding gate knows every gait; the aim fixture clears parked vehicles; one log line reworded -- WIP: 'CHASE 30 u up at 40 u' aim case fails after the merge"
+   },
+   {
+    "sha": "0f9c20b",
+    "date": "2026-10-04",
+    "subject": "the squad gets into vehicles with you: empty HMMWV / Stryker / SH-60 parked near a soldier's start, ENTER to get in and out, the squad rides hidden (ABOARD) and dies with the vehicle; four witnessed gates; log, lessons (950), OPEN row, archive"
+   },
+   {
+    "sha": "226435d",
+    "date": "2026-10-04",
+    "subject": "diagnose: the compiled-mark reference rounds as the kernel now does (the rut fix rounded the store); a log line no longer names two things that do not exist"
+   },
+   {
+    "sha": "82c0e6c",
+    "date": "2026-10-04",
+    "subject": "play as infantry: the full gate's findings -- a soldier has no cabin and walks on legs, his flash is at his rifle, the hand weapons are their own arena (the carbine out-reaches the SAW), a man is not a platform; log"
+   },
+   {
+    "sha": "f2d1b32",
     "date": "2026-10-03",
-    "subject": "trailer: re-filming what the cut uses takes ~10 min (was ~100 for everything) -- --cut-only, --jobs=N worker processes, the game's model/sound disk caches turned on (session build 26 s -> 6-14 s), NVENC, the readback straight to the encoder and double-buffered so it never waits on the GPU (one take 79 s -> 38 s, frames identical); per-stage timings in the log; log, lesson (936), board"
+    "subject": "docs: play as infantry -- log, lessons (948), OPEN row, archive; site data"
    },
    {
-    "sha": "f50be45",
+    "sha": "fd97524",
     "date": "2026-10-03",
-    "subject": "the canyon's cliffs: the hit is bisected to the side in the ground (the midpoint could be air in front of a wall, over the sea -- a checkerboard of rock and sea), a wall wears its own top cell's colour, and only a building's marked roof gets windows (config.bld_roof) -- every other crisp face is rock; two new GPU self-test parts, witnessed three ways; no measurable GPU cost"
+    "subject": "wip: the squad's toughness rides YOUR ARMOUR"
    },
    {
-    "sha": "c83aa75",
-    "date": "2026-10-02",
-    "subject": "trailer: every angle records the game version it was filmed on ('older game' in --list, and the cut names its clips from older code); all 187 angles re-filmed on the current game and the trailer re-cut; log, lesson (934), board (and the TTS fallback's write-up)"
+    "sha": "acc863a",
+    "date": "2026-10-03",
+    "subject": "wip: infantry -- rounds that cross a man hit him before the ground behind him; aim at a man's chest; squad seam; landing"
    },
    {
-    "sha": "b3cfdb7",
-    "date": "2026-10-02",
-    "subject": "tts: the box went quiet on its WireGuard address (10.8.0.9) while it still answered on the LAN, so every render failed on a timeout -- tts_tool now tries fallback_urls (192.168.1.3 by default) and says which it used; --list no longer crashes on a Windows console; the 8 voice lines that were missing rendered (iron gauntlet, deck recovery, recovered)"
+    "sha": "8095ed5",
+    "date": "2026-10-03",
+    "subject": "wip: play as infantry -- the soldier on foot, his squad and its orders, the views, the gates (docs follow)"
    },
    {
-    "sha": "19db8b2",
-    "date": "2026-10-02",
-    "subject": "trailer re-cut with the ground views: LOW PASS (an F/A-18 overhead), THE FRONT (the fight at ground level), FROM ABOVE (an A-10 diving at the camera with napalm) and two finale cuts; 106 s at 1080p60; 187 numbered clips; log, lesson (933), board"
+    "sha": "d23b967",
+    "date": "2026-10-03",
+    "subject": "track marks: a stamp's blend is rounded, not floored -- every stamp took at least a level off, ~14 a pass, so rock (k 0.06) rutted 0.38 as deep as dirt (k 0.40); now ~0.2, clear of the bar; the rock-colour stopgap reverted; witnessed; log, lesson (946), board"
    },
    {
-    "sha": "3837e7d",
-    "date": "2026-10-02",
-    "subject": "trailer: three ground-view takes -- overhead (an F-16 low over the plains, cameras stood on the ground under its line), divebomb (an A-10 diving at a ground camera, napalm in the dive), groundwar (an armour fight with gunships, cameras in the grass); a fire_window, a per-angle zoom (the renderer's telescopic zoom), and a fixed camera no longer fades the trees round it to ghosts"
+    "sha": "84da40e",
+    "date": "2026-10-03",
+    "subject": "the ground is not one colour again: the far-rock change gated the dry/damp swing with the rock weight, which covers every steep hillside; now only a cliff (grade 4.7..9.5) loses it -- saturation spread 0.150 from 0.116 as before; the Alps stay rock; log, lesson (945)"
    },
    {
-    "sha": "b307d4f",
-    "date": "2026-10-01",
-    "subject": "graphics polish, from the game re-filmed: lakes and sea no longer ruled in stripes (each wave faded by the pixel's footprint along the view; row-to-row 7.28 -> 5.38 against 5.00 with no waves), hillsides no longer knitted close up (the sun-raked ground grain band-limited the same way; the fall-line streak made axis-aligned), and a shell's arc trace is a faint line instead of a row of white balls on the GPU path; two new self-test parts and a new check, all witnessed"
+    "sha": "09425cd",
+    "date": "2026-10-03",
+    "subject": "log, lesson (944): the full parallel gate had no verdict -- a lab cleared sys.argv"
    },
    {
-    "sha": "0e5d015",
-    "date": "2026-10-01",
-    "subject": "railways, trains and crash barriers run along their line: they were camera-facing billboards baked side-on, so looked down the line they stood across it; now drawn near the camera as models turned along it (heading from the next piece of the same kind, no network query; 0.82 ms), left out of the billboard field; the wagons no longer stand 1.6 u inside the locomotive; new check witnessed three ways"
-   },
-   {
-    "sha": "367c17c",
-    "date": "2026-10-01",
-    "subject": "world models C/D: the bomb (Mk 80 shape, 117 voxels), shell and rocket round instead of square; the motel (numbered bays, AC units, door lamps, lit VACANCY sign, marked car park) and the radar (braced tower, orange-peel reflector, red obstruction light) rebuilt; 470 model/prop/ordnance/rail/traffic checks pass; log, lesson (930), board"
-   },
-   {
-    "sha": "e85509a",
-    "date": "2026-10-01",
-    "subject": "world models B: the railway rebuilt -- a road-switcher locomotive (cab and nose, long hood with doors, radiator fans, dynamic-brake blister, walkways and handrails, fuel tank, three-axle bogies, head, ditch and rear lights at night), a ribbed boxcar with its sliding door, ladders and brake wheel, a round tank wagon with heads, manway platform and placards, a signal with mast, ladder and hooded lamps, and track with real rail profiles on concrete sleepers; rail checks pass"
-   },
-   {
-    "sha": "f0c6f61",
-    "date": "2026-10-01",
-    "subject": "world models A: the road traffic rebuilt -- car, hatchback, pickup, van, box truck, bus, semi, tanker, tipper, tractor, combine: round wheels (tyre, sidewall, rim, hub) instead of cogs, tinted glass with pillars, door lines, mirrors, bumpers, grilles, plates, and head and tail lamps that light with the night; footprints and wheel counts kept (the semi still has 18); new check 'the road traffic is detailed' witnessed twice (the cog wheel, no tail lamps) -- it caught the tractor with none"
-   },
-   {
-    "sha": "492ee7d",
-    "date": "2026-10-01",
-    "subject": "docs: PERFORMANCE_PLAYBOOK.md -- every performance win in one reusable reference (the rules, the architecture and why, the method, ~50 patterns with before/after numbers, what lost, the instruments, a checklist); README brought up to date (realistic weapons + rearm, weapon roles, smoke + APS, wrecks, the V views, X); ENGINE/CLAUDE/CPU/GPU point at it; PORTING gains what landed on 09-30"
-   },
-   {
-    "sha": "980e4f4",
-    "date": "2026-10-01",
-    "subject": "lesson: a bound on the aim's lead is still a run-on"
-   },
-   {
-    "sha": "69999ba",
-    "date": "2026-10-01",
-    "subject": "the turret stops when the mouse stops: the aim leads the gun by one frame of its traverse (it ran on 7.4 deg over 0.17 s after the hand stopped; now 0.2 deg), still turning at the mount's full rate while the hand moves; the view check asserts the gun is where you look within 0.05 s; witnessed"
+    "sha": "d9add37",
+    "date": "2026-10-03",
+    "subject": "diagnose: the full --jobs run gives a verdict again -- the command line is read once at start (drive_lab clears sys.argv at import, so workers lost --out= and every full parallel run ended 'produced no results'); a check's leaked GRADE_LEVEL / unit shadows are put back (the ground-colour check left the grade on and the water-ring part of gpu terrain raymarch failed after it); the track fixture is seeded after its session is built; rock scuffs fainter (lift 0.97); two doc references fixed"
    }
   ]
  }

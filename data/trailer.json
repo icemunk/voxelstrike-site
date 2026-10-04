@@ -2,7 +2,7 @@
  "video": "media/trailer.mp4",
  "poster": "media/trailer.jpg",
  "secs": 106.0,
- "commit": "ab2c5c9",
- "built": "2026-10-03",
- "takes": "valley,canyon,battle,napalm,carpet,dogfight,armour,mech,naval,lowjet,aero,storm,dusk,artillery,dawn,duel,islands,hug,dive,jdam,strafe,rockets,salvo,thermo,harrier,mars,dunes,arctic,jungle,lava,ac130,swarm,flak,carrier,alien,canyon_jet,vale_jet,alps_jet,overhead,divebomb,groundwar"
+ "commit": "02e3563",
+ "built": "2026-10-04",
+ "takes": "valley,canyon,battle,napalm,carpet,dogfight,armour,mech,naval,lowjet,aero,storm,dusk,artillery,dawn,duel,islands,hug,dive,jdam,strafe,rockets,salvo,thermo,harrier,mars,dunes,arctic,jungle,lava,ac130,swarm,flak,carrier,alien,canyon_jet,vale_jet,alps_jet,overhead,divebomb,groundwar,troops_heli,troops_jet,troops_mech,troops_low"
 }

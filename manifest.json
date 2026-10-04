@@ -8,7 +8,7 @@
   "replay_air": "clip_replay_air.mp4",
   "strike": "clip_strike.mp4"
  },
- "commit": "ab2c5c9",
+ "commit": "cfcd561",
  "facts": {
   "biomes": 14,
   "check_names": [
@@ -30,10 +30,15 @@
    "a big enough blow puts a machine down, and it gets back up",
    "a big impact knocks a vehicle back",
    "a blast lights its own smoke",
+   "a blast still reaches exactly the units its body test reaches",
+   "a blast's shock ring lies on the ground",
    "a building that falls does not build its own sound",
    "a building's model is the size of its block",
+   "a cached map is the map, and leaves the random streams where generating it does",
    "a city stands on level ground",
    "a city's windows are lit at night",
+   "a clear night has stars and a moon",
+   "a closer view on V, and your own machine seen through smoke",
    "a cloud reads as a cloud",
    "a collective is heard as load, not as a volume knob",
    "a crash into the ground is contact, not proximity",
@@ -50,11 +55,13 @@
    "a follow view frames the machine, at any resolution",
    "a hardpoint carries what belongs on it",
    "a heavy battlemech does not run or leap",
+   "a heavy hit leaves a machine hurt and smoking, and a kill leaves its hull",
    "a heavy round staggers a walking machine",
    "a heavy vehicle runs a car over",
    "a helicopter can settle with power",
    "a helicopter carries its momentum, and flares to a stop",
    "a helicopter lands on a roof, and the building stands",
+   "a helicopter lands on the deck that is drawn, and the deck is above the sea",
    "a helicopter sets down gently, and a hard arrival costs it",
    "a helicopter sits on a slope its gear holds, rolls over past it, and goes in on water",
    "a helicopter's disc comes round at its own rate",
@@ -66,12 +73,16 @@
    "a hybrid world's home is its authored ground to the edge",
    "a hybrid world's window holds the right ground after a reset",
    "a jet can go vertical",
+   "a jet flown into the ground is a crash into terrain, not a landing fault",
    "a jet folds into a robot",
    "a key pressed as you die does not skip the death",
    "a kill is seen, not inferred",
    "a kill's wreckage is drawn by the GPU",
    "a lamp is its own colour, and a strobe flashes",
+   "a land machine can screen itself with smoke and shoot down a missile",
    "a land vehicle climbs what it can, not a cliff or a wall",
+   "a land vehicle drives like a machine",
+   "a land vehicle fords shallow water and drowns slowly in deep",
    "a land vehicle is detailed on its own plates, and its lamps are at the right ends",
    "a land vehicle never spawns in water",
    "a land vehicle rides on springs",
@@ -79,6 +90,8 @@
    "a laser does not sound like a slug",
    "a launch is an event with a shape",
    "a leap comes back down, and a fall is still a fall",
+   "a limb blown off is the same piece whether built or kept",
+   "a lobbed shell's arc is a line where the GPU draws one",
    "a lock either builds or says why it will not",
    "a lock is worth having",
    "a lock-on weapon can engage a ground vehicle, and a dud comes down",
@@ -94,9 +107,12 @@
    "a machine moves over the terrain the way the terrain goes, and a hull rides the sea",
    "a machine sights from itself, not from its ankles",
    "a machine standing in a shadow is in it",
+   "a machine that stands up is its vehicle, then its own robot",
    "a machine turning on the spot is heard turning",
+   "a machine's waist twist equals its numpy original",
    "a manoeuvre is an EVENT you can hear",
    "a mech dodges the way it leans",
+   "a missile fired at a wingman flies at the wingman, and the wingman defends itself",
    "a missile is not one missile",
    "a missile leaves the way it is mounted",
    "a missile that fires straight up does not need the hull pointed at its target",
@@ -104,6 +120,7 @@
    "a near miss is not a hit",
    "a new model is not drawn as the one that was freed before it",
    "a person killed is heard",
+   "a pose starts from the fold as the original blend computed it",
    "a power line is drawn by the GPU against the terrain's depth",
    "a preset names what the machine is",
    "a prop states what it is made of",
@@ -116,6 +133,7 @@
    "a road does not run through a town on its way",
    "a road is painted exactly where the road is",
    "a robot holds together",
+   "a robot hops, and the camera stays with it",
    "a robot is CONTROLLED as a robot",
    "a robot lands on its thrusters, it does not just stop",
    "a robot's joints stay closed while it walks",
@@ -134,6 +152,7 @@
    "a ship is detailed on its own plates, its radar turns and it shows its lamps",
    "a small batch does not spin up the parallel kernel",
    "a soft sprite is a cached bucket, not a per-frame rebuild",
+   "a soldier model is a soldier",
    "a sprite holds the whole prop",
    "a steep face is drawn as a face",
    "a storm is wet and electric",
@@ -147,6 +166,7 @@
    "a streamed world is not a torus for its inhabitants",
    "a strike is a run you pay for",
    "a strike stops lighting the ground it already hit",
+   "a strike weapon does not lock an aircraft",
    "a tank's main gun is a 120mm, and its rounds share the tube",
    "a tiltrotor flies as two aircraft",
    "a tree means something to an aircraft",
@@ -174,6 +194,7 @@
    "aim + naval",
    "air intercept",
    "aircraft vs static objects",
+   "an AI tank on a hillside is drawn lying on it",
    "an aeroplane flies on a lift vector",
    "an aeroplane lands on a runway and stops on its brakes; on the ground's own roughness it loses its gear",
    "an aeroplane takes off at flying speed, and not before",
@@ -181,10 +202,14 @@
    "an aircraft is detailed on the plates it was authored with, and carries its lamps",
    "an aircraft is heard flying: spool, burner, speed, stall, G, dive, ground",
    "an amphibian floats in the water like a boat",
+   "an animated machine's buffer equals a full pack",
    "an authored map's settlements are joined by the network",
    "an effect stops where the world stops",
+   "an emplacement stands on the ground, not in it",
    "an enemy aircraft flies its own flight model",
    "an enemy battlemech loses limbs too",
+   "an enemy has to see you and lock before it launches, and you are warned first",
+   "an enemy missile hurts you the way yours hurt them",
    "an enemy moves as the machine it is",
    "an energy weapon has a body, and the lightning has a crack",
    "an engine loop does not audibly repeat",
@@ -207,6 +232,7 @@
    "building collapse",
    "building damage variety",
    "buildings upgraded (windows + pipeline)",
+   "built-in graphics are told from a graphics card, and tuned for",
    "camera views",
    "chunk determinism",
    "city detail + material destruction",
@@ -237,6 +263,7 @@
    "enemy:airliner",
    "enemy:arsenal_barge",
    "enemy:artillery",
+   "enemy:at_team",
    "enemy:attack_prop",
    "enemy:awacs_plane",
    "enemy:battleship",
@@ -258,6 +285,7 @@
    "enemy:heavy_sph",
    "enemy:heavy_transport_heli",
    "enemy:helicopter",
+   "enemy:infantry",
    "enemy:interceptor",
    "enemy:jet",
    "enemy:mech_assault",
@@ -281,6 +309,7 @@
    "enemy:turret",
    "engine voices differ per vehicle",
    "entity render perf",
+   "every ground vehicle stands up into its own robot",
    "every hit has weight, whatever hit it",
    "every knob is real",
    "every land vehicle, rotorcraft and ship moves as its real type",
@@ -365,6 +394,9 @@
    "fly+fire:shilka",
    "fly+fire:skycrane",
    "fly+fire:smerch",
+   "fly+fire:soldier",
+   "fly+fire:soldier_at",
+   "fly+fire:soldier_mg",
    "fly+fire:spirit",
    "fly+fire:stryker",
    "fly+fire:submarine",
@@ -376,6 +408,7 @@
    "fly+fire:ucav",
    "fly+fire:viper",
    "fly+fire:warthog",
+   "flying controls: up is up or a flight stick, the same on every aircraft",
    "flying on a keyboard and mouse",
    "forge presets",
    "four MRSI rounds fired seconds apart land in the same moment",
@@ -401,6 +434,8 @@
    "hold U to watch your round hit, and the mouse looks around behind you",
    "hold left alt to look behind you",
    "holding the stick flies it, it does not depart it",
+   "infantry are in the battles the game offers",
+   "infantry fight as fire teams on the player's path",
    "invert reaches every control path",
    "jet coordinated turn",
    "land variety + decor",
@@ -409,6 +444,7 @@
    "left means left on every machine",
    "loadout customization",
    "loop",
+   "machines on the ground do not walk through each other",
    "map terrain detail",
    "mapgen:alien",
    "mapgen:alps",
@@ -484,6 +520,8 @@
    "model:enemy_rocket_artillery",
    "model:enemy_sam",
    "model:enemy_scout_heli",
+   "model:enemy_soldier",
+   "model:enemy_soldier_at",
    "model:enemy_spaag",
    "model:enemy_sph",
    "model:enemy_swingwing",
@@ -550,6 +588,7 @@
    "model:prop_agave_v1",
    "model:prop_agave_v2",
    "model:prop_agave_v3",
+   "model:prop_ammo_crate",
    "model:prop_apartment_walkup",
    "model:prop_apartment_walkup_v1",
    "model:prop_apartment_walkup_v2",
@@ -817,6 +856,9 @@
    "model:shilka",
    "model:skycrane",
    "model:smerch",
+   "model:soldier",
+   "model:soldier_at",
+   "model:soldier_mg",
    "model:spirit",
    "model:stealth_bomber",
    "model:stryker",
@@ -896,10 +938,21 @@
    "nothing unused is carried",
    "numba available",
    "objects sit on the ground",
+   "on foot: aimed on the zoom control, the lens comes in over the shoulder and he walks steady",
+   "on foot: ammo crates refill a soldier who stops at one, and only there",
+   "on foot: the crosshair over the shoulder is the middle of the frame and the rifle hits what it is over",
+   "on foot: the soldier walks, runs and sprints on his feet, the rifle steady",
    "one targeting system, one mark to aim with",
+   "play as infantry: W walks him, his legs move, the mouse turns him, V reaches his eyes",
+   "play as infantry: a tank round kills the soldier, one rifle round does not",
+   "play as infantry: the rifle hits what is under the crosshair",
+   "play as infantry: the soldier is in the pickers and starts on dry ground with his squad",
+   "play as infantry: the squad holds, follows, attacks and moves on your orders",
    "power lines are drawn where they read",
    "projectile launch physics",
+   "railways run along their line",
    "realistic crash",
+   "realistic weapons: a real machine carries its own fit, and it runs dry",
    "render performance",
    "respawn vehicle picker",
    "roads take an occasional turn",
@@ -932,25 +985,28 @@
    "the billboard atlas goes up by pages and by the rects that changed",
    "the cockpit horizon does not freeze",
    "the compiled rounds and the scenery filter change nothing",
+   "the compiled target pick is the Python one, call for call",
+   "the compiled unit scalars equal the numpy they replaced",
    "the crater journal belongs to the terrain it indexes",
    "the crosshair is on the target in EVERY view",
    "the crosshair leads a MOVING target",
    "the death replay is directed: smooth, cut on an angle, never across the line",
-   "the docs name things that exist",
    "the end of a session shows what happened before the picker, and says it",
-   "the enemies advance, and each machine has a character",
    "the enemy does not stand still, and does more than one thing",
    "the far field is made off the frame and uploads only what changed",
    "the far field over a hybrid home is the home",
    "the far shore is not drawn in squares",
    "the fight you build is the fight you get",
    "the fire is the colour of the blast that made it",
+   "the first fill on several cores is the same world",
    "the fitted stores reach the draw",
    "the flying boat lands on water and flies off it; anything else ditches",
    "the follow view keeps your machine in sight",
    "the frame log records the spike, and what was in it",
    "the full-screen layers are not made or sent whole on the CPU",
    "the gait's rotations are the ones they replaced",
+   "the game's built models are kept on disk and come back identical",
+   "the game's synthesized sounds are kept on disk and come back identical",
    "the governor cuts the world's resolution only when the GPU is short of time",
    "the governor does not spend your saved settings",
    "the governor knows when the SIM is the floor",
@@ -962,23 +1018,26 @@
    "the loading screen is shown, and it pays for the first frame",
    "the lock is a system, not a boolean",
    "the menu arrow you click is the one you see",
+   "the minimap's range rings are one layer, under every blip",
    "the mix is balanced against your own engine",
    "the mouse is a proportional stick, and each jet rolls its own way",
    "the mouse never runs out of desk",
    "the muzzle flash comes off the gun",
    "the neighbour search finds the true nearest",
    "the new ground models reach the world",
+   "the ordnance and the countryside are detailed: round rounds, a gambrel barn",
    "the particle draw touches only what it draws",
    "the pipper simulates the round the gun fires",
    "the replay draws only the recording and hands the world back",
    "the replay is a rewind, not a re-run",
    "the replay shows who killed you, the shot and the lock",
    "the road network is the same from either side",
+   "the road traffic is detailed: round wheels, lamps at night",
+   "the rotor's compiled solvers and flight loop equal their Python originals",
    "the scenery draw stores follow the grids and are never rebuilt",
    "the screens say what a weapon is for",
    "the sea is water, and the surf is on the coast",
    "the settlements are connected",
-   "the showcase page is intact",
    "the showcase shows every model",
    "the smoke is the colour of what made it",
    "the sun, the clouds, the tints and the rain are drawn by the GPU",
@@ -989,11 +1048,15 @@
    "the traffic is heard driving, being hit and going up",
    "the trees stand in the same air as the ground",
    "the turret and the torso are independent of the tracks and the legs",
+   "the turret holds where you left it, you hear it hold, and you hear the machines around you",
+   "the turret reverses when the hand does",
    "the turret turns on the machine",
+   "the units that touch are found the same way, compiled",
    "the vehicle picker is drawn on every render path",
    "the view follows where you aim, and the turret catches up",
    "the view holds the machine you are flying, at any resolution",
    "the war reports itself",
+   "the weapon strip says what each weapon is for, and which are lobbed",
    "the weapons you fitted are on the machine",
    "the window runs ahead of a fast jet",
    "the world runs in real time",
@@ -1042,6 +1105,7 @@
    "you can shoot a windmill down",
    "you drive THROUGH the world",
    "you have to go and find them",
+   "you rearm at your base, at rest, and only there",
    "your death comes first, then the replay, then the card",
    "your gun recoils when you fire, and it throws its case",
    "your jet's stabilators follow the stick and its burner lights with the throttle",
@@ -1050,78 +1114,23 @@
    "your rotor turns on the GPU path",
    "your tracks run and your wheels turn as you drive"
   ],
-  "checks": 1037,
-  "checks_partial": true,
-  "checks_pass": 1037,
-  "checks_secs": 8437.996211051941,
-  "enemies": 47,
-  "engine_loc": 109452,
-  "lessons": 936,
-  "log_lines": 23212,
+  "checks": 1104,
+  "checks_partial": false,
+  "checks_pass": 1101,
+  "checks_secs": 8020.827410697937,
+  "enemies": 50,
+  "engine_loc": 114164,
+  "lessons": 958,
+  "log_lines": 23851,
   "mechs": 14,
   "missions": 26,
-  "models": 441,
-  "modules": 56,
-  "perf": {
-   "billboard_draw": {
-    "billboards": 9000,
-    "blits": 1046,
-    "draw_ms": 5.049,
-    "prop_keys": 3,
-    "tree_keys": 3
-   },
-   "combat_draw": {
-    "enemies": 24,
-    "particles": 3062,
-    "projectiles": 0,
-    "render_ms": 3.71
-   },
-   "combat_update": {
-    "enemies": 24,
-    "particles": 2917,
-    "projectiles": 0,
-    "update_ms": 1.233
-   },
-   "entity_fan": {
-    "authored_voxels": 32004,
-    "draw_ms": 0.432,
-    "math_ms": 0.903,
-    "render_ms": 1.231
-   },
-   "particles_peak": {
-    "cap": 3500,
-    "particles": 1916,
-    "update_ms": 0.21
-   },
-   "stream_scroll": {
-    "buf": 2048,
-    "far_lod_ms": 1.126,
-    "gen_ms": 4.476,
-    "scroll_ms": 5.601,
-    "strip_cells": 16384
-   },
-   "sustained_fire": {
-    "sustained_mean_ms": 20.068,
-    "sustained_pair_tests": 2,
-    "sustained_rounds": 1542,
-    "sustained_scenery_calls": 62,
-    "sustained_worst_ms": 31.093
-   },
-   "terrain": {
-    "kernel_ms": 0.292,
-    "res": 230400
-   },
-   "warhead_spike": {
-    "carve_cells": 78961,
-    "particles": 3457,
-    "worst_update_ms": 208.797
-   }
-  },
+  "models": 451,
+  "modules": 58,
   "presets": 26,
-  "props": 119,
+  "props": 122,
   "scenarios": 7,
   "vehicles": 66,
-  "weapons": 85
+  "weapons": 89
  },
  "flora": {
   "prop_agave": "prop_agave_strip.png",
@@ -1177,13 +1186,13 @@
    "h": 2.1
   },
   "missile_aam": {
-   "h": 1.5
+   "h": 1.7
   },
   "missile_arm": {
-   "h": 3.0
+   "h": 3.2
   },
   "missile_asm": {
-   "h": 3.7
+   "h": 3.9
   },
   "missile_atgm": {
    "h": 2.3
@@ -1216,10 +1225,14 @@
   "replay_air": "clip_replay_air.jpg",
   "strike": "clip_strike.jpg"
  },
- "readme_counts": "  <sub><b>66</b> machines and <b>14</b> battlemechs &middot; <b>85</b> weapons &middot; <b>47</b> hostile types &middot; <b>26</b> missions &middot; <b>441</b> voxel models &middot; <b>119</b> destructible props &middot; <b>26</b> worlds &middot; <b>1037</b> automated checks</sub>",
+ "readme_counts": "  <sub><b>66</b> machines and <b>14</b> battlemechs &middot; <b>89</b> weapons &middot; <b>50</b> hostile types &middot; <b>26</b> missions &middot; <b>451</b> voxel models &middot; <b>122</b> destructible props &middot; <b>26</b> worlds &middot; <b>1104</b> automated checks</sub>",
  "scenery": {
+  "enemy_soldier": "enemy_soldier.png",
+  "enemy_soldier_at": "enemy_soldier_at.png",
+  "enemy_soldier_mg": "enemy_soldier_mg.png",
   "person": "person.png",
   "prop_adobe_house": "prop_adobe_house_sheet.png",
+  "prop_ammo_crate": "prop_ammo_crate.png",
   "prop_apartment_walkup": "prop_apartment_walkup_sheet.png",
   "prop_barn": "prop_barn.gif",
   "prop_billboard": "prop_billboard.gif",
@@ -1237,6 +1250,8 @@
   "prop_boulder3": "prop_boulder3.png",
   "prop_boulder4": "prop_boulder4.png",
   "prop_boulder5": "prop_boulder5.png",
+  "prop_boulder6": "prop_boulder6.png",
+  "prop_boulder7": "prop_boulder7.png",
   "prop_box_truck": "prop_box_truck_sheet.png",
   "prop_bus": "prop_bus_sheet.png",
   "prop_bus_stop": "prop_bus_stop.png",
@@ -1303,6 +1318,7 @@
   "prop_road_sign": "prop_road_sign_sheet.png",
   "prop_rock_cluster": "prop_rock_cluster_sheet.png",
   "prop_rubble": "prop_rubble.gif",
+  "prop_scree": "prop_scree.png",
   "prop_semi_truck": "prop_semi_truck_sheet.png",
   "prop_shed": "prop_shed_sheet.png",
   "prop_shop": "prop_shop.gif",
@@ -1323,9 +1339,24 @@
   "prop_watermill": "prop_watermill.gif",
   "prop_watertower": "prop_watertower.gif",
   "prop_windmill": "prop_windmill.gif",
-  "prop_windturbine": "prop_windturbine.gif"
+  "prop_windturbine": "prop_windturbine.gif",
+  "soldier": "soldier.png",
+  "soldier_at": "soldier_at.png",
+  "soldier_mg": "soldier_mg.png"
  },
  "scenery_facts": {
+  "enemy_soldier": {
+   "h": 2.0,
+   "rolls": 1
+  },
+  "enemy_soldier_at": {
+   "h": 2.0,
+   "rolls": 1
+  },
+  "enemy_soldier_mg": {
+   "h": 2.0,
+   "rolls": 1
+  },
   "person": {
    "h": 2.1,
    "rolls": 1
@@ -1333,6 +1364,10 @@
   "prop_adobe_house": {
    "h": 5.6,
    "rolls": 4
+  },
+  "prop_ammo_crate": {
+   "h": 3.0,
+   "rolls": 1
   },
   "prop_apartment_walkup": {
    "h": 12.1,
@@ -1383,22 +1418,30 @@
    "rolls": 1
   },
   "prop_boulder": {
-   "h": 4.5,
+   "h": 3.7,
    "rolls": 1
   },
   "prop_boulder2": {
-   "h": 5.1,
+   "h": 3.7,
    "rolls": 1
   },
   "prop_boulder3": {
-   "h": 5.1,
+   "h": 3.2,
    "rolls": 1
   },
   "prop_boulder4": {
-   "h": 5.1,
+   "h": 9.6,
    "rolls": 1
   },
   "prop_boulder5": {
+   "h": 1.6,
+   "rolls": 1
+  },
+  "prop_boulder6": {
+   "h": 6.7,
+   "rolls": 1
+  },
+  "prop_boulder7": {
    "h": 3.2,
    "rolls": 1
   },
@@ -1475,7 +1518,7 @@
    "rolls": 1
   },
   "prop_driftwood": {
-   "h": 2.9,
+   "h": 3.1,
    "rolls": 4
   },
   "prop_dump_truck": {
@@ -1603,7 +1646,7 @@
    "rolls": 1
   },
   "prop_orchard_tree": {
-   "h": 5.3,
+   "h": 5.0,
    "rolls": 4
   },
   "prop_park_bench": {
@@ -1659,11 +1702,15 @@
    "rolls": 4
   },
   "prop_rock_cluster": {
-   "h": 1.5,
+   "h": 0.8,
    "rolls": 4
   },
   "prop_rubble": {
    "h": 3.2,
+   "rolls": 1
+  },
+  "prop_scree": {
+   "h": 1.6,
    "rolls": 1
   },
   "prop_semi_truck": {
@@ -1749,6 +1796,18 @@
   "prop_windturbine": {
    "h": 40.6,
    "rolls": 1
+  },
+  "soldier": {
+   "h": 2.0,
+   "rolls": 1
+  },
+  "soldier_at": {
+   "h": 2.0,
+   "rolls": 1
+  },
+  "soldier_mg": {
+   "h": 2.0,
+   "rolls": 1
   }
  },
  "sections": {
@@ -1787,7 +1846,7 @@
    "game/biomes.py"
   ]
  },
- "source": "1e7909bd2b7553e8",
+ "source": "5f6e88511f09021c",
  "sources": {
   "game/biomes.py": "c0b5ab4a0a3f15e5",
   "game/content.py": "0a16b084cae6dee6",
@@ -1795,11 +1854,11 @@
   "game/limbs.py": "f33cd15e620da455",
   "game/mapgen.py": "1692c875d69ced9c",
   "game/models.py": "39df00541d7f6630",
-  "game/props.py": "3b7e018412580d6f",
-  "inventory.py": "3e0ec2c04af1946a",
-  "sitegen.py": "208e83e5995029a7"
+  "game/props.py": "037b0b83f0f0e20d",
+  "inventory.py": "29693f56a810b6b1",
+  "sitegen.py": "d7ed8a444017f3fe"
  },
- "stamp": "built 2026-10-03",
+ "stamp": "built 2026-10-04",
  "units": {
   "abrams": "abrams.gif",
   "ac130": "ac130.gif",
@@ -1936,74 +1995,74 @@
  },
  "work": [
   {
-   "date": "2026-10-03",
-   "sha": "4cbd45c",
-   "subject": "trailer: re-filming what the cut uses takes ~10 min (was ~100 for everything) -- --cut-only, --jobs=N worker processes, the game's model/sound disk caches turned on (session build 26 s -> 6-14 s), NVENC, the readback straight to the encoder and double-buffered so it never waits on the GPU (one take 79 s -> 38 s, frames identical); per-stage timings in the log; log, lesson (936), board"
+   "date": "2026-10-04",
+   "sha": "cfcd561",
+   "subject": "the over-the-shoulder aim gate under the dev's video state: the fixture held a man in the air with his fall speed on him and its mouse loop never stopped at 1910 px (vz zeroed, the stop one mouse count); the gate now runs under the default and fullscreen/ultra/upscaled video, witnessed; log, lesson (958)"
+  },
+  {
+   "date": "2026-10-04",
+   "sha": "e7d8dae",
+   "subject": "diagnose: the over-the-shoulder aim gate says, when the round misses, what the shot reckoned from (origin against the drawn lens, the range it converged at against his, what the solution named) -- the CHASE 30 u up failure reported on 105d58c does not reproduce here (27/27, alone x2, on-foot x2)"
+  },
+  {
+   "date": "2026-10-04",
+   "sha": "105d58c",
+   "subject": "merge feature/infantry-ammo-aim-walk onto main (squad vehicles): session conflict resolved (the per-gait strides into _setup_machine), docs unioned and the branch's log references re-pointed, lessons 957; the boarding gate knows every gait; the aim fixture clears parked vehicles; one log line reworded -- WIP: 'CHASE 30 u up at 40 u' aim case fails after the merge"
+  },
+  {
+   "date": "2026-10-04",
+   "sha": "0f9c20b",
+   "subject": "the squad gets into vehicles with you: empty HMMWV / Stryker / SH-60 parked near a soldier's start, ENTER to get in and out, the squad rides hidden (ABOARD) and dies with the vehicle; four witnessed gates; log, lessons (950), OPEN row, archive"
+  },
+  {
+   "date": "2026-10-04",
+   "sha": "226435d",
+   "subject": "diagnose: the compiled-mark reference rounds as the kernel now does (the rut fix rounded the store); a log line no longer names two things that do not exist"
+  },
+  {
+   "date": "2026-10-04",
+   "sha": "82c0e6c",
+   "subject": "play as infantry: the full gate's findings -- a soldier has no cabin and walks on legs, his flash is at his rifle, the hand weapons are their own arena (the carbine out-reaches the SAW), a man is not a platform; log"
   },
   {
    "date": "2026-10-03",
-   "sha": "f50be45",
-   "subject": "the canyon's cliffs: the hit is bisected to the side in the ground (the midpoint could be air in front of a wall, over the sea -- a checkerboard of rock and sea), a wall wears its own top cell's colour, and only a building's marked roof gets windows (config.bld_roof) -- every other crisp face is rock; two new GPU self-test parts, witnessed three ways; no measurable GPU cost"
+   "sha": "f2d1b32",
+   "subject": "docs: play as infantry -- log, lessons (948), OPEN row, archive; site data"
   },
   {
-   "date": "2026-10-02",
-   "sha": "c83aa75",
-   "subject": "trailer: every angle records the game version it was filmed on ('older game' in --list, and the cut names its clips from older code); all 187 angles re-filmed on the current game and the trailer re-cut; log, lesson (934), board (and the TTS fallback's write-up)"
+   "date": "2026-10-03",
+   "sha": "fd97524",
+   "subject": "wip: the squad's toughness rides YOUR ARMOUR"
   },
   {
-   "date": "2026-10-02",
-   "sha": "b3cfdb7",
-   "subject": "tts: the box went quiet on its WireGuard address (10.8.0.9) while it still answered on the LAN, so every render failed on a timeout -- tts_tool now tries fallback_urls (192.168.1.3 by default) and says which it used; --list no longer crashes on a Windows console; the 8 voice lines that were missing rendered (iron gauntlet, deck recovery, recovered)"
+   "date": "2026-10-03",
+   "sha": "acc863a",
+   "subject": "wip: infantry -- rounds that cross a man hit him before the ground behind him; aim at a man's chest; squad seam; landing"
   },
   {
-   "date": "2026-10-02",
-   "sha": "19db8b2",
-   "subject": "trailer re-cut with the ground views: LOW PASS (an F/A-18 overhead), THE FRONT (the fight at ground level), FROM ABOVE (an A-10 diving at the camera with napalm) and two finale cuts; 106 s at 1080p60; 187 numbered clips; log, lesson (933), board"
+   "date": "2026-10-03",
+   "sha": "8095ed5",
+   "subject": "wip: play as infantry -- the soldier on foot, his squad and its orders, the views, the gates (docs follow)"
   },
   {
-   "date": "2026-10-02",
-   "sha": "3837e7d",
-   "subject": "trailer: three ground-view takes -- overhead (an F-16 low over the plains, cameras stood on the ground under its line), divebomb (an A-10 diving at a ground camera, napalm in the dive), groundwar (an armour fight with gunships, cameras in the grass); a fire_window, a per-angle zoom (the renderer's telescopic zoom), and a fixed camera no longer fades the trees round it to ghosts"
+   "date": "2026-10-03",
+   "sha": "d23b967",
+   "subject": "track marks: a stamp's blend is rounded, not floored -- every stamp took at least a level off, ~14 a pass, so rock (k 0.06) rutted 0.38 as deep as dirt (k 0.40); now ~0.2, clear of the bar; the rock-colour stopgap reverted; witnessed; log, lesson (946), board"
   },
   {
-   "date": "2026-10-01",
-   "sha": "b307d4f",
-   "subject": "graphics polish, from the game re-filmed: lakes and sea no longer ruled in stripes (each wave faded by the pixel's footprint along the view; row-to-row 7.28 -> 5.38 against 5.00 with no waves), hillsides no longer knitted close up (the sun-raked ground grain band-limited the same way; the fall-line streak made axis-aligned), and a shell's arc trace is a faint line instead of a row of white balls on the GPU path; two new self-test parts and a new check, all witnessed"
+   "date": "2026-10-03",
+   "sha": "84da40e",
+   "subject": "the ground is not one colour again: the far-rock change gated the dry/damp swing with the rock weight, which covers every steep hillside; now only a cliff (grade 4.7..9.5) loses it -- saturation spread 0.150 from 0.116 as before; the Alps stay rock; log, lesson (945)"
   },
   {
-   "date": "2026-10-01",
-   "sha": "0e5d015",
-   "subject": "railways, trains and crash barriers run along their line: they were camera-facing billboards baked side-on, so looked down the line they stood across it; now drawn near the camera as models turned along it (heading from the next piece of the same kind, no network query; 0.82 ms), left out of the billboard field; the wagons no longer stand 1.6 u inside the locomotive; new check witnessed three ways"
+   "date": "2026-10-03",
+   "sha": "09425cd",
+   "subject": "log, lesson (944): the full parallel gate had no verdict -- a lab cleared sys.argv"
   },
   {
-   "date": "2026-10-01",
-   "sha": "367c17c",
-   "subject": "world models C/D: the bomb (Mk 80 shape, 117 voxels), shell and rocket round instead of square; the motel (numbered bays, AC units, door lamps, lit VACANCY sign, marked car park) and the radar (braced tower, orange-peel reflector, red obstruction light) rebuilt; 470 model/prop/ordnance/rail/traffic checks pass; log, lesson (930), board"
-  },
-  {
-   "date": "2026-10-01",
-   "sha": "e85509a",
-   "subject": "world models B: the railway rebuilt -- a road-switcher locomotive (cab and nose, long hood with doors, radiator fans, dynamic-brake blister, walkways and handrails, fuel tank, three-axle bogies, head, ditch and rear lights at night), a ribbed boxcar with its sliding door, ladders and brake wheel, a round tank wagon with heads, manway platform and placards, a signal with mast, ladder and hooded lamps, and track with real rail profiles on concrete sleepers; rail checks pass"
-  },
-  {
-   "date": "2026-10-01",
-   "sha": "f0c6f61",
-   "subject": "world models A: the road traffic rebuilt -- car, hatchback, pickup, van, box truck, bus, semi, tanker, tipper, tractor, combine: round wheels (tyre, sidewall, rim, hub) instead of cogs, tinted glass with pillars, door lines, mirrors, bumpers, grilles, plates, and head and tail lamps that light with the night; footprints and wheel counts kept (the semi still has 18); new check 'the road traffic is detailed' witnessed twice (the cog wheel, no tail lamps) -- it caught the tractor with none"
-  },
-  {
-   "date": "2026-10-01",
-   "sha": "492ee7d",
-   "subject": "docs: PERFORMANCE_PLAYBOOK.md -- every performance win in one reusable reference (the rules, the architecture and why, the method, ~50 patterns with before/after numbers, what lost, the instruments, a checklist); README brought up to date (realistic weapons + rearm, weapon roles, smoke + APS, wrecks, the V views, X); ENGINE/CLAUDE/CPU/GPU point at it; PORTING gains what landed on 09-30"
-  },
-  {
-   "date": "2026-10-01",
-   "sha": "980e4f4",
-   "subject": "lesson: a bound on the aim's lead is still a run-on"
-  },
-  {
-   "date": "2026-10-01",
-   "sha": "69999ba",
-   "subject": "the turret stops when the mouse stops: the aim leads the gun by one frame of its traverse (it ran on 7.4 deg over 0.17 s after the hand stopped; now 0.2 deg), still turning at the mount's full rate while the hand moves; the view check asserts the gun is where you look within 0.05 s; witnessed"
+   "date": "2026-10-03",
+   "sha": "d9add37",
+   "subject": "diagnose: the full --jobs run gives a verdict again -- the command line is read once at start (drive_lab clears sys.argv at import, so workers lost --out= and every full parallel run ended 'produced no results'); a check's leaked GRADE_LEVEL / unit shadows are put back (the ground-colour check left the grade on and the water-ring part of gpu terrain raymarch failed after it); the track fixture is seeded after its session is built; rock scuffs fainter (lift 0.97); two doc references fixed"
   }
  ],
  "worlds": {
